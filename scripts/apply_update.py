@@ -26,6 +26,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -136,9 +137,14 @@ def git_apply(root: Path, source: str, dry_run: bool) -> int:
     else:
         url, branch = spec, "main"
     with tempfile.TemporaryDirectory(prefix="skillupd_") as td:
+        # Clone with LFS smudge disabled so the initial clone is fast even if
+        # the remote tracks many large LFS files (e.g. 17 PPTX × 30+ MB each).
+        # We will pull only the LFS files we actually need afterwards.
+        env = os.environ.copy()
+        env["GIT_LFS_SKIP_SMUDGE"] = "1"
         subprocess.run(
             ["git", "clone", "--depth", "1", "--branch", branch, url, td],
-            check=True,
+            check=True, env=env,
         )
         clone = Path(td)
         remote_updates = json.loads((clone / "updates.json").read_text(encoding="utf-8"))
@@ -156,12 +162,43 @@ def git_apply(root: Path, source: str, dry_run: bool) -> int:
             for f in sorted(modified): print(f"     ~  {f}")
             for f in sorted(removed):  print(f"     -  {f}")
             return 0
+
+        # Selectively materialize LFS-tracked files that the delta needs.
+        # We treat *.pptx as the canonical LFS extension; if you LFS-track more
+        # patterns add them here.
+        lfs_targets = sorted(
+            f for f in (added | modified) if f.endswith(".pptx")
+        )
+        if lfs_targets:
+            print(f"     fetching {len(lfs_targets)} LFS file(s) selectively…")
+            include_arg = ",".join(lfs_targets)
+            try:
+                subprocess.run(
+                    ["git", "lfs", "pull", "--include", include_arg, "--exclude", ""],
+                    cwd=clone, check=True,
+                )
+            except (subprocess.CalledProcessError, FileNotFoundError):
+                print("WARN git-lfs unavailable; falling back to full smudge.",
+                      file=sys.stderr)
+                subprocess.run(
+                    ["git", "checkout", "HEAD", "--", *lfs_targets],
+                    cwd=clone, check=False,
+                )
+
         for f in sorted(added | modified):
             src = clone / f
             dst = root / f
             if not src.exists():
                 print(f"WARN remote missing {f}", file=sys.stderr)
                 continue
+            # Detect LFS pointer that wasn't materialized (still a tiny text
+            # file with "version https://git-lfs.github.com/spec/v1" header).
+            if src.stat().st_size < 1024:
+                head = src.read_bytes()[:64]
+                if head.startswith(b"version https://git-lfs"):
+                    print(f"WARN {f} is still an LFS pointer; skipping (size={src.stat().st_size}).",
+                          file=sys.stderr)
+                    continue
             dst.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(src, dst)
             print(f"OK   wrote {f}")

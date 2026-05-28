@@ -18,6 +18,14 @@ EXCLUDE_DIRS = {".work", "__pycache__", ".git", ".idea", ".vscode", ".duplicates
 EXCLUDE_FILES = {".DS_Store", "manifest.json"}
 
 
+def is_excluded_file(name: str) -> bool:
+    if name in EXCLUDE_FILES:
+        return True
+    if name.startswith("~$"):  # PowerPoint/Office lock files
+        return True
+    return False
+
+
 def sha256_file(p: Path) -> str:
     h = hashlib.sha256()
     with p.open("rb") as f:
@@ -33,7 +41,7 @@ def iter_files(root: Path):
         rel_parts = p.relative_to(root).parts
         if any(part in EXCLUDE_DIRS or part.startswith(".") for part in rel_parts[:-1]):
             continue
-        if p.name in EXCLUDE_FILES:
+        if is_excluded_file(p.name):
             continue
         yield p
 

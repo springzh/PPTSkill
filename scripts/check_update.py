@@ -20,7 +20,10 @@ This script *does not* download files; it just reports what would change. Use
 from __future__ import annotations
 import argparse
 import json
+import os
+import subprocess
 import sys
+import tempfile
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -35,14 +38,42 @@ def parse_version(v: str) -> tuple[int, int, int]:
 
 def fetch_remote_updates(source: str) -> dict:
     if source.startswith("git+"):
-        # git source: not implemented in this minimal stub
-        raise NotImplementedError(
-            "git+ update sources require apply_update.py; check_update.py "
-            "only supports HTTP(S) update_source in this version"
-        )
+        return _fetch_remote_updates_git(source)
     url = source.rstrip("/") + "/updates.json"
     with urllib.request.urlopen(url, timeout=30) as resp:
         return json.loads(resp.read().decode("utf-8"))
+
+
+def _fetch_remote_updates_git(source: str) -> dict:
+    """For git+ sources: do a tiny shallow + blobless clone, read updates.json.
+
+    LFS smudging is disabled so we don't pull large binary assets just to
+    look at version metadata.
+    """
+    spec = source[4:]
+    if "#" in spec:
+        url, branch = spec.split("#", 1)
+    else:
+        url, branch = spec, "main"
+    with tempfile.TemporaryDirectory(prefix="skillchk_") as td:
+        env = os.environ.copy()
+        env["GIT_LFS_SKIP_SMUDGE"] = "1"
+        subprocess.run(
+            ["git", "clone", "--depth", "1", "--branch", branch,
+             "--filter=blob:none", "--no-checkout", url, td],
+            check=True,
+            env=env,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+        # Only check out updates.json (and nothing else)
+        subprocess.run(
+            ["git", "checkout", "HEAD", "--", "updates.json"],
+            cwd=td, check=True, env=env,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+        return json.loads((Path(td) / "updates.json").read_text(encoding="utf-8"))
 
 
 def collect_delta(remote_hist: list[dict], local_version: str) -> tuple[set[str], set[str], set[str]]:
@@ -95,7 +126,8 @@ def main() -> int:
 
     try:
         remote = fetch_remote_updates(source)
-    except (urllib.error.URLError, NotImplementedError, json.JSONDecodeError) as exc:
+    except (urllib.error.URLError, json.JSONDecodeError,
+            subprocess.CalledProcessError, FileNotFoundError) as exc:
         print(f"WARN Could not fetch remote updates ({exc}); using local copy.", file=sys.stderr)
         return 0
 

@@ -1,20 +1,44 @@
 {
   "$schema": "ppt-skill-manifest/v1",
   "skill_name": "ppt-builder",
-  "version": "1.0.0",
-  "file_count": 84,
+  "version": "1.0.1",
+  "file_count": 88,
   "files": {
+    ".gitattributes": {
+      "sha256": "a30b3c792d552ce32fb88449a091bad08c5b3b79962e680013c22ddff84e9f29",
+      "size": 43,
+      "version_added": "1.0.0",
+      "last_modified": "1.0.0"
+    },
+    ".gitignore": {
+      "sha256": "30f85f63855e540d13dc85d70352d92bed17c6383a918a66ca227f8701d7c5d0",
+      "size": 300,
+      "version_added": "1.0.0",
+      "last_modified": "1.0.0"
+    },
     "CHANGELOG.md": {
-      "sha256": "275305de75003e4ec34e2b618a898416793de976381c74a97736df1bf7f82233",
-      "size": 2023,
+      "sha256": "2363087bb86c504e6479b44cd040cfb5a2bfc9b56e88bfcd0620f952d04748f9",
+      "size": 3677,
+      "version_added": "1.0.0",
+      "last_modified": "1.0.1"
+    },
+    "LICENSE": {
+      "sha256": "6f52f1baed8c393758ff6e8bf9c515edd6fd377187ae38a64165a330573b7829",
+      "size": 1417,
+      "version_added": "1.0.0",
+      "last_modified": "1.0.0"
+    },
+    "NOTICE.md": {
+      "sha256": "f495a2a5d809c3b72f5095cdf9c951eaab09bd81652ed04037a12189ace220c2",
+      "size": 2145,
       "version_added": "1.0.0",
       "last_modified": "1.0.0"
     },
     "README.md": {
-      "sha256": "8e8cf7fa05bc34fbbe163447a3b09d73f00dc270b3999301ec9efcb1e54b0711",
-      "size": 3263,
+      "sha256": "586d52a76564dded882f7d6a16e984c0a7526cb52c2b9376d6f4f3699af55d53",
+      "size": 2940,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.1"
     },
     "SKILL.md": {
       "sha256": "c1b637f4171c3cf11995f0629c1b62c9cbab66652f559f6e3381328c5eed675e",
@@ -23,10 +47,10 @@
       "last_modified": "1.0.0"
     },
     "VERSION": {
-      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03",
+      "sha256": "44e161e4495cac2cf7858043e9e6418e9579f0ddcfae826f9a372622968ce066",
       "size": 6,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.1"
     },
     "references/chart-editing.md": {
       "sha256": "37ccd257ae8f8c655e02703e90cdd9163f1254e21587cbe1c833ed8a2854f999",
@@ -59,16 +83,16 @@
       "last_modified": "1.0.0"
     },
     "scripts/apply_update.py": {
-      "sha256": "4c3cba650acd7813de2312d3c7b3537c415d65ec0390a73f2130709677d2b7b5",
-      "size": 7661,
+      "sha256": "6b72a101009b226dc1dab0dab9170cbba2d7032425976304d990673f769acc66",
+      "size": 9461,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.1"
     },
     "scripts/build_manifest.py": {
-      "sha256": "d6ff3893bf775c1efc551829ea0e20244023f186649bfce268629a255d733e7e",
-      "size": 2581,
+      "sha256": "55b98cebf5b609eb56253dacf1f6a531fc5c2d2bcb9f13c847c9e251768ef9d2",
+      "size": 2774,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.1"
     },
     "scripts/build_pptx.py": {
       "sha256": "f14a01350e8a60afbc2bf16b8543c555959025ee747c739592eb125160fc9768",
@@ -77,10 +101,10 @@
       "last_modified": "1.0.0"
     },
     "scripts/check_update.py": {
-      "sha256": "4d257c0eeffad8f0ff2b140cdc24b6b125ef29db39b61dcbea83c64dafeccbb6",
-      "size": 4724,
+      "sha256": "6c2439d80ab47451b76f074fef7819b885bdecef46441061dd762202bf4f4d42",
+      "size": 5764,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.1"
     },
     "scripts/render_slides.py": {
       "sha256": "b615e9c9c12545526a6621b7deeec6721b7b815ced8d47d5b29e7aeedc94eaf5",
@@ -287,28 +311,28 @@
       "last_modified": "1.0.0"
     },
     "templates/premium-corp/detail.json": {
-      "sha256": "88e961e703ac2428ac6547d397796be761e3dcca31600de5de5339f927514aea",
-      "size": 639307,
+      "sha256": "8b22ed0539e5bca03f885e5e5f48361f1513bea709173fb8f2ae571f2227b26d",
+      "size": 628173,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.1"
     },
     "templates/premium-corp/intro.md": {
-      "sha256": "cff978b7e8bf8f46e21265efb6eb25aed17ed9cafd736dd7b5a9c092e22308c1",
-      "size": 3470,
+      "sha256": "c252da9f12eaea795b29fe2f5813b8db8a3a5afac42a851b5b7af20427b58ea3",
+      "size": 3428,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.1"
     },
     "templates/premium-corp/preview.png": {
-      "sha256": "fe88a0d1062dd48f5df8e831e474c61323ac53c84844db199f31db84486f33c6",
-      "size": 1005239,
+      "sha256": "c5e6b4fddb0b3074cd7f27e96e1a6082307a93e9ffa4369bbc4a8a29aed096da",
+      "size": 915496,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.1"
     },
     "templates/premium-corp/template.pptx": {
-      "sha256": "092be10e12d6340613134f996727a63ae777fa055d760c506dde8604b97fd278",
-      "size": 13588933,
+      "sha256": "eb6a34ba17dd25a08d79843c2b710b9dfcf3069da6cd050e0557cc7b21f9b9b9",
+      "size": 8314701,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.1"
     },
     "templates/quarterly-illust/detail.json": {
       "sha256": "51f03f9d809c03839fae9bcd4f359d605f2898010a45f424f8f046fa309d66a3",
@@ -503,10 +527,10 @@
       "last_modified": "1.0.0"
     },
     "updates.json": {
-      "sha256": "3cf2a3b290688dfb03d8bfe02a583e88bab3f6b1f336c25998407f7574fe1d99",
-      "size": 4648,
+      "sha256": "ecf0467699ed8eedbdc81c98f8a54f209ab3a695a7e098bfc53c6b81551abba7",
+      "size": 5473,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.1"
     }
   }
 }
