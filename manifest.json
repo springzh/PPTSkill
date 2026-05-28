@@ -1,8 +1,8 @@
 {
   "$schema": "ppt-skill-manifest/v1",
   "skill_name": "ppt-builder",
-  "version": "1.0.1",
-  "file_count": 88,
+  "version": "1.0.2",
+  "file_count": 96,
   "files": {
     ".gitattributes": {
       "sha256": "a30b3c792d552ce32fb88449a091bad08c5b3b79962e680013c22ddff84e9f29",
@@ -17,10 +17,10 @@
       "last_modified": "1.0.0"
     },
     "CHANGELOG.md": {
-      "sha256": "2363087bb86c504e6479b44cd040cfb5a2bfc9b56e88bfcd0620f952d04748f9",
-      "size": 3677,
+      "sha256": "a3a9659bfeb3d73f1925e2bae29a1d4556463fa81983afcc1ddef8ffae249244",
+      "size": 5707,
       "version_added": "1.0.0",
-      "last_modified": "1.0.1"
+      "last_modified": "1.0.2"
     },
     "LICENSE": {
       "sha256": "6f52f1baed8c393758ff6e8bf9c515edd6fd377187ae38a64165a330573b7829",
@@ -47,10 +47,10 @@
       "last_modified": "1.0.0"
     },
     "VERSION": {
-      "sha256": "44e161e4495cac2cf7858043e9e6418e9579f0ddcfae826f9a372622968ce066",
+      "sha256": "9fd28642d3aca191e5c7fc2383cfd6fabb2aac8743f029dabb8989ac584e31bc",
       "size": 6,
       "version_added": "1.0.0",
-      "last_modified": "1.0.1"
+      "last_modified": "1.0.2"
     },
     "references/chart-editing.md": {
       "sha256": "37ccd257ae8f8c655e02703e90cdd9163f1254e21587cbe1c833ed8a2854f999",
@@ -113,34 +113,34 @@
       "last_modified": "1.0.0"
     },
     "templates/INDEX.md": {
-      "sha256": "b88c7e92b62908637eb3fae794cee8108d4434d418ca94ad812853231fc114a5",
-      "size": 6321,
+      "sha256": "97b68f0b2297e3bf43d056ead3ce534f1d8137f8fdaefe8f3096605d24e6d3fe",
+      "size": 7284,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/architecture-deck/detail.json": {
-      "sha256": "2169b0b8bf695ac320c54727650166b230de7808f4984a333d2dc2ab0496cf52",
-      "size": 888611,
+      "sha256": "1acefdc7a2a0868182ca1cc556c4d81d2b667cd6c7aca7196036c698e6053878",
+      "size": 876070,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/architecture-deck/intro.md": {
-      "sha256": "9165e6ae1f2a3f0913c53531d87c524bd88538be244d60e59838d4f4bc575c84",
+      "sha256": "15347ea8ec5e50fb481385d2bc018c2f842d4dfd047be5bc91cef1d31d2d217a",
       "size": 2862,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/architecture-deck/preview.png": {
-      "sha256": "f469e27b9a6807ca3728d1f26ff2437bdb98f877e6e5ce39e82029a2bb988d15",
-      "size": 987250,
+      "sha256": "b34790fdbe1b650a7391190f00865b6e7be73c5879584ad575691fabcb9d54bf",
+      "size": 881157,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/architecture-deck/template.pptx": {
-      "sha256": "d1ac3b746a4fcb7bfa26ac135ca40ef1ddc41ef198f8b99cb1620cdeff58882c",
-      "size": 18708314,
+      "sha256": "9d18d627cb9f77208502e08414dd56ea065a28a36d842187a3efbbd61f3746c6",
+      "size": 16777674,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/competition-speech/detail.json": {
       "sha256": "46b15faed0e190768c673dcd2c4e79991485a85cf6cef1bc362edba02eed2707",
@@ -239,28 +239,28 @@
       "last_modified": "1.0.0"
     },
     "templates/mckinsey-style/detail.json": {
-      "sha256": "1b4a29f7e7c639db0a4aaebfe31be19247143801fc00faec10ada230c2b5f569",
-      "size": 757093,
+      "sha256": "8526e86c0225f09d571931f888c9aaf9dc2e7ea78d685c16a1fd2aa0355ca690",
+      "size": 748144,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/mckinsey-style/intro.md": {
-      "sha256": "e1ff44685399f347e30821e2f89456050e41c62ff9880be1864a09d3346f98a4",
+      "sha256": "b01c305a67d5e5d47d9d67f41dbadc7a55953a32fef8f488e2c8cdbdd7337e81",
       "size": 2731,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/mckinsey-style/preview.png": {
-      "sha256": "918f50363f436bbe70e99bad2e10b99bab24d42c8ea785c5cee092061006a8f2",
-      "size": 1299463,
+      "sha256": "bd5b55adffd9f946f4b01cddae263e838a4634af9871edc34b1ab370b5117e85",
+      "size": 761958,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/mckinsey-style/template.pptx": {
-      "sha256": "93379ab10224d0c5c4003d57122a864b67cb26a5f5fcf21d66e3d6943cbcb541",
-      "size": 24112434,
+      "sha256": "7f967884794551e93ac1fc358b4c8fe5406af41b6fe0278780da0d7fc0197d33",
+      "size": 15877522,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/minimal-business-summary/detail.json": {
       "sha256": "8c355410faf010c9bbcb280fa37b81c7af21b213452fc6e52cdaf0b2e164dea6",
@@ -406,131 +406,179 @@
       "version_added": "1.0.0",
       "last_modified": "1.0.0"
     },
+    "templates/report-massive-charts/detail.json": {
+      "sha256": "b3587a0e9580ba378d95059ed311a74c8b19070160bca074ebd4da54e20c8d53",
+      "size": 763808,
+      "version_added": "1.0.2",
+      "last_modified": "1.0.2"
+    },
+    "templates/report-massive-charts/intro.md": {
+      "sha256": "5e87b04a87e9d0d4ca79c0433c82389cf988655bcbe29052ff1c1e6431f0ec19",
+      "size": 1933,
+      "version_added": "1.0.2",
+      "last_modified": "1.0.2"
+    },
+    "templates/report-massive-charts/preview.png": {
+      "sha256": "b6454fc997d087227918517dd7a3de445acab26ffac68dd3aa586e95e0edec4a",
+      "size": 971905,
+      "version_added": "1.0.2",
+      "last_modified": "1.0.2"
+    },
+    "templates/report-massive-charts/template.pptx": {
+      "sha256": "737f45d3466fd08a7f5cce6a1cd7919ffac1f67c1eb9249549f22de9c57f2cfd",
+      "size": 16913005,
+      "version_added": "1.0.2",
+      "last_modified": "1.0.2"
+    },
+    "templates/report-massive-models/detail.json": {
+      "sha256": "1a676993ed6bfee99a15b9e87dbf6365c7f7136259926b4c8482a1d80207cbeb",
+      "size": 735519,
+      "version_added": "1.0.2",
+      "last_modified": "1.0.2"
+    },
+    "templates/report-massive-models/intro.md": {
+      "sha256": "05ccb3f021035e6c2db1e14c4ae8e46ec7dd84cc04507d574f2445fee67f35fa",
+      "size": 1866,
+      "version_added": "1.0.2",
+      "last_modified": "1.0.2"
+    },
+    "templates/report-massive-models/preview.png": {
+      "sha256": "f771ec31533598514bafbc3cf0e7060fdacef60b843cfce4007e8f33cae08f51",
+      "size": 1002772,
+      "version_added": "1.0.2",
+      "last_modified": "1.0.2"
+    },
+    "templates/report-massive-models/template.pptx": {
+      "sha256": "202766cca87223985071a8c947acfe2fb5c5c61a021625f0ab51bc3d12793210",
+      "size": 16705051,
+      "version_added": "1.0.2",
+      "last_modified": "1.0.2"
+    },
+    "templates/report-massive-reports/detail.json": {
+      "sha256": "791c6a7c80d32fedac693ab4a44cdc03a25dfe4fb0121d6b343516ce64cec4a5",
+      "size": 616357,
+      "version_added": "1.0.2",
+      "last_modified": "1.0.2"
+    },
+    "templates/report-massive-reports/intro.md": {
+      "sha256": "f9322518f11662f1d5c44557f3e1eabff5fea0c48fb26cd9ec66c8dd968012fe",
+      "size": 1964,
+      "version_added": "1.0.2",
+      "last_modified": "1.0.2"
+    },
+    "templates/report-massive-reports/preview.png": {
+      "sha256": "869308af5cbe0b155aff792babc4190774e02fcdebac598b77e3a863d928cece",
+      "size": 631862,
+      "version_added": "1.0.2",
+      "last_modified": "1.0.2"
+    },
+    "templates/report-massive-reports/template.pptx": {
+      "sha256": "b56fb0abc666da1c47a3f953029286a78a4ed1314a6caa23f7bfa62442879980",
+      "size": 16331475,
+      "version_added": "1.0.2",
+      "last_modified": "1.0.2"
+    },
     "templates/report-savior/detail.json": {
-      "sha256": "7735d49e370f4ee432a57ec394047a03567c570fe2639d690ffcd3c9def46e24",
-      "size": 780355,
+      "sha256": "fa66010af07d6128e8be89b6f0c063ebd7b485bbf6aba61b8cea203c20af1132",
+      "size": 770463,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/report-savior/intro.md": {
-      "sha256": "8817a17649b656227075a51e307fa3741c948b652d3e76e5667df5a689603f27",
+      "sha256": "4ad091c3e25ec5cf0e2015da8627a66b8390a74f18ffdd0f181d4ba8edf6c059",
       "size": 2998,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/report-savior/preview.png": {
-      "sha256": "f0bc470a5f202897c06180500f9df0cbc1cf50462d4ddf225c5f2f39255e8c80",
-      "size": 1317448,
+      "sha256": "3a8394e7d46d9379261fc2346624a8751a7e5323cec2568c609da69b8f9c2104",
+      "size": 852978,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/report-savior/template.pptx": {
-      "sha256": "26d72dcb9e05a1696f05b074345686937e3f9a24668eb7e6dd0e13672e160260",
-      "size": 23988891,
+      "sha256": "bf9481950afeddf6e9dfaa8bb2f1da0cb22bfe5cf9b6a87bb49c3c7c58916418",
+      "size": 16925901,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
-    },
-    "templates/report-template-massive/detail.json": {
-      "sha256": "3222827853d6f92c2798f534e3d5a0f0121a4f4ebf162ba0e7ddcdfb275a9aa7",
-      "size": 2127189,
-      "version_added": "1.0.0",
-      "last_modified": "1.0.0"
-    },
-    "templates/report-template-massive/intro.md": {
-      "sha256": "ca2f032a73818e32fc482dbbea2101ac2321cc4f14309bb00102f153b1495325",
-      "size": 3031,
-      "version_added": "1.0.0",
-      "last_modified": "1.0.0"
-    },
-    "templates/report-template-massive/preview.png": {
-      "sha256": "5b688e15d1d976d82890bdcedb381016fc8cfb17774b08af1b4727fb8c96e086",
-      "size": 1093029,
-      "version_added": "1.0.0",
-      "last_modified": "1.0.0"
-    },
-    "templates/report-template-massive/template.pptx": {
-      "sha256": "1b5e90f2643df28445c714eedbf6e5162f5e60d85cf5defa8da97ab69d2cf9b2",
-      "size": 27578305,
-      "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/thesis-formula/detail.json": {
-      "sha256": "e7c7a39b9588e5d913ba4f5b9a815ea9ca1a11d4659644be93a2e77e0d70a205",
-      "size": 257647,
+      "sha256": "dfe0908d6ea7aba9525e8a2b250e5cc3da9fd96437009ab8c487bfadb8d24f6d",
+      "size": 248307,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/thesis-formula/intro.md": {
-      "sha256": "035846506d864f9e0f1d52ce4ee64ea0e78f96f736e01fbcbd8d44aea4f9e9c9",
+      "sha256": "63c45cc67d071147652391aa5f52d4976a09939a331007f0d1c2f89dfdd2921b",
       "size": 2840,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/thesis-formula/preview.png": {
-      "sha256": "5175e05d9adce9632284315936e682dce0a8f72f5359e270ace751226f7b4fb0",
-      "size": 610798,
+      "sha256": "9edc643bbaf68c271d34d530a5b40bc6f62ef77642d95bbabf279c767f0ab06e",
+      "size": 538603,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/thesis-formula/template.pptx": {
-      "sha256": "9611ec9d73a3bced779a6242b4cd1a4cb3470fac547986613e8fdb0c825dc885",
-      "size": 43977702,
+      "sha256": "187ecf559acca7267d94b2268265c8e59eed6ea5db038f968e3d18b757429e79",
+      "size": 42507917,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/thesis-novice/detail.json": {
-      "sha256": "ba1167d1de3da54395884df87cb1536ceb5ec61bf1e5fa9b86f9eaa59117869d",
-      "size": 223775,
+      "sha256": "b388d7d94cfffb5d9388a68c3973c4238b5e04c6f687e88ea01519e4e7b47b36",
+      "size": 214358,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/thesis-novice/intro.md": {
-      "sha256": "dbd5cdc1556d9709f137f69a9e23f3682660357bd751631b7c926c51f2e9cdd4",
+      "sha256": "38f778f8c9f57815749c566e2df40a6396d8592c27ebf82d52241448d472704e",
       "size": 3313,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/thesis-novice/preview.png": {
-      "sha256": "3c1afce9618827e75646b8177f6a26a519bdc745aa68aa38faed9a41be2e7c26",
-      "size": 908041,
+      "sha256": "3d643d279a3832753bf93a3d6621ef6047f3b87d264b8aff157fdf89688244fb",
+      "size": 574177,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/thesis-novice/template.pptx": {
-      "sha256": "f7c21f9521f78d3e264d6e9dbc65b1cbbc7830495093f070841b8a2bc4ab18da",
-      "size": 72816812,
+      "sha256": "a3a8e00492e01bfb5dbfa3f66f9fd1819d54c05418cdb27f5ce0a2aaa65f25bc",
+      "size": 71474594,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/top-thesis/detail.json": {
-      "sha256": "8dccf45b8ea59acd6f4544787117624f4bd299f8ce639e5420171f88d87cd008",
-      "size": 254827,
+      "sha256": "e731e3334ae99ca6cf55d9a91f88053a0910e954386bd6755c48243dee50cc78",
+      "size": 244483,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/top-thesis/intro.md": {
-      "sha256": "5a0fd9174895a539443058eb0e7b5e8b7aede03f35f0a7c3bd9e45185b188a94",
+      "sha256": "6e5da774989c22ecbf81bf6e6c631aca72fcfb7f5681848f4f73d09f53d7cc43",
       "size": 2183,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/top-thesis/preview.png": {
-      "sha256": "8966eba860d51bb33f6553edff4652385491b6e30178801df662a4cf7167a6a3",
-      "size": 538428,
+      "sha256": "afdc5247da78d08d433713dc9faf839d9cbbc70a42625a86cf4679f0a5f06d20",
+      "size": 652399,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "templates/top-thesis/template.pptx": {
-      "sha256": "f5ea63e5ec718f67a8f11396d38119be12fd3917783e92fa5ebc945468d8e5c4",
-      "size": 81487011,
+      "sha256": "de559e1ecfa75bbb54d0c580381e488129c2739f4ec1fe579052038cae4fb72e",
+      "size": 80260247,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.2"
     },
     "updates.json": {
-      "sha256": "ecf0467699ed8eedbdc81c98f8a54f209ab3a695a7e098bfc53c6b81551abba7",
-      "size": 5473,
+      "sha256": "de3200b7b2884b38d26f5df3123d6e8abe747958d199d0213a007a1728e2cb8d",
+      "size": 7892,
       "version_added": "1.0.0",
-      "last_modified": "1.0.1"
+      "last_modified": "1.0.2"
     }
   }
 }

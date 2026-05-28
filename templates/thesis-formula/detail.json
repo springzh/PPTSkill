@@ -3,7 +3,7 @@
   "slug": "thesis-formula",
   "name": "开题报告万能公式",
   "source_pptx": "template.pptx",
-  "slide_count": 41,
+  "slide_count": 39,
   "slide_size_cm": [
     33.87,
     19.05
@@ -28,10 +28,13 @@
     "auto_promo_flag=true 的页面是模板自带的宣传页，请加入 skip_pages 不要使用。",
     "本模板是 '研究背景 / 研究意义 / 研究现状 / 研究方法' 4 段开题公式。每段都有 8-9 个示例版式，只需选 1 个最匹配的即可。",
     "示例文字都是真实学科的研究表述，建议整段重写而非微改。",
-    "4 段扉页 (3/13/23/33) 的英文/序号是装饰，建议保持。"
+    "4 段扉页 (3/13/23/33) 的英文/序号是装饰，建议保持。",
+    "v1.0.2: 删除了原模板前 2 页（稻壳儿封面 / 模板宣传），总页数由 41 降至 39。"
   ],
   "skip_pages": [],
   "shape_caution_pages": [
+    2,
+    3,
     4,
     5,
     6,
@@ -39,8 +42,8 @@
     8,
     9,
     10,
-    11,
     12,
+    13,
     14,
     15,
     16,
@@ -48,8 +51,8 @@
     18,
     19,
     20,
-    21,
     22,
+    23,
     24,
     25,
     26,
@@ -57,32 +60,28 @@
     28,
     29,
     30,
-    31,
     32,
+    33,
     34,
     35,
     36,
     37,
     38,
-    39,
-    40,
-    41
+    39
   ],
   "data_charts": [],
   "page_roles": {
-    "cover": [
-      1
-    ],
-    "agenda": [
-      2
-    ],
+    "cover": [],
+    "agenda": [],
     "section_divider": [
-      3,
-      13,
-      23,
-      33
+      1,
+      11,
+      21,
+      31
     ],
     "content": [
+      2,
+      3,
       4,
       5,
       6,
@@ -90,8 +89,8 @@
       8,
       9,
       10,
-      11,
       12,
+      13,
       14,
       15,
       16,
@@ -99,8 +98,8 @@
       18,
       19,
       20,
-      21,
       22,
+      23,
       24,
       25,
       26,
@@ -108,336 +107,26 @@
       28,
       29,
       30,
-      31,
       32,
+      33,
       34,
       35,
       36,
       37,
       38,
-      39,
-      40,
-      41
+      39
     ]
   },
   "pages": [
     {
       "slide_number": 1,
-      "role": "cover",
-      "layout": "顶部 '内含研究背景/方法' 小标签 + 大字主标题 '干货！开题报告万能公式模板' + 缩略图栈展示后续。",
-      "use_for": "封面（开题报告合辑）",
-      "auto_promo_flag": false,
-      "text_slots": [
-        {
-          "slot_id": "s1_sh31_p0r0",
-          "role": "页面主标题",
-          "position": "顶部居中",
-          "address": {
-            "shape_id": 31,
-            "paragraph": 0
-          },
-          "current_text": "干货！开题报告万能公式模板",
-          "max_chars": 23,
-          "editable": true,
-          "guidance": "页面主标题，建议≤ 13 个中文字",
-          "font_size_pt": 54.0,
-          "font_name": "思源黑体 CN Bold",
-          "font_color": null,
-          "language": "zh"
-        },
-        {
-          "slot_id": "s1_sh3_p0r0",
-          "role": "段落标题",
-          "position": "顶部左侧",
-          "address": {
-            "shape_id": 3,
-            "paragraph": 0
-          },
-          "current_text": "内含研究背景/方法",
-          "max_chars": 13,
-          "editable": true,
-          "guidance": "副标 / 段落小标，6-15 字",
-          "font_size_pt": 24.0,
-          "font_name": "思源黑体 CN Medium",
-          "font_color": null,
-          "language": "zh"
-        }
-      ],
-      "preview_slot_in_2x2": "左上",
-      "title_slot_id": "s1_sh31_p0r0",
-      "body_slot_ids": [
-        "s1_sh3_p0r0"
-      ],
-      "decorative_slot_ids": [],
-      "text_density": "low"
-    },
-    {
-      "slide_number": 2,
-      "role": "agenda",
-      "layout": "顶部 '开题报告必备！多专业领域融合思路' + 中央 '35 页 精选关系流程图' + 缩略图栈 + 底部 6 个分类按钮（多专业结合 / 研究方法 / 国内外研究现状 / 数据结合图 / 鱼骨图 / 关键词推演）。",
-      "use_for": "总览页",
-      "auto_promo_flag": false,
-      "text_slots": [
-        {
-          "slot_id": "s2_sh516_p0r0",
-          "role": "段落标题",
-          "position": "顶部居中",
-          "address": {
-            "shape_id": 516,
-            "paragraph": 0,
-            "run": 0
-          },
-          "current_text": "开题报告",
-          "max_chars": 6,
-          "editable": true,
-          "guidance": "副标 / 段落小标，6-15 字",
-          "font_size_pt": 28.0,
-          "font_name": "思源黑体 CN Bold",
-          "font_color": null,
-          "bold": true,
-          "language": "zh"
-        },
-        {
-          "slot_id": "s2_sh516_p0r1",
-          "role": "段落标题",
-          "position": "顶部居中",
-          "address": {
-            "shape_id": 516,
-            "paragraph": 0,
-            "run": 1
-          },
-          "current_text": "必备！多专业领域融合思路",
-          "max_chars": 22,
-          "editable": true,
-          "guidance": "副标 / 段落小标，6-15 字",
-          "font_size_pt": 28.0,
-          "font_name": "思源黑体 CN Bold",
-          "font_color": "0D0D0D",
-          "language": "zh"
-        },
-        {
-          "slot_id": "s2_sh4_p0r0",
-          "role": "段落标题",
-          "position": "底部左侧",
-          "address": {
-            "shape_id": 4,
-            "paragraph": 0
-          },
-          "current_text": "多专业结合",
-          "max_chars": 9,
-          "editable": true,
-          "guidance": "副标 / 段落小标，6-15 字",
-          "font_size_pt": 24.0,
-          "font_name": "思源黑体 CN Medium",
-          "font_color": "FFFFFF",
-          "bold": true,
-          "language": "zh"
-        },
-        {
-          "slot_id": "s2_sh13_p0r0",
-          "role": "页面主标题",
-          "position": "顶部居中",
-          "address": {
-            "shape_id": 13,
-            "paragraph": 0
-          },
-          "current_text": "35",
-          "max_chars": 8,
-          "editable": false,
-          "guidance": "装饰大字数据 / 章节号",
-          "font_size_pt": 120.0,
-          "font_name": "思源黑体 CN Medium",
-          "font_color": null,
-          "bold": true,
-          "language": "number"
-        },
-        {
-          "slot_id": "s2_sh14_p0r0",
-          "role": "辅助文本",
-          "position": "顶部居中",
-          "address": {
-            "shape_id": 14,
-            "paragraph": 0
-          },
-          "current_text": "页",
-          "max_chars": 4,
-          "editable": true,
-          "guidance": "小字辅助说明",
-          "font_size_pt": 12.0,
-          "font_name": "思源黑体 CN Medium",
-          "font_color": "FFFFFF",
-          "language": "zh"
-        },
-        {
-          "slot_id": "s2_sh52_p0r0",
-          "role": "段落标题",
-          "position": "底部居中",
-          "address": {
-            "shape_id": 52,
-            "paragraph": 0
-          },
-          "current_text": "研究方法",
-          "max_chars": 6,
-          "editable": true,
-          "guidance": "副标 / 段落小标，6-15 字",
-          "font_size_pt": 24.0,
-          "font_name": "思源黑体 CN Medium",
-          "font_color": "FFFFFF",
-          "bold": true,
-          "language": "zh"
-        },
-        {
-          "slot_id": "s2_sh55_p0r0",
-          "role": "段落标题",
-          "position": "底部右侧",
-          "address": {
-            "shape_id": 55,
-            "paragraph": 0
-          },
-          "current_text": "国内外研究现状",
-          "max_chars": 11,
-          "editable": true,
-          "guidance": "副标 / 段落小标，6-15 字",
-          "font_size_pt": 24.0,
-          "font_name": "思源黑体 CN Medium",
-          "font_color": "FFFFFF",
-          "bold": true,
-          "language": "zh"
-        },
-        {
-          "slot_id": "s2_sh12_p0r0",
-          "role": "段落标题",
-          "position": "顶部居中",
-          "address": {
-            "shape_id": 12,
-            "paragraph": 0
-          },
-          "current_text": "精选关系流程图",
-          "max_chars": 11,
-          "editable": true,
-          "guidance": "副标 / 段落小标，6-15 字",
-          "font_size_pt": 24.0,
-          "font_name": "思源黑体 CN Medium",
-          "font_color": "0D0D0D",
-          "language": "zh"
-        },
-        {
-          "slot_id": "s2_sh51_p0r0",
-          "role": "段落标题",
-          "position": "底部左侧",
-          "address": {
-            "shape_id": 51,
-            "paragraph": 0
-          },
-          "current_text": "数据结合图",
-          "max_chars": 9,
-          "editable": true,
-          "guidance": "副标 / 段落小标，6-15 字",
-          "font_size_pt": 24.0,
-          "font_name": "思源黑体 CN Medium",
-          "font_color": "FFFFFF",
-          "bold": true,
-          "language": "zh"
-        },
-        {
-          "slot_id": "s2_sh67_p0r0",
-          "role": "段落标题",
-          "position": "底部居中",
-          "address": {
-            "shape_id": 67,
-            "paragraph": 0
-          },
-          "current_text": "鱼骨图",
-          "max_chars": 5,
-          "editable": true,
-          "guidance": "副标 / 段落小标，6-15 字",
-          "font_size_pt": 24.0,
-          "font_name": "思源黑体 CN Medium",
-          "font_color": "FFFFFF",
-          "bold": true,
-          "language": "zh"
-        },
-        {
-          "slot_id": "s2_sh68_p0r0",
-          "role": "段落标题",
-          "position": "底部右侧",
-          "address": {
-            "shape_id": 68,
-            "paragraph": 0
-          },
-          "current_text": "关键词推演",
-          "max_chars": 9,
-          "editable": true,
-          "guidance": "副标 / 段落小标，6-15 字",
-          "font_size_pt": 24.0,
-          "font_name": "思源黑体 CN Medium",
-          "font_color": "FFFFFF",
-          "bold": true,
-          "language": "zh"
-        },
-        {
-          "slot_id": "s2_sh8_p0r0",
-          "role": "小标题",
-          "position": "顶部左侧",
-          "address": {
-            "shape_id": 8,
-            "paragraph": 0
-          },
-          "current_text": "一键换色",
-          "max_chars": 8,
-          "editable": true,
-          "guidance": "小标题，8 字内",
-          "font_size_pt": 20.0,
-          "font_name": "思源黑体 CN Medium",
-          "font_color": null,
-          "bold": true,
-          "language": "zh"
-        },
-        {
-          "slot_id": "s2_sh18_p0r0",
-          "role": "小标题",
-          "position": "顶部左侧",
-          "address": {
-            "shape_id": 18,
-            "paragraph": 0
-          },
-          "current_text": "自由编辑",
-          "max_chars": 8,
-          "editable": true,
-          "guidance": "小标题，8 字内",
-          "font_size_pt": 20.0,
-          "font_name": "思源黑体 CN Medium",
-          "font_color": null,
-          "bold": true,
-          "language": "zh"
-        }
-      ],
-      "title_slot_id": "s2_sh516_p0r0",
-      "body_slot_ids": [
-        "s2_sh516_p0r0",
-        "s2_sh516_p0r1",
-        "s2_sh4_p0r0",
-        "s2_sh52_p0r0",
-        "s2_sh55_p0r0",
-        "s2_sh12_p0r0",
-        "s2_sh51_p0r0",
-        "s2_sh67_p0r0",
-        "s2_sh68_p0r0"
-      ],
-      "decorative_slot_ids": [
-        "s2_sh13_p0r0"
-      ],
-      "text_density": "medium"
-    },
-    {
-      "slide_number": 3,
       "role": "section_divider",
       "layout": "极简：大字 '01 研究背景 RESEARCH BACKGROUND' + 蓝色横线。",
       "use_for": "第 1 段扉页：研究背景",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s3_sh3_p0r0",
+          "slot_id": "s1_sh3_p0r0",
           "role": "装饰序号 01",
           "position": "中部居中",
           "address": {
@@ -455,7 +144,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s3_sh4_p0r0",
+          "slot_id": "s1_sh4_p0r0",
           "role": "标签 / 序号",
           "position": "中部居中",
           "address": {
@@ -472,7 +161,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s3_sh5_p0r0",
+          "slot_id": "s1_sh5_p0r0",
           "role": "小标题",
           "position": "中部居中",
           "address": {
@@ -493,19 +182,19 @@
       "title_slot_id": null,
       "body_slot_ids": [],
       "decorative_slot_ids": [
-        "s3_sh3_p0r0"
+        "s1_sh3_p0r0"
       ],
       "text_density": "low"
     },
     {
-      "slide_number": 4,
+      "slide_number": 2,
       "role": "content",
       "layout": "研究背景版式 1（具体可视化形式见渲染图）。",
       "use_for": "研究背景 - 版式 1",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s4_sh6_p0r0",
+          "slot_id": "s2_sh6_p0r0",
           "role": "小标题",
           "position": "顶部居中",
           "address": {
@@ -522,7 +211,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s4_sh33_p0r0",
+          "slot_id": "s2_sh33_p0r0",
           "role": "标签 / 序号",
           "position": "中部右侧",
           "address": {
@@ -539,7 +228,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s4_sh48_p0r0",
+          "slot_id": "s2_sh48_p0r0",
           "role": "标签 / 序号",
           "position": "底部右侧",
           "address": {
@@ -556,7 +245,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s4_sh57_p0r0",
+          "slot_id": "s2_sh57_p0r0",
           "role": "标签 / 序号",
           "position": "底部居中",
           "address": {
@@ -573,7 +262,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s4_sh68_p0r0",
+          "slot_id": "s2_sh68_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -590,7 +279,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s4_sh69_p0r0",
+          "slot_id": "s2_sh69_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -607,7 +296,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s4_sh78_p0r0",
+          "slot_id": "s2_sh78_p0r0",
           "role": "小标题",
           "position": "中部左侧",
           "address": {
@@ -624,7 +313,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s4_sh79_p0r0",
+          "slot_id": "s2_sh79_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -641,7 +330,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s4_sh81_p0r0",
+          "slot_id": "s2_sh81_p0r0",
           "role": "小标题",
           "position": "底部左侧",
           "address": {
@@ -658,7 +347,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s4_sh82_p0r0",
+          "slot_id": "s2_sh82_p0r0",
           "role": "正文段落",
           "position": "底部左侧",
           "address": {
@@ -675,24 +364,24 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s4_sh68_p0r0",
+      "title_slot_id": "s2_sh68_p0r0",
       "body_slot_ids": [
-        "s4_sh69_p0r0",
-        "s4_sh79_p0r0",
-        "s4_sh82_p0r0"
+        "s2_sh69_p0r0",
+        "s2_sh79_p0r0",
+        "s2_sh82_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 5,
+      "slide_number": 3,
       "role": "content",
       "layout": "研究背景版式 2（具体可视化形式见渲染图）。",
       "use_for": "研究背景 - 版式 2",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s5_sh2_p0r0",
+          "slot_id": "s3_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -709,7 +398,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s5_sh87_p0r0",
+          "slot_id": "s3_sh87_p0r0",
           "role": "页脚 / 注释",
           "position": "顶部左侧",
           "address": {
@@ -726,7 +415,7 @@
           "language": "symbol"
         },
         {
-          "slot_id": "s5_sh88_p0r0",
+          "slot_id": "s3_sh88_p0r0",
           "role": "页脚 / 注释",
           "position": "顶部居中",
           "address": {
@@ -743,7 +432,7 @@
           "language": "symbol"
         },
         {
-          "slot_id": "s5_sh101_p0r0",
+          "slot_id": "s3_sh101_p0r0",
           "role": "页脚 / 注释",
           "position": "顶部居中",
           "address": {
@@ -760,7 +449,7 @@
           "language": "symbol"
         },
         {
-          "slot_id": "s5_sh102_p0r0",
+          "slot_id": "s3_sh102_p0r0",
           "role": "页脚 / 注释",
           "position": "顶部右侧",
           "address": {
@@ -777,7 +466,7 @@
           "language": "symbol"
         },
         {
-          "slot_id": "s5_sh103_p0r0",
+          "slot_id": "s3_sh103_p0r0",
           "role": "段落标题",
           "position": "中部左侧",
           "address": {
@@ -795,7 +484,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s5_sh104_p0r0",
+          "slot_id": "s3_sh104_p0r0",
           "role": "正文段落",
           "position": "底部左侧",
           "address": {
@@ -812,7 +501,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s5_sh105_p0r0",
+          "slot_id": "s3_sh105_p0r0",
           "role": "段落标题",
           "position": "中部居中",
           "address": {
@@ -830,7 +519,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s5_sh106_p0r0",
+          "slot_id": "s3_sh106_p0r0",
           "role": "正文段落",
           "position": "底部居中",
           "address": {
@@ -847,7 +536,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s5_sh107_p0r0",
+          "slot_id": "s3_sh107_p0r0",
           "role": "段落标题",
           "position": "中部居中",
           "address": {
@@ -865,7 +554,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s5_sh108_p0r0",
+          "slot_id": "s3_sh108_p0r0",
           "role": "正文段落",
           "position": "底部居中",
           "address": {
@@ -882,7 +571,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s5_sh109_p0r0",
+          "slot_id": "s3_sh109_p0r0",
           "role": "段落标题",
           "position": "中部右侧",
           "address": {
@@ -900,7 +589,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s5_sh110_p0r0",
+          "slot_id": "s3_sh110_p0r0",
           "role": "正文段落",
           "position": "底部右侧",
           "address": {
@@ -917,30 +606,30 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s5_sh103_p0r0",
+      "title_slot_id": "s3_sh103_p0r0",
       "body_slot_ids": [
-        "s5_sh2_p0r0",
-        "s5_sh103_p0r0",
-        "s5_sh104_p0r0",
-        "s5_sh105_p0r0",
-        "s5_sh106_p0r0",
-        "s5_sh107_p0r0",
-        "s5_sh108_p0r0",
-        "s5_sh109_p0r0",
-        "s5_sh110_p0r0"
+        "s3_sh2_p0r0",
+        "s3_sh103_p0r0",
+        "s3_sh104_p0r0",
+        "s3_sh105_p0r0",
+        "s3_sh106_p0r0",
+        "s3_sh107_p0r0",
+        "s3_sh108_p0r0",
+        "s3_sh109_p0r0",
+        "s3_sh110_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 6,
+      "slide_number": 4,
       "role": "content",
       "layout": "研究背景版式 3（具体可视化形式见渲染图）。",
       "use_for": "研究背景 - 版式 3",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s6_sh2_p0r0",
+          "slot_id": "s4_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -957,7 +646,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s6_sh3_p0r0",
+          "slot_id": "s4_sh3_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -974,7 +663,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s6_sh4_p0r0",
+          "slot_id": "s4_sh4_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -991,7 +680,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s6_sh5_p0r0",
+          "slot_id": "s4_sh5_p0r0",
           "role": "小标题",
           "position": "中部左侧",
           "address": {
@@ -1008,7 +697,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s6_sh6_p0r0",
+          "slot_id": "s4_sh6_p0r0",
           "role": "正文段落",
           "position": "底部左侧",
           "address": {
@@ -1025,7 +714,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s6_sh7_p0r0",
+          "slot_id": "s4_sh7_p0r0",
           "role": "小标题",
           "position": "顶部右侧",
           "address": {
@@ -1042,7 +731,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s6_sh8_p0r0",
+          "slot_id": "s4_sh8_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -1059,7 +748,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s6_sh9_p0r0",
+          "slot_id": "s4_sh9_p0r0",
           "role": "小标题",
           "position": "中部右侧",
           "address": {
@@ -1076,7 +765,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s6_sh10_p0r0",
+          "slot_id": "s4_sh10_p0r0",
           "role": "正文段落",
           "position": "底部右侧",
           "address": {
@@ -1093,26 +782,26 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s6_sh2_p0r0",
+      "title_slot_id": "s4_sh2_p0r0",
       "body_slot_ids": [
-        "s6_sh2_p0r0",
-        "s6_sh4_p0r0",
-        "s6_sh6_p0r0",
-        "s6_sh8_p0r0",
-        "s6_sh10_p0r0"
+        "s4_sh2_p0r0",
+        "s4_sh4_p0r0",
+        "s4_sh6_p0r0",
+        "s4_sh8_p0r0",
+        "s4_sh10_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 7,
+      "slide_number": 5,
       "role": "content",
       "layout": "研究背景版式 4（具体可视化形式见渲染图）。",
       "use_for": "研究背景 - 版式 4",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s7_sh2_p0r0",
+          "slot_id": "s5_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -1129,7 +818,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s7_sh51_p0r0",
+          "slot_id": "s5_sh51_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -1146,7 +835,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s7_sh52_p0r0",
+          "slot_id": "s5_sh52_p0r0",
           "role": "段落标题",
           "position": "顶部右侧",
           "address": {
@@ -1164,7 +853,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s7_sh53_p0r0",
+          "slot_id": "s5_sh53_p0r0",
           "role": "正文短句",
           "position": "中部右侧",
           "address": {
@@ -1181,7 +870,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s7_sh54_p0r0",
+          "slot_id": "s5_sh54_p0r0",
           "role": "段落标题",
           "position": "中部右侧",
           "address": {
@@ -1199,7 +888,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s7_sh55_p0r0",
+          "slot_id": "s5_sh55_p0r0",
           "role": "正文短句",
           "position": "底部右侧",
           "address": {
@@ -1216,7 +905,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s7_sh56_p0r0",
+          "slot_id": "s5_sh56_p0r0",
           "role": "段落标题",
           "position": "底部右侧",
           "address": {
@@ -1234,7 +923,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s7_sh57_p0r0",
+          "slot_id": "s5_sh57_p0r0",
           "role": "正文短句",
           "position": "底部左侧",
           "address": {
@@ -1251,7 +940,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s7_sh58_p0r0",
+          "slot_id": "s5_sh58_p0r0",
           "role": "段落标题",
           "position": "底部左侧",
           "address": {
@@ -1269,7 +958,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s7_sh59_p0r0",
+          "slot_id": "s5_sh59_p0r0",
           "role": "正文短句",
           "position": "中部左侧",
           "address": {
@@ -1286,7 +975,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s7_sh60_p0r0",
+          "slot_id": "s5_sh60_p0r0",
           "role": "段落标题",
           "position": "中部左侧",
           "address": {
@@ -1304,7 +993,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s7_sh61_p0r0",
+          "slot_id": "s5_sh61_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -1321,7 +1010,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s7_sh62_p0r0",
+          "slot_id": "s5_sh62_p0r0",
           "role": "段落标题",
           "position": "顶部左侧",
           "address": {
@@ -1340,34 +1029,34 @@
         }
       ],
       "preview_slot_in_2x2": "左下",
-      "title_slot_id": "s7_sh52_p0r0",
+      "title_slot_id": "s5_sh52_p0r0",
       "body_slot_ids": [
-        "s7_sh2_p0r0",
-        "s7_sh51_p0r0",
-        "s7_sh52_p0r0",
-        "s7_sh53_p0r0",
-        "s7_sh54_p0r0",
-        "s7_sh55_p0r0",
-        "s7_sh56_p0r0",
-        "s7_sh57_p0r0",
-        "s7_sh58_p0r0",
-        "s7_sh59_p0r0",
-        "s7_sh60_p0r0",
-        "s7_sh61_p0r0",
-        "s7_sh62_p0r0"
+        "s5_sh2_p0r0",
+        "s5_sh51_p0r0",
+        "s5_sh52_p0r0",
+        "s5_sh53_p0r0",
+        "s5_sh54_p0r0",
+        "s5_sh55_p0r0",
+        "s5_sh56_p0r0",
+        "s5_sh57_p0r0",
+        "s5_sh58_p0r0",
+        "s5_sh59_p0r0",
+        "s5_sh60_p0r0",
+        "s5_sh61_p0r0",
+        "s5_sh62_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 8,
+      "slide_number": 6,
       "role": "content",
       "layout": "研究背景版式 5（具体可视化形式见渲染图）。",
       "use_for": "研究背景 - 版式 5",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s8_sh2_p0r0",
+          "slot_id": "s6_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -1384,7 +1073,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s8_sh8_p0r0",
+          "slot_id": "s6_sh8_p0r0",
           "role": "小标题",
           "position": "中部左侧",
           "address": {
@@ -1401,7 +1090,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s8_sh10_p0r0",
+          "slot_id": "s6_sh10_p0r0",
           "role": "小标题",
           "position": "中部居中",
           "address": {
@@ -1418,7 +1107,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s8_sh11_p0r0",
+          "slot_id": "s6_sh11_p0r0",
           "role": "正文段落",
           "position": "顶部居中",
           "address": {
@@ -1435,7 +1124,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s8_sh23_p0r0",
+          "slot_id": "s6_sh23_p0r0",
           "role": "小标题",
           "position": "中部居中",
           "address": {
@@ -1452,7 +1141,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s8_sh24_p0r0",
+          "slot_id": "s6_sh24_p0r0",
           "role": "小标题",
           "position": "中部右侧",
           "address": {
@@ -1469,7 +1158,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s8_sh25_p0r0",
+          "slot_id": "s6_sh25_p0r0",
           "role": "正文段落",
           "position": "底部左侧",
           "address": {
@@ -1486,7 +1175,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s8_sh28_p0r0",
+          "slot_id": "s6_sh28_p0r0",
           "role": "正文段落",
           "position": "顶部右侧",
           "address": {
@@ -1503,7 +1192,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s8_sh9_p0r0",
+          "slot_id": "s6_sh9_p0r0",
           "role": "正文段落",
           "position": "底部居中",
           "address": {
@@ -1520,26 +1209,26 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s8_sh2_p0r0",
+      "title_slot_id": "s6_sh2_p0r0",
       "body_slot_ids": [
-        "s8_sh2_p0r0",
-        "s8_sh11_p0r0",
-        "s8_sh25_p0r0",
-        "s8_sh28_p0r0",
-        "s8_sh9_p0r0"
+        "s6_sh2_p0r0",
+        "s6_sh11_p0r0",
+        "s6_sh25_p0r0",
+        "s6_sh28_p0r0",
+        "s6_sh9_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 9,
+      "slide_number": 7,
       "role": "content",
       "layout": "研究背景版式 6（具体可视化形式见渲染图）。",
       "use_for": "研究背景 - 版式 6",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s9_sh2_p0r0",
+          "slot_id": "s7_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -1556,7 +1245,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s9_sh3_p0r0",
+          "slot_id": "s7_sh3_p0r0",
           "role": "正文段落",
           "position": "底部居中",
           "address": {
@@ -1573,7 +1262,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s9_sh38_p0r0",
+          "slot_id": "s7_sh38_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -1591,7 +1280,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s9_sh39_p0r0",
+          "slot_id": "s7_sh39_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -1608,7 +1297,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s9_sh40_p0r0",
+          "slot_id": "s7_sh40_p0r0",
           "role": "小标题",
           "position": "顶部右侧",
           "address": {
@@ -1626,7 +1315,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s9_sh41_p0r0",
+          "slot_id": "s7_sh41_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -1643,7 +1332,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s9_sh42_p0r0",
+          "slot_id": "s7_sh42_p0r0",
           "role": "小标题",
           "position": "中部左侧",
           "address": {
@@ -1661,7 +1350,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s9_sh43_p0r0",
+          "slot_id": "s7_sh43_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -1678,7 +1367,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s9_sh44_p0r0",
+          "slot_id": "s7_sh44_p0r0",
           "role": "小标题",
           "position": "中部右侧",
           "address": {
@@ -1696,7 +1385,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s9_sh45_p0r0",
+          "slot_id": "s7_sh45_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -1713,27 +1402,27 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s9_sh2_p0r0",
+      "title_slot_id": "s7_sh2_p0r0",
       "body_slot_ids": [
-        "s9_sh2_p0r0",
-        "s9_sh3_p0r0",
-        "s9_sh39_p0r0",
-        "s9_sh41_p0r0",
-        "s9_sh43_p0r0",
-        "s9_sh45_p0r0"
+        "s7_sh2_p0r0",
+        "s7_sh3_p0r0",
+        "s7_sh39_p0r0",
+        "s7_sh41_p0r0",
+        "s7_sh43_p0r0",
+        "s7_sh45_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 10,
+      "slide_number": 8,
       "role": "content",
       "layout": "研究背景版式 7（具体可视化形式见渲染图）。",
       "use_for": "研究背景 - 版式 7",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s10_sh2_p0r0",
+          "slot_id": "s8_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -1750,7 +1439,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s10_sh4_p0r0",
+          "slot_id": "s8_sh4_p0r0",
           "role": "小标题",
           "position": "顶部居中",
           "address": {
@@ -1767,7 +1456,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s10_sh5_p0r0",
+          "slot_id": "s8_sh5_p0r0",
           "role": "页面标题",
           "position": "中部左侧",
           "address": {
@@ -1785,7 +1474,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s10_sh9_p0r0",
+          "slot_id": "s8_sh9_p0r0",
           "role": "正文段落",
           "position": "中部居中",
           "address": {
@@ -1802,7 +1491,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s10_sh11_p0r0",
+          "slot_id": "s8_sh11_p0r0",
           "role": "小标题",
           "position": "中部居中",
           "address": {
@@ -1819,7 +1508,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s10_sh12_p0r0",
+          "slot_id": "s8_sh12_p0r0",
           "role": "正文段落",
           "position": "中部居中",
           "address": {
@@ -1836,7 +1525,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s10_sh14_p0r0",
+          "slot_id": "s8_sh14_p0r0",
           "role": "小标题",
           "position": "底部居中",
           "address": {
@@ -1853,7 +1542,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s10_sh15_p0r0",
+          "slot_id": "s8_sh15_p0r0",
           "role": "正文段落",
           "position": "底部居中",
           "address": {
@@ -1870,25 +1559,25 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s10_sh5_p0r0",
+      "title_slot_id": "s8_sh5_p0r0",
       "body_slot_ids": [
-        "s10_sh2_p0r0",
-        "s10_sh9_p0r0",
-        "s10_sh12_p0r0",
-        "s10_sh15_p0r0"
+        "s8_sh2_p0r0",
+        "s8_sh9_p0r0",
+        "s8_sh12_p0r0",
+        "s8_sh15_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 11,
+      "slide_number": 9,
       "role": "content",
       "layout": "研究背景版式 8（具体可视化形式见渲染图）。",
       "use_for": "研究背景 - 版式 8",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s11_sh2_p0r0",
+          "slot_id": "s9_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -1905,7 +1594,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s11_sh30_p0r0",
+          "slot_id": "s9_sh30_p0r0",
           "role": "段落标题",
           "position": "顶部左侧",
           "address": {
@@ -1923,7 +1612,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s11_sh24_p0r0",
+          "slot_id": "s9_sh24_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -1940,7 +1629,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s11_sh38_p0r0",
+          "slot_id": "s9_sh38_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -1958,7 +1647,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s11_sh42_p0r0",
+          "slot_id": "s9_sh42_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -1976,7 +1665,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s11_sh46_p0r0",
+          "slot_id": "s9_sh46_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -1994,7 +1683,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s11_sh48_p0r0",
+          "slot_id": "s9_sh48_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -2011,7 +1700,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s11_sh49_p0r0",
+          "slot_id": "s9_sh49_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -2028,7 +1717,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s11_sh50_p0r0",
+          "slot_id": "s9_sh50_p0r0",
           "role": "正文段落",
           "position": "底部右侧",
           "address": {
@@ -2045,27 +1734,27 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s11_sh30_p0r0",
+      "title_slot_id": "s9_sh30_p0r0",
       "body_slot_ids": [
-        "s11_sh2_p0r0",
-        "s11_sh30_p0r0",
-        "s11_sh24_p0r0",
-        "s11_sh48_p0r0",
-        "s11_sh49_p0r0",
-        "s11_sh50_p0r0"
+        "s9_sh2_p0r0",
+        "s9_sh30_p0r0",
+        "s9_sh24_p0r0",
+        "s9_sh48_p0r0",
+        "s9_sh49_p0r0",
+        "s9_sh50_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 12,
+      "slide_number": 10,
       "role": "content",
       "layout": "研究背景版式 9（具体可视化形式见渲染图）。",
       "use_for": "研究背景 - 版式 9",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s12_sh2_p0r0",
+          "slot_id": "s10_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -2082,7 +1771,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s12_sh16_p0r0",
+          "slot_id": "s10_sh16_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -2100,7 +1789,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s12_sh17_p0r0",
+          "slot_id": "s10_sh17_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -2117,7 +1806,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s12_sh19_p0r0",
+          "slot_id": "s10_sh19_p0r0",
           "role": "小标题",
           "position": "中部左侧",
           "address": {
@@ -2135,7 +1824,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s12_sh20_p0r0",
+          "slot_id": "s10_sh20_p0r0",
           "role": "正文段落",
           "position": "底部左侧",
           "address": {
@@ -2152,7 +1841,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s12_sh22_p0r0",
+          "slot_id": "s10_sh22_p0r0",
           "role": "小标题",
           "position": "顶部右侧",
           "address": {
@@ -2170,7 +1859,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s12_sh23_p0r0",
+          "slot_id": "s10_sh23_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -2187,7 +1876,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s12_sh25_p0r0",
+          "slot_id": "s10_sh25_p0r0",
           "role": "小标题",
           "position": "中部右侧",
           "address": {
@@ -2205,7 +1894,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s12_sh26_p0r0",
+          "slot_id": "s10_sh26_p0r0",
           "role": "正文段落",
           "position": "底部右侧",
           "address": {
@@ -2222,26 +1911,26 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s12_sh2_p0r0",
+      "title_slot_id": "s10_sh2_p0r0",
       "body_slot_ids": [
-        "s12_sh2_p0r0",
-        "s12_sh17_p0r0",
-        "s12_sh20_p0r0",
-        "s12_sh23_p0r0",
-        "s12_sh26_p0r0"
+        "s10_sh2_p0r0",
+        "s10_sh17_p0r0",
+        "s10_sh20_p0r0",
+        "s10_sh23_p0r0",
+        "s10_sh26_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 13,
+      "slide_number": 11,
       "role": "section_divider",
       "layout": "和 slide 3 同结构，'02 研究意义 RESEARCH SIGNIFICANCE'。",
       "use_for": "第 2 段扉页：研究意义",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s13_sh3_p0r0",
+          "slot_id": "s11_sh3_p0r0",
           "role": "装饰序号 02",
           "position": "中部居中",
           "address": {
@@ -2259,7 +1948,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s13_sh4_p0r0",
+          "slot_id": "s11_sh4_p0r0",
           "role": "标签 / 序号",
           "position": "中部居中",
           "address": {
@@ -2276,7 +1965,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s13_sh5_p0r0",
+          "slot_id": "s11_sh5_p0r0",
           "role": "小标题",
           "position": "中部居中",
           "address": {
@@ -2296,19 +1985,19 @@
       "title_slot_id": null,
       "body_slot_ids": [],
       "decorative_slot_ids": [
-        "s13_sh3_p0r0"
+        "s11_sh3_p0r0"
       ],
       "text_density": "low"
     },
     {
-      "slide_number": 14,
+      "slide_number": 12,
       "role": "content",
       "layout": "研究意义版式 1（具体可视化形式见渲染图）。",
       "use_for": "研究意义 - 版式 1",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s14_sh2_p0r0",
+          "slot_id": "s12_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -2325,7 +2014,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s14_sh27_p0r0",
+          "slot_id": "s12_sh27_p0r0",
           "role": "小标题",
           "position": "中部左侧",
           "address": {
@@ -2343,7 +2032,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s14_sh28_p0r0",
+          "slot_id": "s12_sh28_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -2360,7 +2049,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s14_sh33_p0r0",
+          "slot_id": "s12_sh33_p0r0",
           "role": "小标题",
           "position": "中部居中",
           "address": {
@@ -2378,7 +2067,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s14_sh34_p0r0",
+          "slot_id": "s12_sh34_p0r0",
           "role": "正文段落",
           "position": "中部居中",
           "address": {
@@ -2395,7 +2084,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s14_sh39_p0r0",
+          "slot_id": "s12_sh39_p0r0",
           "role": "小标题",
           "position": "中部居中",
           "address": {
@@ -2413,7 +2102,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s14_sh40_p0r0",
+          "slot_id": "s12_sh40_p0r0",
           "role": "正文段落",
           "position": "中部居中",
           "address": {
@@ -2430,7 +2119,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s14_sh45_p0r0",
+          "slot_id": "s12_sh45_p0r0",
           "role": "小标题",
           "position": "中部右侧",
           "address": {
@@ -2448,7 +2137,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s14_sh46_p0r0",
+          "slot_id": "s12_sh46_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -2465,7 +2154,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s14_sh47_p0r0",
+          "slot_id": "s12_sh47_p0r0",
           "role": "装饰序号 01",
           "position": "底部左侧",
           "address": {
@@ -2482,7 +2171,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s14_sh48_p0r0",
+          "slot_id": "s12_sh48_p0r0",
           "role": "装饰序号 02",
           "position": "底部居中",
           "address": {
@@ -2499,7 +2188,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s14_sh49_p0r0",
+          "slot_id": "s12_sh49_p0r0",
           "role": "装饰序号 03",
           "position": "底部居中",
           "address": {
@@ -2516,7 +2205,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s14_sh50_p0r0",
+          "slot_id": "s12_sh50_p0r0",
           "role": "装饰序号 04",
           "position": "底部右侧",
           "address": {
@@ -2533,31 +2222,31 @@
           "language": "number"
         }
       ],
-      "title_slot_id": "s14_sh2_p0r0",
+      "title_slot_id": "s12_sh2_p0r0",
       "body_slot_ids": [
-        "s14_sh2_p0r0",
-        "s14_sh28_p0r0",
-        "s14_sh34_p0r0",
-        "s14_sh40_p0r0",
-        "s14_sh46_p0r0"
+        "s12_sh2_p0r0",
+        "s12_sh28_p0r0",
+        "s12_sh34_p0r0",
+        "s12_sh40_p0r0",
+        "s12_sh46_p0r0"
       ],
       "decorative_slot_ids": [
-        "s14_sh47_p0r0",
-        "s14_sh48_p0r0",
-        "s14_sh49_p0r0",
-        "s14_sh50_p0r0"
+        "s12_sh47_p0r0",
+        "s12_sh48_p0r0",
+        "s12_sh49_p0r0",
+        "s12_sh50_p0r0"
       ],
       "text_density": "high"
     },
     {
-      "slide_number": 15,
+      "slide_number": 13,
       "role": "content",
       "layout": "研究意义版式 2（具体可视化形式见渲染图）。",
       "use_for": "研究意义 - 版式 2",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s15_sh2_p0r0",
+          "slot_id": "s13_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -2574,7 +2263,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s15_sh6_p0r0",
+          "slot_id": "s13_sh6_p0r0",
           "role": "小标题",
           "position": "顶部居中",
           "address": {
@@ -2592,7 +2281,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s15_sh7_p0r0",
+          "slot_id": "s13_sh7_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -2609,7 +2298,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s15_sh9_p0r0",
+          "slot_id": "s13_sh9_p0r0",
           "role": "小标题",
           "position": "顶部右侧",
           "address": {
@@ -2627,7 +2316,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s15_sh10_p0r0",
+          "slot_id": "s13_sh10_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -2644,7 +2333,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s15_sh12_p0r0",
+          "slot_id": "s13_sh12_p0r0",
           "role": "小标题",
           "position": "中部居中",
           "address": {
@@ -2662,7 +2351,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s15_sh13_p0r0",
+          "slot_id": "s13_sh13_p0r0",
           "role": "正文段落",
           "position": "底部右侧",
           "address": {
@@ -2679,7 +2368,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s15_sh14_p0r0",
+          "slot_id": "s13_sh14_p0r0",
           "role": "小标题",
           "position": "中部右侧",
           "address": {
@@ -2697,7 +2386,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s15_sh15_p0r0",
+          "slot_id": "s13_sh15_p0r0",
           "role": "正文段落",
           "position": "底部右侧",
           "address": {
@@ -2714,26 +2403,26 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s15_sh2_p0r0",
+      "title_slot_id": "s13_sh2_p0r0",
       "body_slot_ids": [
-        "s15_sh2_p0r0",
-        "s15_sh7_p0r0",
-        "s15_sh10_p0r0",
-        "s15_sh13_p0r0",
-        "s15_sh15_p0r0"
+        "s13_sh2_p0r0",
+        "s13_sh7_p0r0",
+        "s13_sh10_p0r0",
+        "s13_sh13_p0r0",
+        "s13_sh15_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 16,
+      "slide_number": 14,
       "role": "content",
       "layout": "研究意义版式 3（具体可视化形式见渲染图）。",
       "use_for": "研究意义 - 版式 3",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s16_sh2_p0r0",
+          "slot_id": "s14_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -2750,7 +2439,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s16_sh43_p0r0",
+          "slot_id": "s14_sh43_p0r0",
           "role": "段落标题",
           "position": "中部左侧",
           "address": {
@@ -2768,7 +2457,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s16_sh45_p0r0",
+          "slot_id": "s14_sh45_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -2785,7 +2474,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s16_sh47_p0r0",
+          "slot_id": "s14_sh47_p0r0",
           "role": "段落标题",
           "position": "中部左侧",
           "address": {
@@ -2803,7 +2492,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s16_sh49_p0r0",
+          "slot_id": "s14_sh49_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -2820,7 +2509,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s16_sh51_p0r0",
+          "slot_id": "s14_sh51_p0r0",
           "role": "段落标题",
           "position": "中部左侧",
           "address": {
@@ -2838,7 +2527,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s16_sh53_p0r0",
+          "slot_id": "s14_sh53_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -2855,28 +2544,28 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s16_sh43_p0r0",
+      "title_slot_id": "s14_sh43_p0r0",
       "body_slot_ids": [
-        "s16_sh2_p0r0",
-        "s16_sh43_p0r0",
-        "s16_sh45_p0r0",
-        "s16_sh47_p0r0",
-        "s16_sh49_p0r0",
-        "s16_sh51_p0r0",
-        "s16_sh53_p0r0"
+        "s14_sh2_p0r0",
+        "s14_sh43_p0r0",
+        "s14_sh45_p0r0",
+        "s14_sh47_p0r0",
+        "s14_sh49_p0r0",
+        "s14_sh51_p0r0",
+        "s14_sh53_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "medium"
     },
     {
-      "slide_number": 17,
+      "slide_number": 15,
       "role": "content",
       "layout": "研究意义版式 4（具体可视化形式见渲染图）。",
       "use_for": "研究意义 - 版式 4",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s17_sh2_p0r0",
+          "slot_id": "s15_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -2893,7 +2582,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s17_sh54_p0r0",
+          "slot_id": "s15_sh54_p0r0",
           "role": "页面标题",
           "position": "中部左侧",
           "address": {
@@ -2911,7 +2600,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s17_sh55_p0r0",
+          "slot_id": "s15_sh55_p0r0",
           "role": "辅助文本",
           "position": "中部左侧",
           "address": {
@@ -2928,7 +2617,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s17_sh58_p0r0",
+          "slot_id": "s15_sh58_p0r0",
           "role": "小标题",
           "position": "中部左侧",
           "address": {
@@ -2946,7 +2635,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s17_sh59_p0r0",
+          "slot_id": "s15_sh59_p0r0",
           "role": "正文段落",
           "position": "底部居中",
           "address": {
@@ -2963,7 +2652,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s17_sh62_p0r0",
+          "slot_id": "s15_sh62_p0r0",
           "role": "小标题",
           "position": "底部左侧",
           "address": {
@@ -2981,7 +2670,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s17_sh63_p0r0",
+          "slot_id": "s15_sh63_p0r0",
           "role": "正文段落",
           "position": "底部居中",
           "address": {
@@ -2998,7 +2687,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s17_sh66_p0r0",
+          "slot_id": "s15_sh66_p0r0",
           "role": "页面标题",
           "position": "底部居中",
           "address": {
@@ -3016,7 +2705,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s17_sh78_p0r0",
+          "slot_id": "s15_sh78_p0r0",
           "role": "辅助文本",
           "position": "底部居中",
           "address": {
@@ -3033,7 +2722,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s17_sh79_p0r0",
+          "slot_id": "s15_sh79_p0r0",
           "role": "页面标题",
           "position": "底部右侧",
           "address": {
@@ -3051,7 +2740,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s17_sh80_p0r0",
+          "slot_id": "s15_sh80_p0r0",
           "role": "辅助文本",
           "position": "底部右侧",
           "address": {
@@ -3068,28 +2757,28 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s17_sh2_p0r0",
+      "title_slot_id": "s15_sh2_p0r0",
       "body_slot_ids": [
-        "s17_sh2_p0r0",
-        "s17_sh59_p0r0",
-        "s17_sh63_p0r0"
+        "s15_sh2_p0r0",
+        "s15_sh59_p0r0",
+        "s15_sh63_p0r0"
       ],
       "decorative_slot_ids": [
-        "s17_sh54_p0r0",
-        "s17_sh66_p0r0",
-        "s17_sh79_p0r0"
+        "s15_sh54_p0r0",
+        "s15_sh66_p0r0",
+        "s15_sh79_p0r0"
       ],
       "text_density": "medium"
     },
     {
-      "slide_number": 18,
+      "slide_number": 16,
       "role": "content",
       "layout": "研究意义版式 5（具体可视化形式见渲染图）。",
       "use_for": "研究意义 - 版式 5",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s18_sh2_p0r0",
+          "slot_id": "s16_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -3106,7 +2795,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s18_sh11_p0r0",
+          "slot_id": "s16_sh11_p0r0",
           "role": "小标题",
           "position": "中部右侧",
           "address": {
@@ -3123,7 +2812,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s18_sh12_p0r0",
+          "slot_id": "s16_sh12_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -3140,7 +2829,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s18_sh13_p0r0",
+          "slot_id": "s16_sh13_p0r0",
           "role": "正文段落",
           "position": "底部右侧",
           "address": {
@@ -3157,7 +2846,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s18_sh14_p0r0",
+          "slot_id": "s16_sh14_p0r0",
           "role": "小标题",
           "position": "中部左侧",
           "address": {
@@ -3174,7 +2863,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s18_sh15_p0r0",
+          "slot_id": "s16_sh15_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -3191,7 +2880,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s18_sh16_p0r0",
+          "slot_id": "s16_sh16_p0r0",
           "role": "小标题",
           "position": "底部左侧",
           "address": {
@@ -3208,7 +2897,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s18_sh17_p0r0",
+          "slot_id": "s16_sh17_p0r0",
           "role": "正文段落",
           "position": "底部左侧",
           "address": {
@@ -3225,7 +2914,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s18_sh22_p0r0",
+          "slot_id": "s16_sh22_p0r0",
           "role": "页面标题",
           "position": "底部居中",
           "address": {
@@ -3243,7 +2932,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s18_sh28_p0r0",
+          "slot_id": "s16_sh28_p0r0",
           "role": "小标题",
           "position": "底部右侧",
           "address": {
@@ -3260,26 +2949,26 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s18_sh22_p0r0",
+      "title_slot_id": "s16_sh22_p0r0",
       "body_slot_ids": [
-        "s18_sh2_p0r0",
-        "s18_sh12_p0r0",
-        "s18_sh13_p0r0",
-        "s18_sh15_p0r0",
-        "s18_sh17_p0r0"
+        "s16_sh2_p0r0",
+        "s16_sh12_p0r0",
+        "s16_sh13_p0r0",
+        "s16_sh15_p0r0",
+        "s16_sh17_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 19,
+      "slide_number": 17,
       "role": "content",
       "layout": "研究意义版式 6（具体可视化形式见渲染图）。",
       "use_for": "研究意义 - 版式 6",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s19_sh2_p0r0",
+          "slot_id": "s17_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -3296,7 +2985,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s19_sh17_p0r0",
+          "slot_id": "s17_sh17_p0r0",
           "role": "小标题",
           "position": "中部居中",
           "address": {
@@ -3314,7 +3003,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s19_sh18_p0r0",
+          "slot_id": "s17_sh18_p0r0",
           "role": "装饰序号 2",
           "position": "顶部居中",
           "address": {
@@ -3332,7 +3021,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s19_sh14_p0r0",
+          "slot_id": "s17_sh14_p0r0",
           "role": "小标题",
           "position": "中部居中",
           "address": {
@@ -3350,7 +3039,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s19_sh15_p0r0",
+          "slot_id": "s17_sh15_p0r0",
           "role": "装饰序号 1",
           "position": "顶部居中",
           "address": {
@@ -3368,7 +3057,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s19_sh11_p0r0",
+          "slot_id": "s17_sh11_p0r0",
           "role": "小标题",
           "position": "底部居中",
           "address": {
@@ -3386,7 +3075,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s19_sh12_p0r0",
+          "slot_id": "s17_sh12_p0r0",
           "role": "装饰序号 4",
           "position": "中部居中",
           "address": {
@@ -3404,7 +3093,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s19_sh9_p0r0",
+          "slot_id": "s17_sh9_p0r0",
           "role": "小标题",
           "position": "底部居中",
           "address": {
@@ -3422,7 +3111,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s19_sh10_p0r0",
+          "slot_id": "s17_sh10_p0r0",
           "role": "装饰序号 3",
           "position": "中部居中",
           "address": {
@@ -3440,7 +3129,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s19_sh22_p0r0",
+          "slot_id": "s17_sh22_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -3458,7 +3147,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s19_sh23_p0r0",
+          "slot_id": "s17_sh23_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -3475,7 +3164,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s19_sh25_p0r0",
+          "slot_id": "s17_sh25_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -3493,7 +3182,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s19_sh26_p0r0",
+          "slot_id": "s17_sh26_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -3510,7 +3199,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s19_sh28_p0r0",
+          "slot_id": "s17_sh28_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -3528,7 +3217,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s19_sh29_p0r0",
+          "slot_id": "s17_sh29_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -3545,7 +3234,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s19_sh31_p0r0",
+          "slot_id": "s17_sh31_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -3563,7 +3252,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s19_sh32_p0r0",
+          "slot_id": "s17_sh32_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -3580,31 +3269,31 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s19_sh2_p0r0",
+      "title_slot_id": "s17_sh2_p0r0",
       "body_slot_ids": [
-        "s19_sh2_p0r0",
-        "s19_sh23_p0r0",
-        "s19_sh26_p0r0",
-        "s19_sh29_p0r0",
-        "s19_sh32_p0r0"
+        "s17_sh2_p0r0",
+        "s17_sh23_p0r0",
+        "s17_sh26_p0r0",
+        "s17_sh29_p0r0",
+        "s17_sh32_p0r0"
       ],
       "decorative_slot_ids": [
-        "s19_sh18_p0r0",
-        "s19_sh15_p0r0",
-        "s19_sh12_p0r0",
-        "s19_sh10_p0r0"
+        "s17_sh18_p0r0",
+        "s17_sh15_p0r0",
+        "s17_sh12_p0r0",
+        "s17_sh10_p0r0"
       ],
       "text_density": "high"
     },
     {
-      "slide_number": 20,
+      "slide_number": 18,
       "role": "content",
       "layout": "研究意义版式 7（具体可视化形式见渲染图）。",
       "use_for": "研究意义 - 版式 7",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s20_sh2_p0r0",
+          "slot_id": "s18_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -3621,7 +3310,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s20_sh41_p0r0",
+          "slot_id": "s18_sh41_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -3639,7 +3328,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s20_sh42_p0r0",
+          "slot_id": "s18_sh42_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -3656,7 +3345,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s20_sh43_p0r0",
+          "slot_id": "s18_sh43_p0r0",
           "role": "小标题",
           "position": "底部左侧",
           "address": {
@@ -3674,7 +3363,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s20_sh44_p0r0",
+          "slot_id": "s18_sh44_p0r0",
           "role": "正文段落",
           "position": "底部左侧",
           "address": {
@@ -3691,7 +3380,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s20_sh45_p0r0",
+          "slot_id": "s18_sh45_p0r0",
           "role": "小标题",
           "position": "中部右侧",
           "address": {
@@ -3709,7 +3398,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s20_sh46_p0r0",
+          "slot_id": "s18_sh46_p0r0",
           "role": "正文段落",
           "position": "底部右侧",
           "address": {
@@ -3726,7 +3415,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s20_sh47_p0r0",
+          "slot_id": "s18_sh47_p0r0",
           "role": "小标题",
           "position": "中部右侧",
           "address": {
@@ -3744,7 +3433,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s20_sh48_p0r0",
+          "slot_id": "s18_sh48_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -3762,26 +3451,26 @@
         }
       ],
       "preview_slot_in_2x2": "右下",
-      "title_slot_id": "s20_sh2_p0r0",
+      "title_slot_id": "s18_sh2_p0r0",
       "body_slot_ids": [
-        "s20_sh2_p0r0",
-        "s20_sh42_p0r0",
-        "s20_sh44_p0r0",
-        "s20_sh46_p0r0",
-        "s20_sh48_p0r0"
+        "s18_sh2_p0r0",
+        "s18_sh42_p0r0",
+        "s18_sh44_p0r0",
+        "s18_sh46_p0r0",
+        "s18_sh48_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 21,
+      "slide_number": 19,
       "role": "content",
       "layout": "研究意义版式 8（具体可视化形式见渲染图）。",
       "use_for": "研究意义 - 版式 8",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s21_sh2_p0r0",
+          "slot_id": "s19_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -3798,7 +3487,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s21_sh50_p0r0",
+          "slot_id": "s19_sh50_p0r0",
           "role": "小标题",
           "position": "中部左侧",
           "address": {
@@ -3816,7 +3505,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s21_sh51_p0r0",
+          "slot_id": "s19_sh51_p0r0",
           "role": "正文短句",
           "position": "底部左侧",
           "address": {
@@ -3833,7 +3522,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s21_sh53_p0r0",
+          "slot_id": "s19_sh53_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -3851,7 +3540,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s21_sh54_p0r0",
+          "slot_id": "s19_sh54_p0r0",
           "role": "正文段落",
           "position": "顶部左侧",
           "address": {
@@ -3868,7 +3557,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s21_sh56_p0r0",
+          "slot_id": "s19_sh56_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -3886,7 +3575,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s21_sh57_p0r0",
+          "slot_id": "s19_sh57_p0r0",
           "role": "正文段落",
           "position": "顶部左侧",
           "address": {
@@ -3903,7 +3592,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s21_sh59_p0r0",
+          "slot_id": "s19_sh59_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -3921,7 +3610,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s21_sh60_p0r0",
+          "slot_id": "s19_sh60_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -3938,7 +3627,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s21_sh62_p0r0",
+          "slot_id": "s19_sh62_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -3956,7 +3645,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s21_sh63_p0r0",
+          "slot_id": "s19_sh63_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -3973,27 +3662,27 @@
           "language": "mixed"
         }
       ],
-      "title_slot_id": "s21_sh2_p0r0",
+      "title_slot_id": "s19_sh2_p0r0",
       "body_slot_ids": [
-        "s21_sh2_p0r0",
-        "s21_sh51_p0r0",
-        "s21_sh54_p0r0",
-        "s21_sh57_p0r0",
-        "s21_sh60_p0r0",
-        "s21_sh63_p0r0"
+        "s19_sh2_p0r0",
+        "s19_sh51_p0r0",
+        "s19_sh54_p0r0",
+        "s19_sh57_p0r0",
+        "s19_sh60_p0r0",
+        "s19_sh63_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 22,
+      "slide_number": 20,
       "role": "content",
       "layout": "研究意义版式 9（具体可视化形式见渲染图）。",
       "use_for": "研究意义 - 版式 9",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s22_sh2_p0r0",
+          "slot_id": "s20_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -4010,7 +3699,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s22_sh26_p0r0",
+          "slot_id": "s20_sh26_p0r0",
           "role": "装饰序号 01",
           "position": "顶部左侧",
           "address": {
@@ -4028,7 +3717,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s22_sh92_p0r0",
+          "slot_id": "s20_sh92_p0r0",
           "role": "标签 / 序号",
           "position": "中部左侧",
           "address": {
@@ -4046,7 +3735,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s22_sh93_p0r0",
+          "slot_id": "s20_sh93_p0r0",
           "role": "正文短句",
           "position": "底部左侧",
           "address": {
@@ -4063,7 +3752,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s22_sh33_p0r0",
+          "slot_id": "s20_sh33_p0r0",
           "role": "装饰序号 02",
           "position": "顶部左侧",
           "address": {
@@ -4081,7 +3770,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s22_sh83_p0r0",
+          "slot_id": "s20_sh83_p0r0",
           "role": "标签 / 序号",
           "position": "中部左侧",
           "address": {
@@ -4099,7 +3788,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s22_sh84_p0r0",
+          "slot_id": "s20_sh84_p0r0",
           "role": "正文短句",
           "position": "底部左侧",
           "address": {
@@ -4116,7 +3805,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s22_sh40_p0r0",
+          "slot_id": "s20_sh40_p0r0",
           "role": "装饰序号 03",
           "position": "顶部居中",
           "address": {
@@ -4134,7 +3823,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s22_sh74_p0r0",
+          "slot_id": "s20_sh74_p0r0",
           "role": "标签 / 序号",
           "position": "中部左侧",
           "address": {
@@ -4152,7 +3841,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s22_sh75_p0r0",
+          "slot_id": "s20_sh75_p0r0",
           "role": "正文短句",
           "position": "底部左侧",
           "address": {
@@ -4169,7 +3858,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s22_sh47_p0r0",
+          "slot_id": "s20_sh47_p0r0",
           "role": "装饰序号 04",
           "position": "顶部右侧",
           "address": {
@@ -4187,7 +3876,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s22_sh65_p0r0",
+          "slot_id": "s20_sh65_p0r0",
           "role": "标签 / 序号",
           "position": "中部左侧",
           "address": {
@@ -4205,7 +3894,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s22_sh66_p0r0",
+          "slot_id": "s20_sh66_p0r0",
           "role": "正文段落",
           "position": "底部左侧",
           "address": {
@@ -4222,7 +3911,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s22_sh54_p0r0",
+          "slot_id": "s20_sh54_p0r0",
           "role": "装饰序号 05",
           "position": "顶部右侧",
           "address": {
@@ -4240,7 +3929,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s22_sh56_p0r0",
+          "slot_id": "s20_sh56_p0r0",
           "role": "标签 / 序号",
           "position": "中部左侧",
           "address": {
@@ -4258,7 +3947,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s22_sh57_p0r0",
+          "slot_id": "s20_sh57_p0r0",
           "role": "正文短句",
           "position": "底部左侧",
           "address": {
@@ -4275,33 +3964,33 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s22_sh2_p0r0",
+      "title_slot_id": "s20_sh2_p0r0",
       "body_slot_ids": [
-        "s22_sh2_p0r0",
-        "s22_sh93_p0r0",
-        "s22_sh84_p0r0",
-        "s22_sh75_p0r0",
-        "s22_sh66_p0r0",
-        "s22_sh57_p0r0"
+        "s20_sh2_p0r0",
+        "s20_sh93_p0r0",
+        "s20_sh84_p0r0",
+        "s20_sh75_p0r0",
+        "s20_sh66_p0r0",
+        "s20_sh57_p0r0"
       ],
       "decorative_slot_ids": [
-        "s22_sh26_p0r0",
-        "s22_sh33_p0r0",
-        "s22_sh40_p0r0",
-        "s22_sh47_p0r0",
-        "s22_sh54_p0r0"
+        "s20_sh26_p0r0",
+        "s20_sh33_p0r0",
+        "s20_sh40_p0r0",
+        "s20_sh47_p0r0",
+        "s20_sh54_p0r0"
       ],
       "text_density": "medium"
     },
     {
-      "slide_number": 23,
+      "slide_number": 21,
       "role": "section_divider",
       "layout": "和 slide 3 同结构，'03 研究现状 RESEARCH STATUS'。",
       "use_for": "第 3 段扉页：研究现状",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s23_sh3_p0r0",
+          "slot_id": "s21_sh3_p0r0",
           "role": "装饰序号 03",
           "position": "中部居中",
           "address": {
@@ -4319,7 +4008,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s23_sh4_p0r0",
+          "slot_id": "s21_sh4_p0r0",
           "role": "标签 / 序号",
           "position": "中部居中",
           "address": {
@@ -4336,7 +4025,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s23_sh5_p0r0",
+          "slot_id": "s21_sh5_p0r0",
           "role": "小标题",
           "position": "中部居中",
           "address": {
@@ -4356,19 +4045,19 @@
       "title_slot_id": null,
       "body_slot_ids": [],
       "decorative_slot_ids": [
-        "s23_sh3_p0r0"
+        "s21_sh3_p0r0"
       ],
       "text_density": "low"
     },
     {
-      "slide_number": 24,
+      "slide_number": 22,
       "role": "content",
       "layout": "研究现状版式 1（具体可视化形式见渲染图）。",
       "use_for": "研究现状 - 版式 1",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s24_sh2_p0r0",
+          "slot_id": "s22_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -4385,7 +4074,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s24_sh47_p0r0",
+          "slot_id": "s22_sh47_p0r0",
           "role": "小标题",
           "position": "顶部居中",
           "address": {
@@ -4402,7 +4091,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s24_sh49_p0r0",
+          "slot_id": "s22_sh49_p0r0",
           "role": "小标题",
           "position": "中部右侧",
           "address": {
@@ -4419,7 +4108,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s24_sh51_p0r0",
+          "slot_id": "s22_sh51_p0r0",
           "role": "小标题",
           "position": "底部右侧",
           "address": {
@@ -4436,7 +4125,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s24_sh54_p0r0",
+          "slot_id": "s22_sh54_p0r0",
           "role": "小标题",
           "position": "中部左侧",
           "address": {
@@ -4453,7 +4142,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s24_sh56_p0r0",
+          "slot_id": "s22_sh56_p0r0",
           "role": "小标题",
           "position": "底部左侧",
           "address": {
@@ -4470,7 +4159,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s24_sh57_p0r0",
+          "slot_id": "s22_sh57_p0r0",
           "role": "正文段落",
           "position": "底部左侧",
           "address": {
@@ -4487,7 +4176,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s24_sh19_p0r0",
+          "slot_id": "s22_sh19_p0r0",
           "role": "正文短句",
           "position": "中部左侧",
           "address": {
@@ -4504,7 +4193,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s24_sh20_p0r0",
+          "slot_id": "s22_sh20_p0r0",
           "role": "正文段落",
           "position": "中部居中",
           "address": {
@@ -4521,7 +4210,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s24_sh21_p0r0",
+          "slot_id": "s22_sh21_p0r0",
           "role": "正文短句",
           "position": "中部右侧",
           "address": {
@@ -4538,7 +4227,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s24_sh22_p0r0",
+          "slot_id": "s22_sh22_p0r0",
           "role": "正文短句",
           "position": "底部右侧",
           "address": {
@@ -4555,27 +4244,27 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s24_sh2_p0r0",
+      "title_slot_id": "s22_sh2_p0r0",
       "body_slot_ids": [
-        "s24_sh2_p0r0",
-        "s24_sh57_p0r0",
-        "s24_sh19_p0r0",
-        "s24_sh20_p0r0",
-        "s24_sh21_p0r0",
-        "s24_sh22_p0r0"
+        "s22_sh2_p0r0",
+        "s22_sh57_p0r0",
+        "s22_sh19_p0r0",
+        "s22_sh20_p0r0",
+        "s22_sh21_p0r0",
+        "s22_sh22_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 25,
+      "slide_number": 23,
       "role": "content",
       "layout": "研究现状版式 2（具体可视化形式见渲染图）。",
       "use_for": "研究现状 - 版式 2",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s25_sh2_p0r0",
+          "slot_id": "s23_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -4592,7 +4281,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s25_sh7_p0r0",
+          "slot_id": "s23_sh7_p0r0",
           "role": "段落标题",
           "position": "顶部左侧",
           "address": {
@@ -4609,7 +4298,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s25_sh8_p0r0",
+          "slot_id": "s23_sh8_p0r0",
           "role": "段落标题",
           "position": "顶部右侧",
           "address": {
@@ -4627,7 +4316,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s25_sh48_p0r0",
+          "slot_id": "s23_sh48_p0r0",
           "role": "页面主标题 / 英文标签",
           "position": "中部居中",
           "address": {
@@ -4644,7 +4333,7 @@
           "language": "en"
         },
         {
-          "slot_id": "s25_sh51_p0r0",
+          "slot_id": "s23_sh51_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -4661,7 +4350,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s25_sh52_p0r0",
+          "slot_id": "s23_sh52_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -4678,7 +4367,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s25_sh53_p0r0",
+          "slot_id": "s23_sh53_p0r0",
           "role": "正文段落",
           "position": "底部左侧",
           "address": {
@@ -4695,7 +4384,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s25_sh55_p0r0",
+          "slot_id": "s23_sh55_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -4712,7 +4401,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s25_sh56_p0r0",
+          "slot_id": "s23_sh56_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -4729,7 +4418,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s25_sh57_p0r0",
+          "slot_id": "s23_sh57_p0r0",
           "role": "正文段落",
           "position": "底部右侧",
           "address": {
@@ -4746,32 +4435,32 @@
           "language": "mixed"
         }
       ],
-      "title_slot_id": "s25_sh7_p0r0",
+      "title_slot_id": "s23_sh7_p0r0",
       "body_slot_ids": [
-        "s25_sh2_p0r0",
-        "s25_sh7_p0r0",
-        "s25_sh8_p0r0",
-        "s25_sh51_p0r0",
-        "s25_sh52_p0r0",
-        "s25_sh53_p0r0",
-        "s25_sh55_p0r0",
-        "s25_sh56_p0r0",
-        "s25_sh57_p0r0"
+        "s23_sh2_p0r0",
+        "s23_sh7_p0r0",
+        "s23_sh8_p0r0",
+        "s23_sh51_p0r0",
+        "s23_sh52_p0r0",
+        "s23_sh53_p0r0",
+        "s23_sh55_p0r0",
+        "s23_sh56_p0r0",
+        "s23_sh57_p0r0"
       ],
       "decorative_slot_ids": [
-        "s25_sh48_p0r0"
+        "s23_sh48_p0r0"
       ],
       "text_density": "high"
     },
     {
-      "slide_number": 26,
+      "slide_number": 24,
       "role": "content",
       "layout": "研究现状版式 3（具体可视化形式见渲染图）。",
       "use_for": "研究现状 - 版式 3",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s26_sh2_p0r0",
+          "slot_id": "s24_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -4788,7 +4477,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s26_sh6_p0r0",
+          "slot_id": "s24_sh6_p0r0",
           "role": "段落标题",
           "position": "中部左侧",
           "address": {
@@ -4806,7 +4495,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s26_sh7_p0r0",
+          "slot_id": "s24_sh7_p0r0",
           "role": "正文段落",
           "position": "底部左侧",
           "address": {
@@ -4823,7 +4512,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s26_sh8_p0r0",
+          "slot_id": "s24_sh8_p0r0",
           "role": "段落标题",
           "position": "中部居中",
           "address": {
@@ -4841,7 +4530,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s26_sh9_p0r0",
+          "slot_id": "s24_sh9_p0r0",
           "role": "正文段落",
           "position": "底部居中",
           "address": {
@@ -4858,7 +4547,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s26_sh10_p0r0",
+          "slot_id": "s24_sh10_p0r0",
           "role": "段落标题",
           "position": "中部右侧",
           "address": {
@@ -4876,7 +4565,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s26_sh11_p0r0",
+          "slot_id": "s24_sh11_p0r0",
           "role": "正文段落",
           "position": "底部右侧",
           "address": {
@@ -4893,7 +4582,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s26_sh17_p0r0",
+          "slot_id": "s24_sh17_p0r0",
           "role": "正文段落",
           "position": "顶部居中",
           "address": {
@@ -4910,7 +4599,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s26_sh18_p0r0",
+          "slot_id": "s24_sh18_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -4928,30 +4617,30 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s26_sh6_p0r0",
+      "title_slot_id": "s24_sh6_p0r0",
       "body_slot_ids": [
-        "s26_sh2_p0r0",
-        "s26_sh6_p0r0",
-        "s26_sh7_p0r0",
-        "s26_sh8_p0r0",
-        "s26_sh9_p0r0",
-        "s26_sh10_p0r0",
-        "s26_sh11_p0r0",
-        "s26_sh17_p0r0",
-        "s26_sh18_p0r0"
+        "s24_sh2_p0r0",
+        "s24_sh6_p0r0",
+        "s24_sh7_p0r0",
+        "s24_sh8_p0r0",
+        "s24_sh9_p0r0",
+        "s24_sh10_p0r0",
+        "s24_sh11_p0r0",
+        "s24_sh17_p0r0",
+        "s24_sh18_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 27,
+      "slide_number": 25,
       "role": "content",
       "layout": "研究现状版式 4（具体可视化形式见渲染图）。",
       "use_for": "研究现状 - 版式 4",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s27_sh2_p0r0",
+          "slot_id": "s25_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -4968,7 +4657,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s27_sh23_p0r0",
+          "slot_id": "s25_sh23_p0r0",
           "role": "段落标题",
           "position": "底部左侧",
           "address": {
@@ -4986,7 +4675,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s27_sh24_p0r0",
+          "slot_id": "s25_sh24_p0r0",
           "role": "正文段落",
           "position": "底部左侧",
           "address": {
@@ -5003,7 +4692,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s27_sh21_p0r0",
+          "slot_id": "s25_sh21_p0r0",
           "role": "段落标题",
           "position": "底部居中",
           "address": {
@@ -5021,7 +4710,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s27_sh22_p0r0",
+          "slot_id": "s25_sh22_p0r0",
           "role": "正文段落",
           "position": "底部居中",
           "address": {
@@ -5038,7 +4727,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s27_sh19_p0r0",
+          "slot_id": "s25_sh19_p0r0",
           "role": "段落标题",
           "position": "底部右侧",
           "address": {
@@ -5056,7 +4745,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s27_sh20_p0r0",
+          "slot_id": "s25_sh20_p0r0",
           "role": "正文段落",
           "position": "底部右侧",
           "address": {
@@ -5073,28 +4762,28 @@
           "language": "mixed"
         }
       ],
-      "title_slot_id": "s27_sh23_p0r0",
+      "title_slot_id": "s25_sh23_p0r0",
       "body_slot_ids": [
-        "s27_sh2_p0r0",
-        "s27_sh23_p0r0",
-        "s27_sh24_p0r0",
-        "s27_sh21_p0r0",
-        "s27_sh22_p0r0",
-        "s27_sh19_p0r0",
-        "s27_sh20_p0r0"
+        "s25_sh2_p0r0",
+        "s25_sh23_p0r0",
+        "s25_sh24_p0r0",
+        "s25_sh21_p0r0",
+        "s25_sh22_p0r0",
+        "s25_sh19_p0r0",
+        "s25_sh20_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "medium"
     },
     {
-      "slide_number": 28,
+      "slide_number": 26,
       "role": "content",
       "layout": "研究现状版式 5（具体可视化形式见渲染图）。",
       "use_for": "研究现状 - 版式 5",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s28_sh2_p0r0",
+          "slot_id": "s26_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -5111,7 +4800,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s28_sh4_p0r0",
+          "slot_id": "s26_sh4_p0r0",
           "role": "英文标签 / 英文标签",
           "position": "中部左侧",
           "address": {
@@ -5128,7 +4817,7 @@
           "language": "en"
         },
         {
-          "slot_id": "s28_sh13_p0r0",
+          "slot_id": "s26_sh13_p0r0",
           "role": "小标题",
           "position": "顶部右侧",
           "address": {
@@ -5146,7 +4835,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s28_sh14_p0r0",
+          "slot_id": "s26_sh14_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -5163,7 +4852,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s28_sh25_p0r0",
+          "slot_id": "s26_sh25_p0r0",
           "role": "小标题",
           "position": "中部右侧",
           "address": {
@@ -5181,7 +4870,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s28_sh26_p0r0",
+          "slot_id": "s26_sh26_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -5198,7 +4887,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s28_sh30_p0r0",
+          "slot_id": "s26_sh30_p0r0",
           "role": "小标题",
           "position": "底部右侧",
           "address": {
@@ -5216,7 +4905,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s28_sh31_p0r0",
+          "slot_id": "s26_sh31_p0r0",
           "role": "正文段落",
           "position": "底部右侧",
           "address": {
@@ -5233,27 +4922,27 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s28_sh2_p0r0",
+      "title_slot_id": "s26_sh2_p0r0",
       "body_slot_ids": [
-        "s28_sh2_p0r0",
-        "s28_sh14_p0r0",
-        "s28_sh26_p0r0",
-        "s28_sh31_p0r0"
+        "s26_sh2_p0r0",
+        "s26_sh14_p0r0",
+        "s26_sh26_p0r0",
+        "s26_sh31_p0r0"
       ],
       "decorative_slot_ids": [
-        "s28_sh4_p0r0"
+        "s26_sh4_p0r0"
       ],
       "text_density": "medium"
     },
     {
-      "slide_number": 29,
+      "slide_number": 27,
       "role": "content",
       "layout": "研究现状版式 6（具体可视化形式见渲染图）。",
       "use_for": "研究现状 - 版式 6",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s29_sh2_p0r0",
+          "slot_id": "s27_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -5270,7 +4959,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s29_sh17_p0r0",
+          "slot_id": "s27_sh17_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -5287,7 +4976,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s29_sh47_p0r0",
+          "slot_id": "s27_sh47_p0r0",
           "role": "装饰序号 1",
           "position": "底部左侧",
           "address": {
@@ -5304,7 +4993,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s29_sh48_p0r0",
+          "slot_id": "s27_sh48_p0r0",
           "role": "装饰序号 2",
           "position": "中部居中",
           "address": {
@@ -5321,7 +5010,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s29_sh49_p0r0",
+          "slot_id": "s27_sh49_p0r0",
           "role": "装饰序号 3",
           "position": "中部居中",
           "address": {
@@ -5338,7 +5027,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s29_sh50_p0r0",
+          "slot_id": "s27_sh50_p0r0",
           "role": "装饰序号 4",
           "position": "底部右侧",
           "address": {
@@ -5355,7 +5044,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s29_sh51_p0r0",
+          "slot_id": "s27_sh51_p0r0",
           "role": "小标题",
           "position": "顶部右侧",
           "address": {
@@ -5373,7 +5062,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s29_sh52_p0r0",
+          "slot_id": "s27_sh52_p0r0",
           "role": "正文段落",
           "position": "底部右侧",
           "address": {
@@ -5390,7 +5079,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s29_sh53_p0r0",
+          "slot_id": "s27_sh53_p0r0",
           "role": "小标题",
           "position": "中部右侧",
           "address": {
@@ -5408,7 +5097,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s29_sh54_p0r0",
+          "slot_id": "s27_sh54_p0r0",
           "role": "正文段落",
           "position": "底部左侧",
           "address": {
@@ -5425,7 +5114,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s29_sh55_p0r0",
+          "slot_id": "s27_sh55_p0r0",
           "role": "小标题",
           "position": "中部左侧",
           "address": {
@@ -5443,7 +5132,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s29_sh56_p0r0",
+          "slot_id": "s27_sh56_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -5460,7 +5149,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s29_sh57_p0r0",
+          "slot_id": "s27_sh57_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -5478,31 +5167,31 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s29_sh2_p0r0",
+      "title_slot_id": "s27_sh2_p0r0",
       "body_slot_ids": [
-        "s29_sh2_p0r0",
-        "s29_sh17_p0r0",
-        "s29_sh52_p0r0",
-        "s29_sh54_p0r0",
-        "s29_sh56_p0r0"
+        "s27_sh2_p0r0",
+        "s27_sh17_p0r0",
+        "s27_sh52_p0r0",
+        "s27_sh54_p0r0",
+        "s27_sh56_p0r0"
       ],
       "decorative_slot_ids": [
-        "s29_sh47_p0r0",
-        "s29_sh48_p0r0",
-        "s29_sh49_p0r0",
-        "s29_sh50_p0r0"
+        "s27_sh47_p0r0",
+        "s27_sh48_p0r0",
+        "s27_sh49_p0r0",
+        "s27_sh50_p0r0"
       ],
       "text_density": "high"
     },
     {
-      "slide_number": 30,
+      "slide_number": 28,
       "role": "content",
       "layout": "研究现状版式 7（具体可视化形式见渲染图）。",
       "use_for": "研究现状 - 版式 7",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s30_sh2_p0r0",
+          "slot_id": "s28_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -5519,7 +5208,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s30_sh41_p0r0",
+          "slot_id": "s28_sh41_p0r0",
           "role": "小标题",
           "position": "中部左侧",
           "address": {
@@ -5536,7 +5225,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s30_sh42_p0r0",
+          "slot_id": "s28_sh42_p0r0",
           "role": "辅助文本",
           "position": "中部左侧",
           "address": {
@@ -5553,7 +5242,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s30_sh45_p0r0",
+          "slot_id": "s28_sh45_p0r0",
           "role": "小标题",
           "position": "中部居中",
           "address": {
@@ -5570,7 +5259,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s30_sh46_p0r0",
+          "slot_id": "s28_sh46_p0r0",
           "role": "辅助文本",
           "position": "中部居中",
           "address": {
@@ -5587,7 +5276,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s30_sh49_p0r0",
+          "slot_id": "s28_sh49_p0r0",
           "role": "小标题",
           "position": "中部居中",
           "address": {
@@ -5604,7 +5293,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s30_sh50_p0r0",
+          "slot_id": "s28_sh50_p0r0",
           "role": "辅助文本",
           "position": "中部居中",
           "address": {
@@ -5621,7 +5310,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s30_sh53_p0r0",
+          "slot_id": "s28_sh53_p0r0",
           "role": "小标题",
           "position": "中部右侧",
           "address": {
@@ -5638,7 +5327,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s30_sh54_p0r0",
+          "slot_id": "s28_sh54_p0r0",
           "role": "辅助文本",
           "position": "中部右侧",
           "address": {
@@ -5655,7 +5344,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s30_sh55_p0r0",
+          "slot_id": "s28_sh55_p0r0",
           "role": "段落标题",
           "position": "顶部左侧",
           "address": {
@@ -5673,7 +5362,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s30_sh62_p0r0",
+          "slot_id": "s28_sh62_p0r0",
           "role": "正文段落",
           "position": "中部左侧",
           "address": {
@@ -5690,7 +5379,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s30_sh63_p0r0",
+          "slot_id": "s28_sh63_p0r0",
           "role": "正文段落",
           "position": "中部居中",
           "address": {
@@ -5707,7 +5396,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s30_sh64_p0r0",
+          "slot_id": "s28_sh64_p0r0",
           "role": "正文段落",
           "position": "中部居中",
           "address": {
@@ -5724,7 +5413,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s30_sh65_p0r0",
+          "slot_id": "s28_sh65_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -5741,7 +5430,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s30_sh75_p0r0",
+          "slot_id": "s28_sh75_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -5759,28 +5448,28 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s30_sh55_p0r0",
+      "title_slot_id": "s28_sh55_p0r0",
       "body_slot_ids": [
-        "s30_sh2_p0r0",
-        "s30_sh55_p0r0",
-        "s30_sh62_p0r0",
-        "s30_sh63_p0r0",
-        "s30_sh64_p0r0",
-        "s30_sh65_p0r0",
-        "s30_sh75_p0r0"
+        "s28_sh2_p0r0",
+        "s28_sh55_p0r0",
+        "s28_sh62_p0r0",
+        "s28_sh63_p0r0",
+        "s28_sh64_p0r0",
+        "s28_sh65_p0r0",
+        "s28_sh75_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 31,
+      "slide_number": 29,
       "role": "content",
       "layout": "研究现状版式 8（具体可视化形式见渲染图）。",
       "use_for": "研究现状 - 版式 8",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s31_sh2_p0r0",
+          "slot_id": "s29_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -5797,7 +5486,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s31_sh6_p0r0",
+          "slot_id": "s29_sh6_p0r0",
           "role": "装饰序号 01",
           "position": "中部左侧",
           "address": {
@@ -5815,7 +5504,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s31_sh10_p0r0",
+          "slot_id": "s29_sh10_p0r0",
           "role": "装饰序号 02",
           "position": "中部居中",
           "address": {
@@ -5833,7 +5522,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s31_sh14_p0r0",
+          "slot_id": "s29_sh14_p0r0",
           "role": "装饰序号 03",
           "position": "中部居中",
           "address": {
@@ -5851,7 +5540,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s31_sh17_p0r0",
+          "slot_id": "s29_sh17_p0r0",
           "role": "装饰序号 04",
           "position": "中部右侧",
           "address": {
@@ -5869,7 +5558,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s31_sh20_p0r0",
+          "slot_id": "s29_sh20_p0r0",
           "role": "正文段落",
           "position": "底部左侧",
           "address": {
@@ -5886,7 +5575,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s31_sh21_p0r0",
+          "slot_id": "s29_sh21_p0r0",
           "role": "段落标题",
           "position": "中部左侧",
           "address": {
@@ -5904,7 +5593,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s31_sh22_p0r0",
+          "slot_id": "s29_sh22_p0r0",
           "role": "正文段落",
           "position": "底部居中",
           "address": {
@@ -5921,7 +5610,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s31_sh23_p0r0",
+          "slot_id": "s29_sh23_p0r0",
           "role": "段落标题",
           "position": "中部居中",
           "address": {
@@ -5939,7 +5628,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s31_sh24_p0r0",
+          "slot_id": "s29_sh24_p0r0",
           "role": "正文段落",
           "position": "底部居中",
           "address": {
@@ -5956,7 +5645,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s31_sh25_p0r0",
+          "slot_id": "s29_sh25_p0r0",
           "role": "段落标题",
           "position": "中部居中",
           "address": {
@@ -5974,7 +5663,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s31_sh26_p0r0",
+          "slot_id": "s29_sh26_p0r0",
           "role": "正文段落",
           "position": "中部右侧",
           "address": {
@@ -5991,7 +5680,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s31_sh27_p0r0",
+          "slot_id": "s29_sh27_p0r0",
           "role": "段落标题",
           "position": "中部右侧",
           "address": {
@@ -6009,35 +5698,35 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s31_sh21_p0r0",
+      "title_slot_id": "s29_sh21_p0r0",
       "body_slot_ids": [
-        "s31_sh2_p0r0",
-        "s31_sh20_p0r0",
-        "s31_sh21_p0r0",
-        "s31_sh22_p0r0",
-        "s31_sh23_p0r0",
-        "s31_sh24_p0r0",
-        "s31_sh25_p0r0",
-        "s31_sh26_p0r0",
-        "s31_sh27_p0r0"
+        "s29_sh2_p0r0",
+        "s29_sh20_p0r0",
+        "s29_sh21_p0r0",
+        "s29_sh22_p0r0",
+        "s29_sh23_p0r0",
+        "s29_sh24_p0r0",
+        "s29_sh25_p0r0",
+        "s29_sh26_p0r0",
+        "s29_sh27_p0r0"
       ],
       "decorative_slot_ids": [
-        "s31_sh6_p0r0",
-        "s31_sh10_p0r0",
-        "s31_sh14_p0r0",
-        "s31_sh17_p0r0"
+        "s29_sh6_p0r0",
+        "s29_sh10_p0r0",
+        "s29_sh14_p0r0",
+        "s29_sh17_p0r0"
       ],
       "text_density": "high"
     },
     {
-      "slide_number": 32,
+      "slide_number": 30,
       "role": "content",
       "layout": "研究现状版式 9（具体可视化形式见渲染图）。",
       "use_for": "研究现状 - 版式 9",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s32_sh2_p0r0",
+          "slot_id": "s30_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -6054,7 +5743,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s32_sh12_p0r0",
+          "slot_id": "s30_sh12_p0r0",
           "role": "正文段落",
           "position": "顶部左侧",
           "address": {
@@ -6071,7 +5760,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s32_sh16_p0r0",
+          "slot_id": "s30_sh16_p0r0",
           "role": "小标题",
           "position": "底部左侧",
           "address": {
@@ -6089,7 +5778,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s32_sh17_p0r0",
+          "slot_id": "s30_sh17_p0r0",
           "role": "小标题",
           "position": "底部居中",
           "address": {
@@ -6107,7 +5796,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s32_sh18_p0r0",
+          "slot_id": "s30_sh18_p0r0",
           "role": "小标题",
           "position": "底部右侧",
           "address": {
@@ -6125,7 +5814,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s32_sh19_p0r0",
+          "slot_id": "s30_sh19_p0r0",
           "role": "正文段落",
           "position": "底部左侧",
           "address": {
@@ -6142,7 +5831,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s32_sh20_p0r0",
+          "slot_id": "s30_sh20_p0r0",
           "role": "正文段落",
           "position": "底部居中",
           "address": {
@@ -6159,7 +5848,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s32_sh21_p0r0",
+          "slot_id": "s30_sh21_p0r0",
           "role": "正文段落",
           "position": "底部右侧",
           "address": {
@@ -6176,7 +5865,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s32_sh22_p0r0",
+          "slot_id": "s30_sh22_p0r0",
           "role": "正文段落",
           "position": "顶部右侧",
           "address": {
@@ -6193,27 +5882,27 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s32_sh2_p0r0",
+      "title_slot_id": "s30_sh2_p0r0",
       "body_slot_ids": [
-        "s32_sh2_p0r0",
-        "s32_sh12_p0r0",
-        "s32_sh19_p0r0",
-        "s32_sh20_p0r0",
-        "s32_sh21_p0r0",
-        "s32_sh22_p0r0"
+        "s30_sh2_p0r0",
+        "s30_sh12_p0r0",
+        "s30_sh19_p0r0",
+        "s30_sh20_p0r0",
+        "s30_sh21_p0r0",
+        "s30_sh22_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "high"
     },
     {
-      "slide_number": 33,
+      "slide_number": 31,
       "role": "section_divider",
       "layout": "和 slide 3 同结构，'04 研究方法 RESEARCH METHODS'。",
       "use_for": "第 4 段扉页：研究方法",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s33_sh3_p0r0",
+          "slot_id": "s31_sh3_p0r0",
           "role": "装饰序号 04",
           "position": "中部居中",
           "address": {
@@ -6231,7 +5920,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s33_sh4_p0r0",
+          "slot_id": "s31_sh4_p0r0",
           "role": "标签 / 序号",
           "position": "中部居中",
           "address": {
@@ -6248,7 +5937,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s33_sh5_p0r0",
+          "slot_id": "s31_sh5_p0r0",
           "role": "小标题",
           "position": "中部居中",
           "address": {
@@ -6268,19 +5957,19 @@
       "title_slot_id": null,
       "body_slot_ids": [],
       "decorative_slot_ids": [
-        "s33_sh3_p0r0"
+        "s31_sh3_p0r0"
       ],
       "text_density": "low"
     },
     {
-      "slide_number": 34,
+      "slide_number": 32,
       "role": "content",
       "layout": "研究方法版式 1（具体可视化形式见渲染图）。",
       "use_for": "研究方法 - 版式 1",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s34_sh2_p0r0",
+          "slot_id": "s32_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -6297,7 +5986,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s34_sh57_p0r0",
+          "slot_id": "s32_sh57_p0r0",
           "role": "标签 / 序号",
           "position": "中部左侧",
           "address": {
@@ -6315,7 +6004,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s34_sh58_p0r0",
+          "slot_id": "s32_sh58_p0r0",
           "role": "正文短句",
           "position": "中部左侧",
           "address": {
@@ -6332,7 +6021,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s34_sh45_p0r0",
+          "slot_id": "s32_sh45_p0r0",
           "role": "标签 / 序号",
           "position": "中部左侧",
           "address": {
@@ -6350,7 +6039,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s34_sh46_p0r0",
+          "slot_id": "s32_sh46_p0r0",
           "role": "正文短句",
           "position": "中部左侧",
           "address": {
@@ -6367,7 +6056,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s34_sh33_p0r0",
+          "slot_id": "s32_sh33_p0r0",
           "role": "标签 / 序号",
           "position": "中部左侧",
           "address": {
@@ -6385,7 +6074,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s34_sh34_p0r0",
+          "slot_id": "s32_sh34_p0r0",
           "role": "正文短句",
           "position": "中部左侧",
           "address": {
@@ -6402,7 +6091,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s34_sh21_p0r0",
+          "slot_id": "s32_sh21_p0r0",
           "role": "标签 / 序号",
           "position": "中部左侧",
           "address": {
@@ -6420,7 +6109,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s34_sh22_p0r0",
+          "slot_id": "s32_sh22_p0r0",
           "role": "正文短句",
           "position": "中部左侧",
           "address": {
@@ -6437,26 +6126,26 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s34_sh2_p0r0",
+      "title_slot_id": "s32_sh2_p0r0",
       "body_slot_ids": [
-        "s34_sh2_p0r0",
-        "s34_sh58_p0r0",
-        "s34_sh46_p0r0",
-        "s34_sh34_p0r0",
-        "s34_sh22_p0r0"
+        "s32_sh2_p0r0",
+        "s32_sh58_p0r0",
+        "s32_sh46_p0r0",
+        "s32_sh34_p0r0",
+        "s32_sh22_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "medium"
     },
     {
-      "slide_number": 35,
+      "slide_number": 33,
       "role": "content",
       "layout": "研究方法版式 2（具体可视化形式见渲染图）。",
       "use_for": "研究方法 - 版式 2",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s35_sh2_p0r0",
+          "slot_id": "s33_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -6473,7 +6162,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s35_sh10_p0r0",
+          "slot_id": "s33_sh10_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -6491,7 +6180,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s35_sh11_p0r0",
+          "slot_id": "s33_sh11_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -6509,7 +6198,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s35_sh12_p0r0",
+          "slot_id": "s33_sh12_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -6527,7 +6216,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s35_sh13_p0r0",
+          "slot_id": "s33_sh13_p0r0",
           "role": "正文短句",
           "position": "顶部左侧",
           "address": {
@@ -6544,7 +6233,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s35_sh14_p0r0",
+          "slot_id": "s33_sh14_p0r0",
           "role": "正文短句",
           "position": "顶部左侧",
           "address": {
@@ -6561,7 +6250,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s35_sh15_p0r0",
+          "slot_id": "s33_sh15_p0r0",
           "role": "正文短句",
           "position": "顶部左侧",
           "address": {
@@ -6578,25 +6267,25 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s35_sh2_p0r0",
+      "title_slot_id": "s33_sh2_p0r0",
       "body_slot_ids": [
-        "s35_sh2_p0r0",
-        "s35_sh13_p0r0",
-        "s35_sh14_p0r0",
-        "s35_sh15_p0r0"
+        "s33_sh2_p0r0",
+        "s33_sh13_p0r0",
+        "s33_sh14_p0r0",
+        "s33_sh15_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "medium"
     },
     {
-      "slide_number": 36,
+      "slide_number": 34,
       "role": "content",
       "layout": "研究方法版式 3（具体可视化形式见渲染图）。",
       "use_for": "研究方法 - 版式 3",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s36_sh2_p0r0",
+          "slot_id": "s34_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -6613,7 +6302,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s36_sh39_p0r0",
+          "slot_id": "s34_sh39_p0r0",
           "role": "辅助文本",
           "position": "顶部左侧",
           "address": {
@@ -6631,7 +6320,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s36_sh40_p0r0",
+          "slot_id": "s34_sh40_p0r0",
           "role": "正文短句",
           "position": "顶部左侧",
           "address": {
@@ -6648,7 +6337,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s36_sh37_p0r0",
+          "slot_id": "s34_sh37_p0r0",
           "role": "辅助文本",
           "position": "顶部左侧",
           "address": {
@@ -6666,7 +6355,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s36_sh38_p0r0",
+          "slot_id": "s34_sh38_p0r0",
           "role": "正文短句",
           "position": "顶部左侧",
           "address": {
@@ -6683,7 +6372,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s36_sh35_p0r0",
+          "slot_id": "s34_sh35_p0r0",
           "role": "辅助文本",
           "position": "顶部左侧",
           "address": {
@@ -6701,7 +6390,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s36_sh36_p0r0",
+          "slot_id": "s34_sh36_p0r0",
           "role": "正文短句",
           "position": "顶部左侧",
           "address": {
@@ -6718,7 +6407,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s36_sh33_p0r0",
+          "slot_id": "s34_sh33_p0r0",
           "role": "辅助文本",
           "position": "顶部左侧",
           "address": {
@@ -6736,7 +6425,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s36_sh34_p0r0",
+          "slot_id": "s34_sh34_p0r0",
           "role": "正文短句",
           "position": "顶部左侧",
           "address": {
@@ -6753,7 +6442,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s36_sh31_p0r0",
+          "slot_id": "s34_sh31_p0r0",
           "role": "辅助文本",
           "position": "顶部左侧",
           "address": {
@@ -6771,7 +6460,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s36_sh32_p0r0",
+          "slot_id": "s34_sh32_p0r0",
           "role": "正文短句",
           "position": "顶部左侧",
           "address": {
@@ -6788,27 +6477,27 @@
           "language": "mixed"
         }
       ],
-      "title_slot_id": "s36_sh2_p0r0",
+      "title_slot_id": "s34_sh2_p0r0",
       "body_slot_ids": [
-        "s36_sh2_p0r0",
-        "s36_sh40_p0r0",
-        "s36_sh38_p0r0",
-        "s36_sh36_p0r0",
-        "s36_sh34_p0r0",
-        "s36_sh32_p0r0"
+        "s34_sh2_p0r0",
+        "s34_sh40_p0r0",
+        "s34_sh38_p0r0",
+        "s34_sh36_p0r0",
+        "s34_sh34_p0r0",
+        "s34_sh32_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "medium"
     },
     {
-      "slide_number": 37,
+      "slide_number": 35,
       "role": "content",
       "layout": "研究方法版式 4（具体可视化形式见渲染图）。",
       "use_for": "研究方法 - 版式 4",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s37_sh2_p0r0",
+          "slot_id": "s35_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -6825,7 +6514,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s37_sh12_p0r0",
+          "slot_id": "s35_sh12_p0r0",
           "role": "辅助文本",
           "position": "中部居中",
           "address": {
@@ -6842,7 +6531,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s37_sh13_p0r0",
+          "slot_id": "s35_sh13_p0r0",
           "role": "辅助文本",
           "position": "中部居中",
           "address": {
@@ -6859,7 +6548,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s37_sh14_p0r0",
+          "slot_id": "s35_sh14_p0r0",
           "role": "辅助文本",
           "position": "中部居中",
           "address": {
@@ -6876,7 +6565,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s37_sh15_p0r0",
+          "slot_id": "s35_sh15_p0r0",
           "role": "段落标题",
           "position": "中部居中",
           "address": {
@@ -6893,7 +6582,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s37_sh34_p0r0",
+          "slot_id": "s35_sh34_p0r0",
           "role": "辅助文本",
           "position": "中部左侧",
           "address": {
@@ -6910,7 +6599,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s37_sh35_p0r0",
+          "slot_id": "s35_sh35_p0r0",
           "role": "辅助文本",
           "position": "中部左侧",
           "address": {
@@ -6927,7 +6616,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s37_sh36_p0r0",
+          "slot_id": "s35_sh36_p0r0",
           "role": "辅助文本",
           "position": "中部左侧",
           "address": {
@@ -6944,7 +6633,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s37_sh37_p0r0",
+          "slot_id": "s35_sh37_p0r0",
           "role": "辅助文本",
           "position": "底部居中",
           "address": {
@@ -6961,7 +6650,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s37_sh38_p0r0",
+          "slot_id": "s35_sh38_p0r0",
           "role": "辅助文本",
           "position": "底部居中",
           "address": {
@@ -6978,7 +6667,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s37_sh39_p0r0",
+          "slot_id": "s35_sh39_p0r0",
           "role": "辅助文本",
           "position": "底部居中",
           "address": {
@@ -6995,7 +6684,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s37_sh40_p0r0",
+          "slot_id": "s35_sh40_p0r0",
           "role": "辅助文本",
           "position": "中部右侧",
           "address": {
@@ -7012,7 +6701,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s37_sh41_p0r0",
+          "slot_id": "s35_sh41_p0r0",
           "role": "辅助文本",
           "position": "中部右侧",
           "address": {
@@ -7029,7 +6718,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s37_sh42_p0r0",
+          "slot_id": "s35_sh42_p0r0",
           "role": "辅助文本",
           "position": "中部右侧",
           "address": {
@@ -7046,23 +6735,23 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s37_sh15_p0r0",
+      "title_slot_id": "s35_sh15_p0r0",
       "body_slot_ids": [
-        "s37_sh2_p0r0",
-        "s37_sh15_p0r0"
+        "s35_sh2_p0r0",
+        "s35_sh15_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "medium"
     },
     {
-      "slide_number": 38,
+      "slide_number": 36,
       "role": "content",
       "layout": "研究方法版式 5（具体可视化形式见渲染图）。",
       "use_for": "研究方法 - 版式 5",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s38_sh2_p0r0",
+          "slot_id": "s36_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -7079,7 +6768,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s38_sh69_p0r0",
+          "slot_id": "s36_sh69_p0r0",
           "role": "装饰序号 01",
           "position": "顶部居中",
           "address": {
@@ -7097,7 +6786,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s38_sh67_p0r0",
+          "slot_id": "s36_sh67_p0r0",
           "role": "装饰序号 03",
           "position": "顶部居中",
           "address": {
@@ -7115,7 +6804,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s38_sh65_p0r0",
+          "slot_id": "s36_sh65_p0r0",
           "role": "装饰序号 05",
           "position": "顶部居中",
           "address": {
@@ -7133,7 +6822,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s38_sh63_p0r0",
+          "slot_id": "s36_sh63_p0r0",
           "role": "装饰序号 02",
           "position": "顶部居中",
           "address": {
@@ -7151,7 +6840,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s38_sh61_p0r0",
+          "slot_id": "s36_sh61_p0r0",
           "role": "装饰序号 04",
           "position": "顶部居中",
           "address": {
@@ -7169,7 +6858,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s38_sh59_p0r0",
+          "slot_id": "s36_sh59_p0r0",
           "role": "装饰序号 06",
           "position": "顶部居中",
           "address": {
@@ -7187,7 +6876,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s38_sh39_p0r0",
+          "slot_id": "s36_sh39_p0r0",
           "role": "辅助文本",
           "position": "顶部左侧",
           "address": {
@@ -7205,7 +6894,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s38_sh40_p0r0",
+          "slot_id": "s36_sh40_p0r0",
           "role": "正文短句",
           "position": "顶部左侧",
           "address": {
@@ -7222,7 +6911,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s38_sh37_p0r0",
+          "slot_id": "s36_sh37_p0r0",
           "role": "辅助文本",
           "position": "顶部左侧",
           "address": {
@@ -7240,7 +6929,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s38_sh38_p0r0",
+          "slot_id": "s36_sh38_p0r0",
           "role": "辅助文本",
           "position": "顶部左侧",
           "address": {
@@ -7257,7 +6946,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s38_sh35_p0r0",
+          "slot_id": "s36_sh35_p0r0",
           "role": "辅助文本",
           "position": "顶部左侧",
           "address": {
@@ -7275,7 +6964,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s38_sh36_p0r0",
+          "slot_id": "s36_sh36_p0r0",
           "role": "正文短句",
           "position": "顶部左侧",
           "address": {
@@ -7292,7 +6981,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s38_sh33_p0r0",
+          "slot_id": "s36_sh33_p0r0",
           "role": "辅助文本",
           "position": "顶部左侧",
           "address": {
@@ -7310,7 +6999,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s38_sh34_p0r0",
+          "slot_id": "s36_sh34_p0r0",
           "role": "正文短句",
           "position": "中部左侧",
           "address": {
@@ -7327,7 +7016,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s38_sh31_p0r0",
+          "slot_id": "s36_sh31_p0r0",
           "role": "辅助文本",
           "position": "中部左侧",
           "address": {
@@ -7345,7 +7034,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s38_sh32_p0r0",
+          "slot_id": "s36_sh32_p0r0",
           "role": "辅助文本",
           "position": "中部左侧",
           "address": {
@@ -7362,7 +7051,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s38_sh29_p0r0",
+          "slot_id": "s36_sh29_p0r0",
           "role": "辅助文本",
           "position": "底部左侧",
           "address": {
@@ -7380,7 +7069,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s38_sh30_p0r0",
+          "slot_id": "s36_sh30_p0r0",
           "role": "辅助文本",
           "position": "底部左侧",
           "address": {
@@ -7397,32 +7086,32 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s38_sh2_p0r0",
+      "title_slot_id": "s36_sh2_p0r0",
       "body_slot_ids": [
-        "s38_sh2_p0r0",
-        "s38_sh40_p0r0",
-        "s38_sh36_p0r0",
-        "s38_sh34_p0r0"
+        "s36_sh2_p0r0",
+        "s36_sh40_p0r0",
+        "s36_sh36_p0r0",
+        "s36_sh34_p0r0"
       ],
       "decorative_slot_ids": [
-        "s38_sh69_p0r0",
-        "s38_sh67_p0r0",
-        "s38_sh65_p0r0",
-        "s38_sh63_p0r0",
-        "s38_sh61_p0r0",
-        "s38_sh59_p0r0"
+        "s36_sh69_p0r0",
+        "s36_sh67_p0r0",
+        "s36_sh65_p0r0",
+        "s36_sh63_p0r0",
+        "s36_sh61_p0r0",
+        "s36_sh59_p0r0"
       ],
       "text_density": "medium"
     },
     {
-      "slide_number": 39,
+      "slide_number": 37,
       "role": "content",
       "layout": "研究方法版式 6（具体可视化形式见渲染图）。",
       "use_for": "研究方法 - 版式 6",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s39_sh2_p0r0",
+          "slot_id": "s37_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -7439,7 +7128,7 @@
           "language": "mixed"
         },
         {
-          "slot_id": "s39_sh7_p0r0",
+          "slot_id": "s37_sh7_p0r0",
           "role": "段落标题",
           "position": "中部居中",
           "address": {
@@ -7457,7 +7146,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s39_sh11_p0r0",
+          "slot_id": "s37_sh11_p0r0",
           "role": "装饰序号 03",
           "position": "顶部左侧",
           "address": {
@@ -7474,7 +7163,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s39_sh13_p0r0",
+          "slot_id": "s37_sh13_p0r0",
           "role": "装饰序号 06",
           "position": "中部左侧",
           "address": {
@@ -7491,7 +7180,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s39_sh21_p0r0",
+          "slot_id": "s37_sh21_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -7509,7 +7198,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s39_sh22_p0r0",
+          "slot_id": "s37_sh22_p0r0",
           "role": "小标题",
           "position": "中部左侧",
           "address": {
@@ -7527,7 +7216,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s39_sh26_p0r0",
+          "slot_id": "s37_sh26_p0r0",
           "role": "装饰序号 02",
           "position": "顶部居中",
           "address": {
@@ -7544,7 +7233,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s39_sh28_p0r0",
+          "slot_id": "s37_sh28_p0r0",
           "role": "装饰序号 05",
           "position": "中部居中",
           "address": {
@@ -7561,7 +7250,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s39_sh33_p0r0",
+          "slot_id": "s37_sh33_p0r0",
           "role": "小标题",
           "position": "顶部左侧",
           "address": {
@@ -7579,7 +7268,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s39_sh34_p0r0",
+          "slot_id": "s37_sh34_p0r0",
           "role": "小标题",
           "position": "中部左侧",
           "address": {
@@ -7597,7 +7286,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s39_sh38_p0r0",
+          "slot_id": "s37_sh38_p0r0",
           "role": "装饰序号 01",
           "position": "顶部居中",
           "address": {
@@ -7615,7 +7304,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s39_sh40_p0r0",
+          "slot_id": "s37_sh40_p0r0",
           "role": "装饰序号 04",
           "position": "中部居中",
           "address": {
@@ -7633,7 +7322,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s39_sh45_p0r0",
+          "slot_id": "s37_sh45_p0r0",
           "role": "小标题",
           "position": "中部居中",
           "address": {
@@ -7651,7 +7340,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s39_sh46_p0r0",
+          "slot_id": "s37_sh46_p0r0",
           "role": "小标题",
           "position": "中部居中",
           "address": {
@@ -7669,30 +7358,30 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s39_sh2_p0r0",
+      "title_slot_id": "s37_sh2_p0r0",
       "body_slot_ids": [
-        "s39_sh2_p0r0",
-        "s39_sh7_p0r0"
+        "s37_sh2_p0r0",
+        "s37_sh7_p0r0"
       ],
       "decorative_slot_ids": [
-        "s39_sh11_p0r0",
-        "s39_sh13_p0r0",
-        "s39_sh26_p0r0",
-        "s39_sh28_p0r0",
-        "s39_sh38_p0r0",
-        "s39_sh40_p0r0"
+        "s37_sh11_p0r0",
+        "s37_sh13_p0r0",
+        "s37_sh26_p0r0",
+        "s37_sh28_p0r0",
+        "s37_sh38_p0r0",
+        "s37_sh40_p0r0"
       ],
       "text_density": "medium"
     },
     {
-      "slide_number": 40,
+      "slide_number": 38,
       "role": "content",
       "layout": "研究方法版式 7（具体可视化形式见渲染图）。",
       "use_for": "研究方法 - 版式 7",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s40_sh2_p0r0",
+          "slot_id": "s38_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -7709,7 +7398,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s40_sh57_p0r0",
+          "slot_id": "s38_sh57_p0r0",
           "role": "小标题",
           "position": "底部左侧",
           "address": {
@@ -7726,7 +7415,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s40_sh58_p0r0",
+          "slot_id": "s38_sh58_p0r0",
           "role": "正文短句",
           "position": "底部左侧",
           "address": {
@@ -7743,7 +7432,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s40_sh52_p0r0",
+          "slot_id": "s38_sh52_p0r0",
           "role": "装饰序号 01",
           "position": "中部左侧",
           "address": {
@@ -7761,7 +7450,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s40_sh53_p0r0",
+          "slot_id": "s38_sh53_p0r0",
           "role": "段落标题",
           "position": "底部左侧",
           "address": {
@@ -7779,7 +7468,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s40_sh44_p0r0",
+          "slot_id": "s38_sh44_p0r0",
           "role": "小标题",
           "position": "底部左侧",
           "address": {
@@ -7796,7 +7485,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s40_sh45_p0r0",
+          "slot_id": "s38_sh45_p0r0",
           "role": "正文短句",
           "position": "底部左侧",
           "address": {
@@ -7813,7 +7502,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s40_sh10_p0r0",
+          "slot_id": "s38_sh10_p0r0",
           "role": "装饰序号 02",
           "position": "中部居中",
           "address": {
@@ -7831,7 +7520,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s40_sh11_p0r0",
+          "slot_id": "s38_sh11_p0r0",
           "role": "段落标题",
           "position": "底部居中",
           "address": {
@@ -7849,7 +7538,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s40_sh38_p0r0",
+          "slot_id": "s38_sh38_p0r0",
           "role": "小标题",
           "position": "底部左侧",
           "address": {
@@ -7866,7 +7555,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s40_sh39_p0r0",
+          "slot_id": "s38_sh39_p0r0",
           "role": "正文短句",
           "position": "底部左侧",
           "address": {
@@ -7883,7 +7572,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s40_sh14_p0r0",
+          "slot_id": "s38_sh14_p0r0",
           "role": "装饰序号 03",
           "position": "中部右侧",
           "address": {
@@ -7901,7 +7590,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s40_sh15_p0r0",
+          "slot_id": "s38_sh15_p0r0",
           "role": "段落标题",
           "position": "底部居中",
           "address": {
@@ -7919,7 +7608,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s40_sh32_p0r0",
+          "slot_id": "s38_sh32_p0r0",
           "role": "小标题",
           "position": "底部左侧",
           "address": {
@@ -7936,7 +7625,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s40_sh33_p0r0",
+          "slot_id": "s38_sh33_p0r0",
           "role": "正文短句",
           "position": "底部左侧",
           "address": {
@@ -7953,7 +7642,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s40_sh18_p0r0",
+          "slot_id": "s38_sh18_p0r0",
           "role": "装饰序号 04",
           "position": "中部右侧",
           "address": {
@@ -7971,7 +7660,7 @@
           "language": "number"
         },
         {
-          "slot_id": "s40_sh19_p0r0",
+          "slot_id": "s38_sh19_p0r0",
           "role": "段落标题",
           "position": "底部右侧",
           "address": {
@@ -7989,35 +7678,35 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s40_sh2_p0r0",
+      "title_slot_id": "s38_sh2_p0r0",
       "body_slot_ids": [
-        "s40_sh2_p0r0",
-        "s40_sh58_p0r0",
-        "s40_sh53_p0r0",
-        "s40_sh45_p0r0",
-        "s40_sh11_p0r0",
-        "s40_sh39_p0r0",
-        "s40_sh15_p0r0",
-        "s40_sh33_p0r0",
-        "s40_sh19_p0r0"
+        "s38_sh2_p0r0",
+        "s38_sh58_p0r0",
+        "s38_sh53_p0r0",
+        "s38_sh45_p0r0",
+        "s38_sh11_p0r0",
+        "s38_sh39_p0r0",
+        "s38_sh15_p0r0",
+        "s38_sh33_p0r0",
+        "s38_sh19_p0r0"
       ],
       "decorative_slot_ids": [
-        "s40_sh52_p0r0",
-        "s40_sh10_p0r0",
-        "s40_sh14_p0r0",
-        "s40_sh18_p0r0"
+        "s38_sh52_p0r0",
+        "s38_sh10_p0r0",
+        "s38_sh14_p0r0",
+        "s38_sh18_p0r0"
       ],
       "text_density": "medium"
     },
     {
-      "slide_number": 41,
+      "slide_number": 39,
       "role": "content",
       "layout": "研究方法版式 8（具体可视化形式见渲染图）。",
       "use_for": "研究方法 - 版式 8",
       "auto_promo_flag": false,
       "text_slots": [
         {
-          "slot_id": "s41_sh2_p0r0",
+          "slot_id": "s39_sh2_p0r0",
           "role": "段落标题",
           "position": "顶部居中",
           "address": {
@@ -8034,7 +7723,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s41_sh24_p0r0",
+          "slot_id": "s39_sh24_p0r0",
           "role": "段落标题",
           "position": "中部居中",
           "address": {
@@ -8051,7 +7740,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s41_sh29_p0r0",
+          "slot_id": "s39_sh29_p0r0",
           "role": "辅助文本",
           "position": "顶部左侧",
           "address": {
@@ -8068,7 +7757,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s41_sh30_p0r0",
+          "slot_id": "s39_sh30_p0r0",
           "role": "辅助文本",
           "position": "顶部左侧",
           "address": {
@@ -8085,7 +7774,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s41_sh31_p0r0",
+          "slot_id": "s39_sh31_p0r0",
           "role": "辅助文本",
           "position": "中部居中",
           "address": {
@@ -8102,7 +7791,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s41_sh32_p0r0",
+          "slot_id": "s39_sh32_p0r0",
           "role": "辅助文本",
           "position": "中部左侧",
           "address": {
@@ -8119,7 +7808,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s41_sh33_p0r0",
+          "slot_id": "s39_sh33_p0r0",
           "role": "辅助文本",
           "position": "底部左侧",
           "address": {
@@ -8136,7 +7825,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s41_sh34_p0r0",
+          "slot_id": "s39_sh34_p0r0",
           "role": "辅助文本",
           "position": "底部左侧",
           "address": {
@@ -8153,7 +7842,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s41_sh27_p0r0",
+          "slot_id": "s39_sh27_p0r0",
           "role": "小标题",
           "position": "中部左侧",
           "address": {
@@ -8170,7 +7859,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s41_sh49_p0r0",
+          "slot_id": "s39_sh49_p0r0",
           "role": "辅助文本",
           "position": "中部居中",
           "address": {
@@ -8187,7 +7876,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s41_sh54_p0r0",
+          "slot_id": "s39_sh54_p0r0",
           "role": "辅助文本",
           "position": "顶部左侧",
           "address": {
@@ -8204,7 +7893,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s41_sh55_p0r0",
+          "slot_id": "s39_sh55_p0r0",
           "role": "辅助文本",
           "position": "顶部左侧",
           "address": {
@@ -8221,7 +7910,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s41_sh56_p0r0",
+          "slot_id": "s39_sh56_p0r0",
           "role": "辅助文本",
           "position": "中部居中",
           "address": {
@@ -8238,7 +7927,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s41_sh57_p0r0",
+          "slot_id": "s39_sh57_p0r0",
           "role": "辅助文本",
           "position": "中部左侧",
           "address": {
@@ -8255,7 +7944,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s41_sh58_p0r0",
+          "slot_id": "s39_sh58_p0r0",
           "role": "辅助文本",
           "position": "底部左侧",
           "address": {
@@ -8272,7 +7961,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s41_sh59_p0r0",
+          "slot_id": "s39_sh59_p0r0",
           "role": "辅助文本",
           "position": "底部左侧",
           "address": {
@@ -8289,7 +7978,7 @@
           "language": "zh"
         },
         {
-          "slot_id": "s41_sh52_p0r0",
+          "slot_id": "s39_sh52_p0r0",
           "role": "小标题",
           "position": "中部左侧",
           "address": {
@@ -8306,10 +7995,10 @@
           "language": "zh"
         }
       ],
-      "title_slot_id": "s41_sh24_p0r0",
+      "title_slot_id": "s39_sh24_p0r0",
       "body_slot_ids": [
-        "s41_sh2_p0r0",
-        "s41_sh24_p0r0"
+        "s39_sh2_p0r0",
+        "s39_sh24_p0r0"
       ],
       "decorative_slot_ids": [],
       "text_density": "medium"
