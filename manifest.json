@@ -1,14 +1,14 @@
 {
   "$schema": "ppt-skill-manifest/v1",
   "skill_name": "ppt-builder",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "file_count": 97,
   "files": {
     ".gitattributes": {
-      "sha256": "a30b3c792d552ce32fb88449a091bad08c5b3b79962e680013c22ddff84e9f29",
-      "size": 43,
+      "sha256": "538c7a3e4a5ddc32a56c2f79f7e3abae99a9cb98e587bf681d9a7a1d19a554dc",
+      "size": 151,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.6"
     },
     ".gitignore": {
       "sha256": "30f85f63855e540d13dc85d70352d92bed17c6383a918a66ca227f8701d7c5d0",
@@ -17,10 +17,10 @@
       "last_modified": "1.0.0"
     },
     "CHANGELOG.md": {
-      "sha256": "5e45417a274d5ffec9d2800ec3faba8a52d425f95d30df931970c81f35fdfd80",
-      "size": 9188,
+      "sha256": "a8646a9f0f026edfab414041bd48bd6967404404c7be4ee802cdbf6e5e0e654b",
+      "size": 10848,
       "version_added": "1.0.0",
-      "last_modified": "1.0.5"
+      "last_modified": "1.0.6"
     },
     "LICENSE": {
       "sha256": "6f52f1baed8c393758ff6e8bf9c515edd6fd377187ae38a64165a330573b7829",
@@ -47,10 +47,10 @@
       "last_modified": "1.0.4"
     },
     "VERSION": {
-      "sha256": "8c54bfab7f1ae9bd1a7148eae41e7b0a8f4ad3726e0cac70f823a2d45db9e60c",
+      "sha256": "51c18dc8694861beb47a67894e61044864214435389f6d3a274704d9566ff96c",
       "size": 6,
       "version_added": "1.0.0",
-      "last_modified": "1.0.5"
+      "last_modified": "1.0.6"
     },
     "assets/group-qr.jpg": {
       "sha256": "08093fd8089a52a6ceb269c50d5461d3368c6bb2bb289d55ace0af8bf273755d",
@@ -89,10 +89,10 @@
       "last_modified": "1.0.3"
     },
     "scripts/apply_update.py": {
-      "sha256": "6b72a101009b226dc1dab0dab9170cbba2d7032425976304d990673f769acc66",
-      "size": 9461,
+      "sha256": "f51608a3e2c7097eca52d932247a6c3fbb6bd951265c26a472cc3eb17caa86e3",
+      "size": 9803,
       "version_added": "1.0.0",
-      "last_modified": "1.0.1"
+      "last_modified": "1.0.6"
     },
     "scripts/build_manifest.py": {
       "sha256": "55b98cebf5b609eb56253dacf1f6a531fc5c2d2bcb9f13c847c9e251768ef9d2",
@@ -143,10 +143,10 @@
       "last_modified": "1.0.2"
     },
     "templates/architecture-deck/template.pptx": {
-      "sha256": "9d18d627cb9f77208502e08414dd56ea065a28a36d842187a3efbbd61f3746c6",
-      "size": 16777674,
+      "sha256": "03cdc0b85e2e26ea9a2f02e467c5fb79614299250514fb3399f6170485c9e06f",
+      "size": 1026044,
       "version_added": "1.0.0",
-      "last_modified": "1.0.2"
+      "last_modified": "1.0.6"
     },
     "templates/competition-speech/detail.json": {
       "sha256": "46b15faed0e190768c673dcd2c4e79991485a85cf6cef1bc362edba02eed2707",
@@ -167,10 +167,10 @@
       "last_modified": "1.0.0"
     },
     "templates/competition-speech/template.pptx": {
-      "sha256": "42294d5131086d5ba6ab09160fc9e13d4fe708571be4a264de663aafa8b2988b",
-      "size": 17011236,
+      "sha256": "3ac9bbdb0107fd90b8cdca088e3408f2c41d7bf13b4e9fc1a4d2fd177808d0a7",
+      "size": 1165153,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.6"
     },
     "templates/cute-orange-class/detail.json": {
       "sha256": "94102f888b4e2e280ab92e6bc2767355a750c54b8820780d9c6aae5920a13057",
@@ -191,10 +191,10 @@
       "last_modified": "1.0.0"
     },
     "templates/cute-orange-class/template.pptx": {
-      "sha256": "247032ac711323aa4cd3b0d284fa9e1f18b2ae7d89a83d496e4b542fbf917e1d",
-      "size": 17580891,
+      "sha256": "0e34ee4df6f9d1bbb7529bad71d3f75ec1181504e1694b96f8d4a13d9a3a072f",
+      "size": 3139395,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.6"
     },
     "templates/data-viz-deck/detail.json": {
       "sha256": "9b39178eab874a90e013fdf937e4d3ab861a2883f23dfbad1f8a5594905a940e",
@@ -215,10 +215,10 @@
       "last_modified": "1.0.0"
     },
     "templates/data-viz-deck/template.pptx": {
-      "sha256": "2107779c56275769fcac74fe10add99062ff6c2d0db3ea42928fd8eefbfaf229",
-      "size": 18514569,
+      "sha256": "ceb16faad8ac784b514a2dcc140933077049dcb744a2fa7be89a3a7a7da24923",
+      "size": 2465317,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.6"
     },
     "templates/geometric-summary/detail.json": {
       "sha256": "6b68e68e27e12d62e81af496a8fa8a9c155ab4c580e71ed1a738a390a0287eeb",
@@ -239,10 +239,10 @@
       "last_modified": "1.0.0"
     },
     "templates/geometric-summary/template.pptx": {
-      "sha256": "bfd863aff8322323608b64228c9c7c2ffd4f3ab61d6254bdff35255f4372ad02",
-      "size": 29342610,
+      "sha256": "94c24c9cb259caf88bbbf86f47771b69ef36873491c2cfe8161f54ec56fcaebd",
+      "size": 10205380,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.6"
     },
     "templates/mckinsey-style/detail.json": {
       "sha256": "8526e86c0225f09d571931f888c9aaf9dc2e7ea78d685c16a1fd2aa0355ca690",
@@ -263,10 +263,10 @@
       "last_modified": "1.0.2"
     },
     "templates/mckinsey-style/template.pptx": {
-      "sha256": "7f967884794551e93ac1fc358b4c8fe5406af41b6fe0278780da0d7fc0197d33",
-      "size": 15877522,
+      "sha256": "680bdfd494299af79bc9b72d2974f13d385a10db57ad57231723c4c7e29505fd",
+      "size": 601931,
       "version_added": "1.0.0",
-      "last_modified": "1.0.2"
+      "last_modified": "1.0.6"
     },
     "templates/minimal-business-summary/detail.json": {
       "sha256": "8c355410faf010c9bbcb280fa37b81c7af21b213452fc6e52cdaf0b2e164dea6",
@@ -287,10 +287,10 @@
       "last_modified": "1.0.0"
     },
     "templates/minimal-business-summary/template.pptx": {
-      "sha256": "8f7de813e4a463f0bf37a2c43be24be5c536ba41fc30bfb5811abb2b9909c9eb",
-      "size": 3805749,
+      "sha256": "156cb8939fc43f96559b525c673c8bebb338f1fca77ce6b2e823b2a16d46befc",
+      "size": 3801367,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.6"
     },
     "templates/operations-deck/detail.json": {
       "sha256": "c85e1fb4baf20260ec50bfaf7ffdf14dc3154c5f365e2a228d6a8dacc968fecb",
@@ -311,10 +311,10 @@
       "last_modified": "1.0.0"
     },
     "templates/operations-deck/template.pptx": {
-      "sha256": "03f59a2a4cba3ea8783b0a3875b794d3aa9c9eaf9ac6414e2d988250f9f8ce39",
-      "size": 18935007,
+      "sha256": "1b5878e724e0177bae812e7c8e3b41fabfcdd5bb8b9e4af2c9506595437f16ca",
+      "size": 2715308,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.6"
     },
     "templates/premium-corp/detail.json": {
       "sha256": "8b22ed0539e5bca03f885e5e5f48361f1513bea709173fb8f2ae571f2227b26d",
@@ -335,10 +335,10 @@
       "last_modified": "1.0.1"
     },
     "templates/premium-corp/template.pptx": {
-      "sha256": "eb6a34ba17dd25a08d79843c2b710b9dfcf3069da6cd050e0557cc7b21f9b9b9",
-      "size": 8314701,
+      "sha256": "502c871be80b930400e9815ef0581232610261a8c0389d1642b409b872bd0c28",
+      "size": 771953,
       "version_added": "1.0.0",
-      "last_modified": "1.0.1"
+      "last_modified": "1.0.6"
     },
     "templates/quarterly-illust/detail.json": {
       "sha256": "51f03f9d809c03839fae9bcd4f359d605f2898010a45f424f8f046fa309d66a3",
@@ -359,10 +359,10 @@
       "last_modified": "1.0.0"
     },
     "templates/quarterly-illust/template.pptx": {
-      "sha256": "0513d003cbc6bfaa7d856100ae470c199d6b2f4164028579894c0930ee21a206",
-      "size": 36707464,
+      "sha256": "558ce85c0d64cd2a06faf88d6a4aa331e8cd4c685c59101c835ded2fbc87696d",
+      "size": 13951095,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.6"
     },
     "templates/red-patriot-general/detail.json": {
       "sha256": "18c47a0fc3c496eb2b9003b7b59dcaf5686034989b0048fef384532843929fb6",
@@ -383,10 +383,10 @@
       "last_modified": "1.0.0"
     },
     "templates/red-patriot-general/template.pptx": {
-      "sha256": "9ba09ced4e814026a06c40500fe5dec6f04a2c9fc1668f1c84fb038675a9da31",
-      "size": 61250497,
+      "sha256": "bab045bca75ab5bd99db2aaafa9641cb9a45c2baa9c1644b79ae5925c7a95295",
+      "size": 9318224,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.6"
     },
     "templates/red-patriot-youth/detail.json": {
       "sha256": "c6a506ec58daf3073433b43e42290329044338abbbd2ad32b6b208f7b1c18e20",
@@ -407,10 +407,10 @@
       "last_modified": "1.0.0"
     },
     "templates/red-patriot-youth/template.pptx": {
-      "sha256": "4a8375e1734f5f1c41d638e846e4c037e4e7ce28dbb59fcc653b3743873134e6",
-      "size": 27845457,
+      "sha256": "1e8d3cac61b7b6fa2efb2e9c0f4e100a9fea22deff66b8fe971d543b65ec3ed4",
+      "size": 6788679,
       "version_added": "1.0.0",
-      "last_modified": "1.0.0"
+      "last_modified": "1.0.6"
     },
     "templates/report-massive-charts/detail.json": {
       "sha256": "b3587a0e9580ba378d95059ed311a74c8b19070160bca074ebd4da54e20c8d53",
@@ -431,10 +431,10 @@
       "last_modified": "1.0.2"
     },
     "templates/report-massive-charts/template.pptx": {
-      "sha256": "737f45d3466fd08a7f5cce6a1cd7919ffac1f67c1eb9249549f22de9c57f2cfd",
-      "size": 16913005,
+      "sha256": "09be8eaf86127e3619089b4465a8f235159efdb91b4bcc99b7ed0bead65feea2",
+      "size": 1768688,
       "version_added": "1.0.2",
-      "last_modified": "1.0.2"
+      "last_modified": "1.0.6"
     },
     "templates/report-massive-models/detail.json": {
       "sha256": "1a676993ed6bfee99a15b9e87dbf6365c7f7136259926b4c8482a1d80207cbeb",
@@ -455,10 +455,10 @@
       "last_modified": "1.0.2"
     },
     "templates/report-massive-models/template.pptx": {
-      "sha256": "202766cca87223985071a8c947acfe2fb5c5c61a021625f0ab51bc3d12793210",
-      "size": 16705051,
+      "sha256": "2ef2d8446af183ed78c108ea6587417ded72068a8eb53d666c9687058988bf5a",
+      "size": 1560732,
       "version_added": "1.0.2",
-      "last_modified": "1.0.2"
+      "last_modified": "1.0.6"
     },
     "templates/report-massive-reports/detail.json": {
       "sha256": "791c6a7c80d32fedac693ab4a44cdc03a25dfe4fb0121d6b343516ce64cec4a5",
@@ -479,10 +479,10 @@
       "last_modified": "1.0.2"
     },
     "templates/report-massive-reports/template.pptx": {
-      "sha256": "b56fb0abc666da1c47a3f953029286a78a4ed1314a6caa23f7bfa62442879980",
-      "size": 16331475,
+      "sha256": "b908a9aadba8aa3d1550ab2ca69c25b98702203d36f7fcfd7c1563e3dca6ed3c",
+      "size": 1187161,
       "version_added": "1.0.2",
-      "last_modified": "1.0.2"
+      "last_modified": "1.0.6"
     },
     "templates/report-savior/detail.json": {
       "sha256": "fa66010af07d6128e8be89b6f0c063ebd7b485bbf6aba61b8cea203c20af1132",
@@ -503,10 +503,10 @@
       "last_modified": "1.0.2"
     },
     "templates/report-savior/template.pptx": {
-      "sha256": "bf9481950afeddf6e9dfaa8bb2f1da0cb22bfe5cf9b6a87bb49c3c7c58916418",
-      "size": 16925901,
+      "sha256": "7b79ef03b4dcce5d38a91840d37778e49d04f4f0ae3c43068e3dd7dd62bc3d8e",
+      "size": 1857738,
       "version_added": "1.0.0",
-      "last_modified": "1.0.2"
+      "last_modified": "1.0.6"
     },
     "templates/thesis-formula/detail.json": {
       "sha256": "dfe0908d6ea7aba9525e8a2b250e5cc3da9fd96437009ab8c487bfadb8d24f6d",
@@ -527,10 +527,10 @@
       "last_modified": "1.0.2"
     },
     "templates/thesis-formula/template.pptx": {
-      "sha256": "187ecf559acca7267d94b2268265c8e59eed6ea5db038f968e3d18b757429e79",
-      "size": 42507917,
+      "sha256": "ac149b78583ce751648f096cc07fe358d663d1f94efb365b45957dcfffc02d04",
+      "size": 1115574,
       "version_added": "1.0.0",
-      "last_modified": "1.0.2"
+      "last_modified": "1.0.6"
     },
     "templates/thesis-novice/detail.json": {
       "sha256": "b388d7d94cfffb5d9388a68c3973c4238b5e04c6f687e88ea01519e4e7b47b36",
@@ -551,10 +551,10 @@
       "last_modified": "1.0.2"
     },
     "templates/thesis-novice/template.pptx": {
-      "sha256": "a3a8e00492e01bfb5dbfa3f66f9fd1819d54c05418cdb27f5ce0a2aaa65f25bc",
-      "size": 71474594,
+      "sha256": "fadca83953a2bc87de78dcdc1fe76515f334cd9014905b267d07edb36c4b27dd",
+      "size": 1400683,
       "version_added": "1.0.0",
-      "last_modified": "1.0.2"
+      "last_modified": "1.0.6"
     },
     "templates/top-thesis/detail.json": {
       "sha256": "e731e3334ae99ca6cf55d9a91f88053a0910e954386bd6755c48243dee50cc78",
@@ -575,16 +575,16 @@
       "last_modified": "1.0.2"
     },
     "templates/top-thesis/template.pptx": {
-      "sha256": "de559e1ecfa75bbb54d0c580381e488129c2739f4ec1fe579052038cae4fb72e",
-      "size": 80260247,
+      "sha256": "a4cb74324d5317b90e326f5409506653c92fa164b283c8e54a40bc2184c4506f",
+      "size": 1120054,
       "version_added": "1.0.0",
-      "last_modified": "1.0.2"
+      "last_modified": "1.0.6"
     },
     "updates.json": {
-      "sha256": "5f5bfc8a3c7477d817d8de679a3883f6addda30f8af79222969689c0547028bc",
-      "size": 9191,
+      "sha256": "ece772c82637f59b0aa9480e63717dcc018f22e92c5dbc6749310febfdc888c4",
+      "size": 10648,
       "version_added": "1.0.0",
-      "last_modified": "1.0.5"
+      "last_modified": "1.0.6"
     }
   }
 }

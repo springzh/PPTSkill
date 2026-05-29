@@ -164,11 +164,17 @@ def git_apply(root: Path, source: str, dry_run: bool) -> int:
             return 0
 
         # Selectively materialize LFS-tracked files that the delta needs.
-        # We treat *.pptx as the canonical LFS extension; if you LFS-track more
-        # patterns add them here.
+        # Since v1.0.6 templates are plain git blobs (no LFS), so this is
+        # usually a no-op; we still support LFS in case a future revision
+        # re-introduces it. Skip entirely when the clone has no LFS filter.
+        clone_attrs = (clone / ".gitattributes")
+        repo_uses_lfs = (
+            clone_attrs.exists()
+            and "filter=lfs" in clone_attrs.read_text(encoding="utf-8", errors="ignore")
+        )
         lfs_targets = sorted(
             f for f in (added | modified) if f.endswith(".pptx")
-        )
+        ) if repo_uses_lfs else []
         if lfs_targets:
             print(f"     fetching {len(lfs_targets)} LFS file(s) selectively…")
             include_arg = ",".join(lfs_targets)

@@ -2,6 +2,38 @@
 
 按版本倒序列出可读变更。机器读取请用 [`updates.json`](./updates.json)；只读哪些文件变动请用 [`manifest.json`](./manifest.json) 的 `last_modified` 字段。
 
+## 1.0.6 — 2026-05-29
+
+**大幅瘦身：移除嵌入字体 + 把模板移出 Git LFS，根治下载流量超限。**
+
+背景：GitHub 免费 LFS 带宽是 1GB/月（硬上限）。19 个模板的 pptx 在 LFS 里共 ~508MB，其中 **~90% 是原作者保存时嵌入的整套中文字体**（如 top-thesis 77MB 里 76MB 是字体），导致下载人数一多就把月度带宽用爆。
+
+优化：
+
+1. **剥离所有 pptx 的嵌入字体**（`ppt/fonts/*.fntdata` + presentation.xml 的 `embeddedFontLst` + 相关 rels）：
+   - 全库 508MB → **63MB**（缩 88%）
+   - 版式 / 配色 / 文字位置 / 页数 **零变化**；只是正文改用查看者本机字体（中文系统都有微软雅黑，无感）
+   - detail.json / slot 寻址 **完全不变**，编辑流程不受影响
+2. **把 pptx 移出 Git LFS，改为普通 git 文件**：
+   - 文件已足够小，普通 git 下载**不受 1GB/月 LFS 硬上限约束**
+   - 新用户 `apply_update.py`（`git clone --depth 1`）直接拿普通 blob，**LFS 带宽消耗为 0**
+3. `apply_update.py`：当远端已不使用 LFS 时自动跳过 `git lfs pull`（纯 git 流程）。
+
+文件改动：
+
+- 全部 19 个 `templates/*/template.pptx`（已瘦身）
+- `.gitattributes`（移除 `*.pptx filter=lfs`）
+- `scripts/apply_update.py`
+- `VERSION` / `CHANGELOG.md` / `updates.json` / `manifest.json`
+
+升级方式（v1.0.5 → v1.0.6）：
+
+```bash
+python3 scripts/apply_update.py     # 一次性拉取瘦身后的 19 个 pptx（共 ~63MB 普通 git，不走 LFS）
+```
+
+> 注：本月已耗尽的 LFS 带宽要等下个计费周期重置；本版本确保**以后不再依赖 LFS 带宽**。
+
 ## 1.0.5 — 2026-05-29
 
 **仓库门面更新：README 重写 + 加入微信交流群二维码。**
