@@ -2,6 +2,17 @@
 
 按版本倒序列出可读变更。机器读取请用 [`updates.json`](./updates.json)；只读哪些文件变动请用 [`manifest.json`](./manifest.json) 的 `last_modified` 字段。
 
+## 1.0.11 — 2026-06-01
+
+**给 SKILL.md 补上 Agent Skill 标准元数据（技能名 + 描述），方便其他 Agent 自动发现与调用。**
+
+- 在 `SKILL.md` 文件最顶部新增 YAML frontmatter：
+  - `name: ppt-builder`
+  - `description`：第三人称、含 WHAT + WHEN 与中英文触发词（做/生成/编辑 PPT、演示文稿、幻灯片、.pptx、工作汇报、述职、开题、商务提案、教学课件等）。
+- 未设 `disable-model-invocation`，因此其它 Agent 可从上下文自动调用本技能。
+
+纯文档更新。升级：`python3 scripts/apply_update.py`。
+
 ## 1.0.10 — 2026-06-01
 
 **更新微信交流群二维码。**
