@@ -2,6 +2,12 @@
 
 按版本倒序列出可读变更。机器读取请用 [`updates.json`](./updates.json)；只读哪些文件变动请用 [`manifest.json`](./manifest.json) 的 `last_modified` 字段。
 
+## 1.0.14 — 2026-06-01
+
+- `assets/group-qr.jpg` 替换为新的「PPT Skill 交流群-4 群」二维码（6 月 8 日前有效）。
+
+纯资源更新。升级：`python3 scripts/apply_update.py`。
+
 ## 1.0.13 — 2026-06-01
 
 - `SKILL.md` frontmatter 的 `name` 改为 `gorden-ppt-skill`（小写连字符，符合 Cursor 原生 Agent Skill 命名规范，可作为原生技能加载）。
