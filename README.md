@@ -26,8 +26,8 @@
 ## 使用方法
 极其简单，把这段提示词发给你的Agent即可：
 
-在当前文件夹安装这个Skill：https://github.com/GordenSun/GordenPPTSkill
-然后做一个复杂、豪华的PPT，读取本地XXX文件，来介绍XXX项目
+安装这个Skill：https://github.com/GordenSun/GordenPPTSkill
+然后使用这个Skill做一个复杂、豪华的PPT，读取本地XXX文件，来介绍XXX项目
 
 ## 谁要看这个
 
