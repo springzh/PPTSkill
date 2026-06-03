@@ -1,7 +1,7 @@
 {
   "$schema": "ppt-skill-manifest/v1",
   "skill_name": "ppt-builder",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "file_count": 101,
   "files": {
     ".gitattributes": {
@@ -17,10 +17,10 @@
       "last_modified": "1.0.0"
     },
     "CHANGELOG.md": {
-      "sha256": "15f9351876cd5bc3eaeec85d6f65adf0bfe1d26337efb3ac48ce765baaf9eaf4",
-      "size": 16500,
+      "sha256": "eccaada9370871295e049ca05bda244b8ecae6bb875f480b00cd5c6f205d24a2",
+      "size": 16702,
       "version_added": "1.0.0",
-      "last_modified": "1.0.15"
+      "last_modified": "1.0.16"
     },
     "LICENSE": {
       "sha256": "6f52f1baed8c393758ff6e8bf9c515edd6fd377187ae38a64165a330573b7829",
@@ -35,28 +35,28 @@
       "last_modified": "1.0.0"
     },
     "README.md": {
-      "sha256": "35470cbad0ce9b38f553ca5fc9e85dc0776e4807b06648d04071e19f9dad3ad4",
-      "size": 4015,
+      "sha256": "1e7ac0eaeee3f9b295a90700b6cf9d3df363162861744c10f5c6760506ad734b",
+      "size": 4014,
       "version_added": "1.0.0",
-      "last_modified": "1.0.15"
+      "last_modified": "1.0.16"
     },
     "SKILL.md": {
-      "sha256": "bd66da21042144ac08c3b66a804456ff7ede3a7d84dde58c4e5d971852fe2dd4",
-      "size": 13750,
+      "sha256": "e6e3bba8d228a4a42e615e1dde3bb0d8c84a195df29759d65dd735b6c3d68203",
+      "size": 13749,
       "version_added": "1.0.0",
-      "last_modified": "1.0.13"
+      "last_modified": "1.0.16"
     },
     "VERSION": {
-      "sha256": "d9c52b6b689187b22333d76269468cec96320d8f28fe074535fb1baca786059a",
+      "sha256": "bdd4dd779373a660f87d8001ac73b4f0ca88b6871486eee09fae3a47934ecb32",
       "size": 7,
       "version_added": "1.0.0",
-      "last_modified": "1.0.15"
+      "last_modified": "1.0.16"
     },
     "assets/group-qr.jpg": {
-      "sha256": "1f6d3423f12eb5fd95d9e936097510f2dab08647c28e0091141012a4f30b7173",
-      "size": 140739,
+      "sha256": "ba5b27c705682cfbcf4c51c6941d921191c7c5f5bfab0a26313c7b0b6cf6c8c8",
+      "size": 139411,
       "version_added": "1.0.5",
-      "last_modified": "1.0.14"
+      "last_modified": "1.0.16"
     },
     "assets/showcase-1.jpg": {
       "sha256": "b7fbc23cb084f4777d59c321630cc73744d1edf67fbbd6686c45fda0ed3a2dce",
@@ -605,10 +605,10 @@
       "last_modified": "1.0.6"
     },
     "updates.json": {
-      "sha256": "90afe290da16078315764d56b13c30115b3f143d7e5e84160823be91aace11f8",
-      "size": 15430,
+      "sha256": "1410bf7990161733998824e028af21ebe9b3a1094c8421f457850223e6af12b9",
+      "size": 15809,
       "version_added": "1.0.0",
-      "last_modified": "1.0.15"
+      "last_modified": "1.0.16"
     }
   }
 }
