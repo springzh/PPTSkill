@@ -1,0 +1,36 @@
+{
+  "$schema": "ppt-style/v1",
+  "slug": "deep-blue-business-massive",
+  "name": "深蓝商务汇报合辑",
+  "description": "深蓝主色商务风，适合工作汇报、竞聘、思维模型、数据图表等场景",
+  "palette": {
+    "primary": "#1E3A5F",
+    "secondary": "#2F6EBA",
+    "accent": "#A6B5C8",
+    "background": "#FFFFFF",
+    "bg_alt": "#F4F6F9",
+    "text_on_light": "#1E293B",
+    "text_on_dark": "#FFFFFF",
+    "text_muted": "#64748B"
+  },
+  "fonts": {
+    "cn_heading": "思源黑体",
+    "cn_body": "微软雅黑",
+    "en_heading": "Arial",
+    "en_body": "Arial"
+  },
+  "color_map": {
+    "#1E3A5F": "primary",
+    "#2F6EBA": "secondary",
+    "#A6B5C8": "accent",
+    "#FFFFFF": "background",
+    "#F4F6F9": "bg_alt",
+    "#1E293B": "text_on_light",
+    "#64748B": "text_muted"
+  },
+  "font_map": {
+    "思源黑体": "cn_heading",
+    "微软雅黑": "cn_body",
+    "Arial": "en_body"
+  }
+}

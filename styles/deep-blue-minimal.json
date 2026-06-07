@@ -1,0 +1,34 @@
+{
+  "$schema": "ppt-style/v1",
+  "slug": "deep-blue-minimal",
+  "name": "深蓝极简商务",
+  "description": "深蓝主色 + 大量留白，极简商务风，适合季度/年度汇报",
+  "palette": {
+    "primary": "#485275",
+    "secondary": "#44546A",
+    "accent": "#E7E6E6",
+    "background": "#FFFFFF",
+    "bg_alt": "#F7F8FA",
+    "text_on_light": "#334155",
+    "text_on_dark": "#F8FAFC",
+    "text_muted": "#94A3B8"
+  },
+  "fonts": {
+    "cn_heading": "微软雅黑",
+    "cn_body": "微软雅黑",
+    "en_heading": "Arial",
+    "en_body": "Arial"
+  },
+  "color_map": {
+    "#485275": "primary",
+    "#44546A": "secondary",
+    "#E7E6E6": "accent",
+    "#FFFFFF": "background",
+    "#334155": "text_on_light",
+    "#F8FAFC": "text_on_dark"
+  },
+  "font_map": {
+    "微软雅黑": "cn_body",
+    "Arial": "en_body"
+  }
+}
