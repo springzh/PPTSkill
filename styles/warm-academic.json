@@ -1,0 +1,35 @@
+{
+  "$schema": "ppt-style/v1",
+  "slug": "warm-academic",
+  "name": "暖色学术",
+  "description": "暖色系学术风，覆盖卡通教学、开题报告、方法论等场景",
+  "palette": {
+    "primary": "#4F6E4F",
+    "secondary": "#F5C97E",
+    "accent": "#C09548",
+    "background": "#FFFFFF",
+    "bg_alt": "#F6F0DC",
+    "text_on_light": "#1E293B",
+    "text_on_dark": "#FFFFFF",
+    "text_muted": "#64748B"
+  },
+  "fonts": {
+    "cn_heading": "思源黑体",
+    "cn_body": "微软雅黑",
+    "en_heading": "Arial",
+    "en_body": "Arial"
+  },
+  "color_map": {
+    "#4F6E4F": "primary",
+    "#F5C97E": "secondary",
+    "#C09548": "accent",
+    "#FFFFFF": "background",
+    "#F6F0DC": "bg_alt",
+    "#2A3F75": "primary"
+  },
+  "font_map": {
+    "思源黑体": "cn_heading",
+    "微软雅黑": "cn_body",
+    "Arial": "en_body"
+  }
+}

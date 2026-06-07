@@ -12,23 +12,23 @@ FAMILY_MAP: dict[str, str] = {
     "report-massive-models":     "deep-blue-business-massive",
     "report-massive-charts":     "deep-blue-business-massive",
     "report-massive-reports":    "deep-blue-business-massive",
-    # Phase 2 (commented until style files exist)
-    # "data-viz-deck":             "deep-blue-corp-extended",
-    # "report-savior":             "deep-blue-corp-extended",
-    # "operations-deck":           "deep-blue-corp-extended",
-    # "competition-speech":        "deep-blue-corp-extended",
-    # "architecture-deck":         "deep-blue-corp-extended",
-    # "premium-corp":              "bordeaux-corp",
-    # "mckinsey-style":            "bordeaux-corp",
-    # Phase 3 (commented until style files exist)
-    # "red-patriot-youth":         "patriotic-red",
-    # "red-patriot-general":       "patriotic-red",
-    # "cute-orange-class":         "warm-academic",
-    # "thesis-novice":             "warm-academic",
-    # "thesis-formula":            "warm-academic",
-    # "top-thesis":                "wine-academic",
-    # "quarterly-illust":          "standalone",
-    # "geometric-summary":         "standalone",
+    # Phase 2
+    "data-viz-deck":             "deep-blue-corp-extended",
+    "report-savior":             "deep-blue-corp-extended",
+    "operations-deck":           "deep-blue-corp-extended",
+    "competition-speech":        "deep-blue-corp-extended",
+    "architecture-deck":         "deep-blue-corp-extended",
+    "premium-corp":              "bordeaux-corp",
+    "mckinsey-style":            "bordeaux-corp",
+    # Phase 3
+    "red-patriot-youth":         "patriotic-red",
+    "red-patriot-general":       "patriotic-red",
+    "cute-orange-class":         "warm-academic",
+    "thesis-novice":             "warm-academic",
+    "thesis-formula":            "warm-academic",
+    "top-thesis":                "wine-academic",
+    "quarterly-illust":          "standalone",
+    "geometric-summary":         "standalone",
 }
 
 

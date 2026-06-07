@@ -1,0 +1,33 @@
+{
+  "$schema": "ppt-style/v1",
+  "slug": "wine-academic",
+  "name": "酒红学术",
+  "description": "酒红学术风，适合开题答辩、课题汇报",
+  "palette": {
+    "primary": "#7A2B22",
+    "secondary": "#A55248",
+    "accent": "#D4A574",
+    "background": "#FAF1E4",
+    "bg_alt": "#FFFFFF",
+    "text_on_light": "#1E293B",
+    "text_on_dark": "#FFFFFF",
+    "text_muted": "#78716C"
+  },
+  "fonts": {
+    "cn_heading": "思源黑体",
+    "cn_body": "微软雅黑",
+    "en_heading": "Arial",
+    "en_body": "Arial"
+  },
+  "color_map": {
+    "#7A2B22": "primary",
+    "#A55248": "secondary",
+    "#FAF1E4": "background",
+    "#1E293B": "text_on_light"
+  },
+  "font_map": {
+    "思源黑体": "cn_heading",
+    "微软雅黑": "cn_body",
+    "Arial": "en_body"
+  }
+}

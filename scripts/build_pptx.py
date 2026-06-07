@@ -427,10 +427,13 @@ def remap_shape_colors(shape, color_map: dict[str, str]) -> None:
     if shape.has_text_frame:
         for para in shape.text_frame.paragraphs:
             for run in para.runs:
-                if run.font.color and run.font.color.rgb:
-                    current = _try_rgb(run.font.color.rgb)
-                    if current and current in color_map:
-                        run.font.color.rgb = _hex_to_rgb(color_map[current])
+                try:
+                    if run.font.color and run.font.color.rgb:
+                        current = _try_rgb(run.font.color.rgb)
+                        if current and current in color_map:
+                            run.font.color.rgb = _hex_to_rgb(color_map[current])
+                except AttributeError:
+                    pass  # Scheme colors, inherited — skip
 
     # Solid fill
     try:

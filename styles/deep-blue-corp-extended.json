@@ -1,0 +1,42 @@
+{
+  "$schema": "ppt-style/v1",
+  "slug": "deep-blue-corp-extended",
+  "name": "深蓝企业扩展",
+  "description": "深蓝企业风，覆盖数据可视化、运营、竞聘、架构图等场景",
+  "palette": {
+    "primary": "#1F3A93",
+    "secondary": "#3498DB",
+    "accent": "#C0392B",
+    "background": "#FFFFFF",
+    "bg_alt": "#ECF0F1",
+    "text_on_light": "#1E293B",
+    "text_on_dark": "#FFFFFF",
+    "text_muted": "#64748B"
+  },
+  "fonts": {
+    "cn_heading": "思源黑体",
+    "cn_body": "微软雅黑",
+    "en_heading": "Arial",
+    "en_body": "Arial"
+  },
+  "color_map": {
+    "#1F3A93": "primary",
+    "#1B3464": "primary",
+    "#2C3E70": "primary",
+    "#2D4F8A": "primary",
+    "#3498DB": "secondary",
+    "#3F6FCC": "secondary",
+    "#C0392B": "accent",
+    "#B73E3E": "accent",
+    "#FFFFFF": "background",
+    "#ECF0F1": "bg_alt",
+    "#E1ECF7": "bg_alt",
+    "#E8E8E8": "bg_alt",
+    "#34495E": "text_on_light"
+  },
+  "font_map": {
+    "思源黑体": "cn_heading",
+    "微软雅黑": "cn_body",
+    "Arial": "en_body"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "ppt-style/v1",
+  "slug": "patriotic-red",
+  "name": "党政红",
+  "description": "红色主调 + 金色点缀，庄重党政风，适合党课、爱国教育、思政课件",
+  "palette": {
+    "primary": "#A91F1F",
+    "secondary": "#F4D9B4",
+    "accent": "#F2C656",
+    "background": "#FFFFFF",
+    "bg_alt": "#FFFDF7",
+    "text_on_light": "#1A1A1A",
+    "text_on_dark": "#FFFFFF",
+    "text_muted": "#8B7355"
+  },
+  "fonts": {
+    "cn_heading": "微软雅黑",
+    "cn_body": "微软雅黑",
+    "en_heading": "Arial",
+    "en_body": "Arial"
+  },
+  "color_map": {
+    "#A91F1F": "primary",
+    "#A8181C": "primary",
+    "#F4D9B4": "secondary",
+    "#F2C656": "accent",
+    "#FFFFFF": "background",
+    "#FFFDF7": "bg_alt"
+  },
+  "font_map": {
+    "微软雅黑": "cn_body",
+    "Arial": "en_body"
+  }
+}
