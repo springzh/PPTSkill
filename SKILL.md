@@ -158,6 +158,37 @@ python3 scripts/build_pptx.py \
 python3 scripts/render_slides.py out/final.pptx out/renders --dpi 144
 ```
 
+### 模式 A-New: 跨模板自由选页（v2.0+）
+
+当用户需求涉及多种版式（如 SWOT + 时间线 + 卡片网格），且它们分布在不同的模板里时：
+
+1. **确定目标 style** — 从 `styles/` 目录选择一个 style family。Phase 1 支持 `deep-blue-business-massive` 和 `deep-blue-minimal`。
+
+2. **查 `slide-registry.json` 选页** — 按 `layout_type` / `tags` / `use_for` 搜索：
+   ```bash
+   python3 -c "
+   import json
+   r = json.load(open('slide-registry.json'))
+   for s in r['slides']:
+       if 'swot' in s['tags'] and s['style_family'] == 'deep-blue-business-massive':
+           print(f\"{s['slide_id']}: {s['use_for']}\")
+   "
+   ```
+
+3. **写 multi-source edits.json** — 使用 `slide_id` 引用跨模板的页。
+
+4. **构建**：
+   ```bash
+   python3 scripts/build_pptx.py edits.json out/final.pptx \
+       --registry slide-registry.json --styles styles/ --strict
+   ```
+
+5. **预览**：同原有流程 `render_slides.py`。
+
+**跨 family 混用：** Phase 2 起启用完整的跨 family 颜色映射。
+
+**兼容性：** 旧单模板模式完全兼容 —— edits.json 里没有 `"style"` 字段就自动走 legacy 路径。
+
 ## 目录结构
 
 ```

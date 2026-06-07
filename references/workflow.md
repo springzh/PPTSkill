@@ -118,6 +118,96 @@ python3 scripts/build_pptx.py \
 
 发现问题 → 修改 edits.json → 再跑一次。
 
+## <a id="mode-a-multi"></a>模式 A-New: 跨模板自由选页（v2.0+）
+
+当用户需求涉及多种版式（如 SWOT + 时间线 + 卡片网格），且它们分布在不同的模板里时，使用跨模板选页模式。
+
+### 前置条件
+
+- `slide-registry.json` 已由 `scripts/build_registry.py` 生成
+- `styles/` 目录包含目标 style family 的定义文件
+
+### A-New1. 确定目标 style
+
+从 `styles/` 目录选择一个 style family。Phase 1 支持：
+- `deep-blue-business-massive`（report-massive-models/charts/reports 三套，113 页）
+- `deep-blue-minimal`（minimal-business-summary，16 页）
+
+```bash
+ls styles/
+# deep-blue-business-massive.json  deep-blue-minimal.json
+```
+
+### A-New2. 查 slide-registry.json 选页
+
+按 `layout_type` / `tags` / `use_for` 字段搜索匹配的页：
+
+```bash
+python3 -c "
+import json
+r = json.load(open('slide-registry.json'))
+for s in r['slides']:
+    if 'swot' in s['tags'] and s['style_family'] == 'deep-blue-business-massive':
+        print(f\"{s['slide_id']}: {s['use_for'][:60]}\")
+"
+```
+
+也可以用 `layout_type` 过滤：
+
+```bash
+python3 -c "
+import json
+r = json.load(open('slide-registry.json'))
+from collections import Counter
+types = Counter(s['layout_type'] for s in r['slides']
+                if s['style_family'] == 'deep-blue-business-massive')
+for t, c in types.most_common():
+    print(f'{t}: {c}')
+"
+```
+
+### A-New3. 写 multi-source edits.json
+
+```jsonc
+{
+  "style": "deep-blue-business-massive",
+  "slides": [
+    {"slide_id": "report-massive-models-content-3"},
+    {"slide_id": "report-massive-charts-content-5"},
+    {"slide_id": "report-massive-models-content-12"}
+  ],
+  "edits": [
+    {"slide_id": "report-massive-models-content-3",
+     "slot_id": "title_cn", "new_text": "市场分析"}
+  ]
+}
+```
+
+### A-New4. 构建
+
+```bash
+python3 scripts/build_pptx.py edits.json out/final.pptx \
+    --registry slide-registry.json \
+    --styles styles/ \
+    --strict
+```
+
+`--strict` 模式下：slot 找不到报错、expected_text 不匹配报错、文字出框拒绝保存。
+
+### A-New5. 预览
+
+```bash
+python3 scripts/render_slides.py out/final.pptx out/renders --dpi 144
+```
+
+### 跨 family 混用
+
+如果选了不同 `style_family` 的页，`build_pptx.py` 会自动用 `color_map` 做颜色映射。Phase 1 暂不支持跨 family 映射（两个 style 是独立 family），Phase 2 起启用完整的跨 family 颜色映射。
+
+### 与旧模式的兼容
+
+旧的单模板模式完全兼容 —— 只要 `edits.json` 里没有 `"style"` 字段，就自动走 legacy 路径。Phase 1 两种模式并存，无需改动任何现有工作流。
+
 ## 模式 B：用户带 PPT
 
 详见 [`custom-template-workflow.md`](./custom-template-workflow.md)。
