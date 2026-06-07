@@ -10,6 +10,8 @@ __pycache__/
 work/
 out/
 .duplicates/
+.worktrees/
+.superpowers/
 
 # Local dev: don't commit user-built PPTs from this skill
 demo-output.pptx
