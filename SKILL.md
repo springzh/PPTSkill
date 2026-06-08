@@ -1,7 +1,7 @@
 ---
 name: gorden-ppt-skill
 description: >-
-  用 19 套内置中文 PPT 模板（或用户自带的 .pptx 模板）生成与编辑 PowerPoint 演示文稿：只替换文字、不破坏原排版/配色/字号，内置按文本框尺寸的出框检测与同级标题字号一致校验；也支持完全原创的简洁版式。当用户要"做 / 生成 / 制作 / 编辑一份 PPT / 演示文稿 / 幻灯片 / .pptx"，或需要工作汇报、年终与季度总结、述职竞聘、项目复盘、开题答辩、商务提案、教学课件、数据可视化等成品 PPTX 时使用。Use when the user wants to create or edit a PowerPoint / PPT / slides / .pptx deck, pick from built-in templates, or apply their own template without breaking the layout.
+  用 19 套内置中文 PPT 模板（或用户自带的 .pptx 模板）生成与编辑 PowerPoint 演示文稿。支持跨模板混搭幻灯片（slide-level composability），通过 slide-registry 按标签/版式类型检索 640+ 张独立幻灯片，搭配可分离的 styles 色彩/字体系统进行跨风格家族的颜色重映射。只替换文字、不破坏原排版/配色/字号，内置按文本框尺寸的出框检测与同级标题字号一致校验；也支持完全原创的简洁版式。当用户要"做 / 生成 / 制作 / 编辑一份 PPT / 演示文稿 / 幻灯片 / .pptx"，或需要工作汇报、年终与季度总结、述职竞聘、项目复盘、开题答辩、商务提案、教学课件、数据可视化等成品 PPTX 时使用。Use when the user wants to create or edit a PowerPoint / PPT / slides / .pptx deck, pick from built-in templates, mix slides across templates, or apply their own template without breaking the layout.
 ---
 
 # gorden-ppt-skill
@@ -59,28 +59,80 @@ python3 scripts/check_update.py     # 列出 added / modified / removed
 
 `updates.json` 的 `update_source` 已配置为 `git+https://github.com/GordenSun/GordenPPTSkill.git#main`，开箱即用，无需修改。
 
+## 架构概述：Slide-Level Templates
+
+本 Skill 采用**可组合幻灯片架构**，核心概念：
+
+```
+slide-registry.json  →  640+ 张独立幻灯片的统一索引（按标签/版式/风格家族检索）
+styles/<slug>.json   →  可分离的色彩 + 字体定义（含 color_map 用于跨家族重映射）
+templates/<slug>/    →  19 套原始模板（不变），每套含 template.pptx + detail.json + intro.md
+```
+
+**关键能力**：你可以从不同模板中挑选幻灯片混搭成一份演示文稿。例如：从 `report-massive-models` 取 SWOT 分析页 + 从 `minimal-business-summary` 取 4 卡片对比页 + 从 `report-savior` 取鱼骨图页，统一应用 `deep-blue-minimal` 风格。
+
+### 风格家族
+
+| 风格家族 | 成员模板 | 幻灯片数 | 状态 |
+|---|---|---|---|
+| `deep-blue-business-massive` | report-massive-models, report-massive-charts, report-massive-reports | 113 | ✅ 可用 |
+| `deep-blue-minimal` | minimal-business-summary | 16 | ✅ 可用 |
+| `deep-blue-corp-extended` | data-viz-deck, report-savior, operations-deck, competition-speech, architecture-deck | 233 | ✅ 可用 |
+| `bordeaux-corp` | premium-corp, mckinsey-style | 72 | ✅ 可用 |
+| `patriotic-red` | red-patriot-youth, red-patriot-general | 41 | 🔜 即将支持 |
+| `warm-academic` | cute-orange-class, thesis-novice, thesis-formula | 88 | 🔜 即将支持 |
+| `wine-academic` | top-thesis | 39 | 🔜 即将支持 |
+| `standalone` | quarterly-illust, geometric-summary | 40 | 🔜 即将支持 |
+
+同一风格家族内的幻灯片配色统一，混搭无需颜色重映射。跨家族混搭时，构建脚本会自动通过 `color_map` 将源幻灯片的颜色重映射到目标风格。
+
 ## 三种模式
 
 收到用户需求后，先判断走哪种模式：
 
-### 模式 A：从内置模板里挑
+### 模式 A：从内置模板里挑（默认）
 
-**默认走这条路。** 19 套内置模板覆盖了绝大多数中文场景。
+**默认走这条路。** 19 套内置模板覆盖了绝大多数中文场景。现在支持两种路径：
 
-1. **读 [`templates/INDEX.md`](./templates/INDEX.md)** ——一份精简清单，列出每套模板的风格、主色、适用场景、页数。
-2. **匹配用户输入** —— 把用户描述（场景、风格关键词、所需页面类型、颜色偏好）和每个模板的 intro.md 对比。
-3. **选模板的决策规则**：
-   - **用户已明确指定模板** → 直接用。
-   - **你高度确信只有 1 个模板最合适**（场景 + 风格 + 主色都强匹配，且明显优于其它）→ 可直接用，但开工前一句话告诉用户你选了哪个、为什么，给用户一个否决的机会。
-   - **其余所有情况（用户没指定，或你不能完全把握哪个最合适）→ 必须让用户来选**：
-     - 用 AskQuestion 提供 **正好 3 个**候选模板，每个附上一句话理由（风格 / 适用场景 / 页数），并**把对应的 `templates/<slug>/preview.png` 一并展示**给用户看图决策。
-     - 选项里**始终额外带一个「都不满意，换一批」**。用户选它时，再按匹配度给出**另外 3 个**没出现过的候选（同样附预览图）。可反复换，直到用户选定或候选用尽。
-     - 候选都用尽仍不满意 → 询问用户更具体的偏好（风格 / 颜色 / 场景），或转模式 C 原创。
-   - ⚠️ 不要在没让用户看预览图的情况下，仅凭模糊匹配就自作主张定一个模板。
-4. **拿到目标模板后**：
-   - 读 `templates/<slug>/intro.md`（高度浓缩，告诉你这个模板的特性）
-   - 读 `templates/<slug>/detail.json`（结构化数据，告诉你每页 / 每个文本位的细节）
-   - 按 [模式 A 工作流](./references/workflow.md#mode-a) 选页、写 `edits.json`、跑 `build_pptx.py`
+#### 路径 A1：单模板（传统，仍然可用）
+
+适合用户需求明确匹配某一套模板。流程与 v1.x 相同：
+
+1. 读 [`templates/INDEX.md`](./templates/INDEX.md) 筛选候选
+2. 读候选模板的 `intro.md` + `detail.json`
+3. 选页、写传统 `edits.json`（`template_slug` + `selected_slides`）
+4. 跑单模板构建命令
+
+#### 路径 A2：跨模板混搭（推荐，新架构）
+
+适合用户需要多种版式类型（如"封面 + SWOT + 时间线 + KPI 卡片 + 结束页"），单模板无法满足。
+
+1. **理解内容需求** → 抽取用户需要的版式类型（cover / swot / timeline / kpi / ending …）
+2. **查询 slide-registry.json** → 按 `tags` + `layout_type` + `style_family` 检索候选幻灯片：
+   ```bash
+   python3 -c "
+   import json
+   reg = json.load(open('slide-registry.json'))
+   # 按标签筛选：cover + deep-blue 家族
+   covers = [s for s in reg['slides'] if 'cover' in s['tags'] and s['style_family'].startswith('deep-blue')]
+   for s in covers:
+       print(f\"{s['slide_id']:40s} | {s['style_family']:30s} | {s['use_for']}\")
+   "
+   ```
+3. **选幻灯片** → 优先在同一风格家族内挑选（无需颜色重映射）；如需跨家族，构建时会自动重映射颜色
+4. **选择目标风格** → 从 `styles/` 目录选一个风格 slug，或让用户从风格家族中挑选
+5. **写多源 `edits.json`** → 使用新格式（见下方）
+6. **跑多源构建命令**
+
+#### 模板选择决策规则（两条路径通用）
+
+- **用户已明确指定模板** → 直接用。
+- **你高度确信只有 1 个模板最合适**（场景 + 风格 + 主色都强匹配，且明显优于其它）→ 可直接用，但开工前一句话告诉用户你选了哪个、为什么，给用户一个否决的机会。
+- **其余所有情况（用户没指定，或你不能完全把握哪个最合适）→ 必须让用户来选**：
+  - 用 AskQuestion 提供 **正好 3 个**候选模板，每个附上一句话理由（风格 / 适用场景 / 页数），并**把对应的 `templates/<slug>/preview.png` 一并展示**给用户看图决策。
+  - 选项里**始终额外带一个「都不满意，换一批」**。用户选它时，再按匹配度给出**另外 3 个**没出现过的候选（同样附预览图）。可反复换，直到用户选定或候选用尽。
+  - 候选都用尽仍不满意 → 询问用户更具体的偏好（风格 / 颜色 / 场景），或转模式 C 原创。
+  - ⚠️ 不要在没让用户看预览图的情况下，仅凭模糊匹配就自作主张定一个模板。
 
 ### 模式 B：用户自己带 PPT 模板
 
@@ -105,6 +157,75 @@ python3 scripts/check_update.py     # 列出 added / modified / removed
 4. 主色 1 个 + 灰阶 + 白底；不要拼凑多种风格
 5. 用 `python-pptx` 直接代码生成，参考 [`references/original-design-guide.md`](./references/original-design-guide.md)
 
+## edits.json 格式
+
+### 传统单模板格式（仍支持）
+
+```jsonc
+{
+  "template_slug": "minimal-business-summary",
+  "selected_slides": [1, 2, 5, 9, 16],
+  "edits": [
+    {"slide": 1, "slot_id": "cover_title_cn", "new_text": "2026 年度复盘"}
+  ]
+}
+```
+
+### 新多源格式（跨模板混搭）
+
+```jsonc
+{
+  "style": "deep-blue-minimal",
+  "slides": [
+    {"slide_id": "minimal-cover-1",      "source_slide": 1},
+    {"slide_id": "models-swot-12",       "source_slide": 12},
+    {"slide_id": "minimal-4card-5",      "source_slide": 5},
+    {"slide_id": "minimal-wheel-9",      "source_slide": 9},
+    {"slide_id": "minimal-ending-16",    "source_slide": 16}
+  ],
+  "edits": [
+    {"slide_id": "minimal-cover-1",  "slot_id": "cover_title_cn", "new_text": "2026 战略复盘"},
+    {"slide_id": "models-swot-12",   "slot_id": "swot_strength_title", "new_text": "技术壁垒"}
+  ]
+}
+```
+
+**格式检测**：`"template_slug"` 存在 → 传统路径；`"style"` 存在 → 多源路径。
+
+## 构建命令
+
+### 传统单模板构建
+
+```bash
+python3 scripts/build_pptx.py \
+    templates/<slug>/template.pptx \
+    edits.json \
+    out/final.pptx \
+    --detail templates/<slug>/detail.json \
+    --strict
+```
+
+### 新多源构建
+
+```bash
+python3 scripts/build_pptx.py \
+    edits.json \
+    out/final.pptx \
+    --registry slide-registry.json \
+    --styles styles/ \
+    --style deep-blue-minimal \
+    --strict
+```
+
+构建流水线（多源模式）：**Resolve**（slide_id → 物理位置）→ **Assemble**（从多源克隆幻灯片）→ **Edit**（文字替换）→ **Apply Style**（跨家族颜色/字体重映射）
+
+### 自检
+
+```bash
+# 渲染最终 pptx 给用户预览 / 自检（每页一张 PNG）
+python3 scripts/render_slides.py out/final.pptx out/renders --dpi 144
+```
+
 ## 编辑铁律（所有模式通用）
 
 1. **不改排版** —— 只改文字。形状的位置、大小、颜色、字体、字号、行距，都不动。
@@ -120,81 +241,60 @@ python3 scripts/check_update.py     # 列出 added / modified / removed
    - 如果 `ending` 数组为空，**直接以最后一张内容页收尾**，不要硬造"感谢聆听"。
    - 同理，`agenda` 空 → 不强加目录；`section_divider` 空 → 不强加分章扉页。
    - 也就是说：**模板有什么角色就用什么角色**，少一个角色就少一页，不要破坏视觉一致性去拼凑。这条规则在 v1.0.3 起对所有模板生效。
+   - **例外（多源模式）**：跨模板混搭时，可以从不同模板分别取 cover、content、ending 页——这正是新架构的核心价值。但仍需确保所有幻灯片属于同一风格家族，或让构建脚本进行颜色重映射。
 9. **同级标题字号必须一致，靠"控制长度"而非"缩字号"达成** ——
    - detail.json 顶部有 `type_scale`（字号层级表，level 1 = 最大），每个 slot 标了 `level`。**同一 level 的文字必须保持模板原字号，不要改字号。**
    - 当某处文字太长放不下时，**永远是缩短文字**（换更精炼的表达），**绝不是把这一处的字号改小** —— 那会让本该同级的标题大小不一，非常难看。
    - 选多页拼一份 PPT 时，确认各页同 level 的标题用词长度相近，整体才齐整。
 
-## 标准工作流（模式 A）
-
-```bash
-# 1. 从 templates/INDEX.md 选定一个模板，例如 minimal-business-summary
-TEMPLATE=templates/minimal-business-summary
-
-# 2. 读两个文件
-#    - $TEMPLATE/intro.md     -> 模板风格 / 适用场景 / 结构概述
-#    - $TEMPLATE/detail.json  -> 每页 / 每个文本位的详细描述
-
-# 3. 自己决定要用哪些页（用 detail.json 的 page.role 和 use_for）
-#    生成 edits.json：
-#    {
-#      "template_slug": "minimal-business-summary",
-#      "selected_slides": [1, 2, 3, 5, 7, 9, 10, 12, 13, 14, 16],
-#      "edits": [
-#        {"slide": 1, "slot_id": "cover_title_cn", "new_text": "2026 年度复盘"},
-#        ...
-#      ]
-#    }
-
-# 4. 跑构建
-python3 scripts/build_pptx.py \
-    $TEMPLATE/template.pptx \
-    edits.json \
-    out/final.pptx \
-    --detail $TEMPLATE/detail.json \
-    --strict
-
-# 5. （可选）渲染最终 pptx 给用户预览 / 自检（每页一张 PNG）
-python3 scripts/render_slides.py out/final.pptx out/renders --dpi 144
-```
-
 ## 目录结构
 
 ```
 GordenPPTSkill/
-├── SKILL.md               ← 本文件
-├── VERSION                ← 当前版本号
-├── CHANGELOG.md           ← 人类可读变更日志
-├── updates.json           ← 机器可读版本增量索引
-├── manifest.json          ← 所有文件的 sha256 与版本归属
-├── README.md              ← 仓库概览（用户阅读）
+├── SKILL.md                    ← 本文件
+├── VERSION                     ← 当前版本号
+├── CHANGELOG.md                ← 人类可读变更日志
+├── updates.json                ← 机器可读版本增量索引
+├── manifest.json               ← 所有文件的 sha256 与版本归属
+├── README.md                   ← 仓库概览（用户阅读）
+├── slide-registry.json         ← 640+ 张幻灯片的统一索引（按标签/版式/风格家族检索）
+├── styles/                     ← 可分离风格定义（色彩 + 字体 + color_map）
+│   ├── deep-blue-minimal.json
+│   ├── deep-blue-business-massive.json
+│   ├── deep-blue-corp-extended.json
+│   ├── bordeaux-corp.json
+│   ├── patriotic-red.json
+│   ├── warm-academic.json
+│   └── wine-academic.json
 ├── scripts/
-│   ├── build_pptx.py          # 按 edits.json 选页 + 换字 → 输出 pptx（含出框检测）
-│   ├── render_slides.py       # pptx → PDF → 每页 PNG（预览/自检）
-│   ├── compute_capacity.py    # 由 template.pptx 计算每个 slot 的容量字段（数据准备）
-│   ├── check_update.py        # 检查远端是否有更新
-│   ├── apply_update.py        # 增量更新本地文件
-│   └── build_manifest.py      # 重建 manifest.json
+│   ├── build_pptx.py           ← 按 edits.json 选页 + 换字 → 输出 pptx（含出框检测 + 多源组装 + 风格重映射）
+│   ├── build_registry.py       ← 扫描 templates/*/detail.json 生成 slide-registry.json
+│   ├── render_slides.py        ← pptx → PDF → 每页 PNG（预览/自检）
+│   ├── compute_capacity.py     ← 由 template.pptx 计算每个 slot 的容量字段（数据准备）
+│   ├── check_update.py         ← 检查远端是否有更新
+│   ├── apply_update.py         ← 增量更新本地文件
+│   └── build_manifest.py       ← 重建 manifest.json
 ├── references/
 │   ├── workflow.md
 │   ├── pptx-edit-schema.md
 │   ├── custom-template-workflow.md
 │   ├── chart-editing.md
 │   └── original-design-guide.md
-└── templates/
+└── templates/                  ← 19 套原始模板（不变）
     ├── INDEX.md
     └── <slug>/
         ├── template.pptx
-        ├── intro.md       # 高度浓缩简介
-        ├── detail.json    # 详细页面 / slot 数据（含容量字段 + type_scale）
-        └── preview.png    # 4 页 2×2 拼接预览图
+        ├── intro.md            ← 高度浓缩简介
+        ├── detail.json         ← 详细页面 / slot 数据（含容量字段 + type_scale）
+        └── preview.png         ← 4 页 2×2 拼接预览图
 ```
 
 ## 关键脚本一句话说明
 
 | 脚本 | 干嘛用 |
 |---|---|
-| `build_pptx.py` | 按 `edits.json`（选页 + 文字替换）从模板生成最终 pptx；带出框检测，`--strict` 时出框拒绝保存 |
+| `build_pptx.py` | 按 `edits.json`（选页 + 文字替换）从模板生成最终 pptx；支持单模板和多源两种模式；带出框检测 + 跨家族风格重映射，`--strict` 时出框拒绝保存 |
+| `build_registry.py` | 扫描所有 `templates/*/detail.json` 生成 `slide-registry.json`；新增或修改模板后运行 |
 | `render_slides.py` | 把任意 pptx 渲染成每页一张 PNG（用 LibreOffice + pdftoppm），用于预览 / 自检 |
 | `compute_capacity.py` | 由 template.pptx 算出每个 slot 的 `chars_per_line/max_lines/max_chars` 等容量字段（自带模板已算好，仅在加新模板时需要） |
 | `check_update.py` | 对比本地 VERSION 和远端 updates.json，告诉你要不要更新 |
@@ -215,3 +315,4 @@ GordenPPTSkill/
 - **不要**为了塞下文字而忽略 `max_chars`
 - **不要**修改用户原始模板文件 —— 所有产出都到新文件
 - **不要**用本 Skill 做商业项目 —— 见顶部声明
+- **不要**在跨家族混搭时忽略风格重映射 —— 如果源幻灯片和目标风格色差大，先确认 `color_map` 覆盖了所有关键颜色

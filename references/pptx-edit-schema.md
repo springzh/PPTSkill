@@ -88,6 +88,13 @@
 
 ## edits.json （由编辑端 AI 写）
 
+edits.json 支持两种格式，由顶层字段自动检测：
+
+- **传统单模板格式**：顶层含 `"template_slug"` → 单源路径
+- **新多源格式**：顶层含 `"style"` → 多源路径
+
+### 传统单模板格式
+
 ```jsonc
 {
   "$schema": "ppt-edit-spec/v1",                     // (可选)
@@ -119,7 +126,49 @@
   - `new_text`：替换为的新文本（必填）。
   - `chart_data` *(可选)*：见 [`chart-editing.md`](./chart-editing.md)。
 
-### 强约束
+### 新多源格式（跨模板混搭）
+
+```jsonc
+{
+  "$schema": "ppt-edit-spec/v2",                     // (可选)
+  "style": "deep-blue-minimal",
+  "slides": [
+    {"slide_id": "minimal-cover-1",   "source_slide": 1},
+    {"slide_id": "models-swot-12",    "source_slide": 12},
+    {"slide_id": "minimal-4card-5",   "source_slide": 5},
+    {"slide_id": "minimal-ending-16", "source_slide": 16}
+  ],
+  "edits": [
+    // 通过 slide_id + slot_id 定位（推荐）
+    {"slide_id": "minimal-cover-1", "slot_id": "cover_title_cn", "new_text": "2026 战略复盘"},
+
+    // 也可以通过 slide_id + address 定位（跨模板时需确保 shape_id 唯一）
+    {
+      "slide_id": "models-swot-12",
+      "address": {"shape_id": 9, "paragraph": 0, "run": 0},
+      "expected_text": "STRENGTHS",
+      "new_text": "核心优势"
+    }
+  ]
+}
+```
+
+字段：
+
+- `style`：目标风格 slug（对应 `styles/<slug>.json`），用于格式检测 + 风格重映射。
+- `slides`：幻灯片列表，按演示顺序写。每项：
+  - `slide_id`：slide-registry.json 中的全局唯一标识。
+  - `source_slide`：该幻灯片在源 .pptx 中的 1-based 编号。
+- `edits`：每个元素描述一处替换：
+  - `slide_id`：对应 `slides` 数组中的 `slide_id`（替代传统格式的 `slide` 数字）。
+  - `slot_id` 或 `address`：二选一，与传统格式相同。
+  - `expected_text` *(可选)*：sanity check。
+  - `new_text`：替换为的新文本（必填）。
+  - `chart_data` *(可选)*：见 [`chart-editing.md`](./chart-editing.md)。
+
+**跨模板 slot 解析**：构建脚本通过 `slide_id` → slide-registry → `detail_ref` → 对应 detail.json 查找 slot_id，因此不同来源的幻灯片各自使用自己的 detail.json 进行 slot 寻址和出框检测。
+
+### 强约束（两种格式通用）
 
 1. **顺序无关**：edits 的顺序不影响结果。同一 slot 出现多次时以最后一条为准。
 2. **覆盖所有 editable 字段**：editable=true 的 slot 必须在 edits 里出现（除非整页被丢弃）。否则会留下占位文字。
