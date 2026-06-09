@@ -10,25 +10,6 @@ description: >-
 
 ---
 
-## 🚨 启用本 Skill 后做的第一件事：跑一次自动更新
-
-任何 AI 在本会话**第一次用到这个 Skill 时**，**必须**先把下面这条命令作为它的第一个 tool call：
-
-```bash
-python3 scripts/apply_update.py
-```
-
-这条命令会自动：
-1. 从远端 `update_source`（git+ 仓库）拉取最新 `updates.json`
-2. 比对本地 `VERSION` 与远端 `latest_version`
-3. 如果有新版本 → 只下载真正变动的文件（增量更新，无 LFS 流量浪费）
-4. 如果已是最新 → 几秒内退出，输出 `OK   Nothing to do`
-
-⚠️ 本 Skill **不会自动 push 更新**，必须由 AI 主动 pull。如果跳过这一步，可能在用过期版本，行为、规则、模板都可能与文档不符。
-
-✅ 同一会话内只需做一次，后续 tool call 不必重复检查。
-
----
 
 > **⚠️ 非商业使用**：本 Skill 与其内置 PPT 模板**仅供个人学习和研究**，**严禁用于任何商业用途**（含商业演示、销售、培训分发、客户提案、企业内部以营利为目的的使用等）。模板素材来自第三方设计师作品，二次商用需要获取原作者授权。
 
@@ -41,23 +22,6 @@ python3 scripts/apply_update.py
 - 用户拿来一份 .pptx 文件，希望"按这个模板做一份新的"
 - 用户希望"调整 / 编辑 PPT 的某些文字"，且要求"不破坏排版"
 - 用户希望对比多个 PPT 模板，选一个合适的
-
-## 更新机制说明
-
-完整的更新工具有两个脚本：
-
-| 脚本 | 干嘛 | 何时用 |
-|---|---|---|
-| `scripts/apply_update.py` | **检查 + 应用**（一步到位） | **每次启用 Skill 第一件事**（见顶部红框） |
-| `scripts/check_update.py` | 仅检查、不应用，列出会变的文件 | 当你只想预览改了什么、不想立即更新时 |
-
-如果只想先看变化再决定要不要升级：
-
-```bash
-python3 scripts/check_update.py     # 列出 added / modified / removed
-```
-
-`updates.json` 的 `update_source` 已配置为 `git+https://github.com/GordenSun/GordenPPTSkill.git#main`，开箱即用，无需修改。
 
 ## 架构概述：Slide-Level Templates
 
@@ -254,7 +218,6 @@ GordenPPTSkill/
 ├── SKILL.md                    ← 本文件
 ├── VERSION                     ← 当前版本号
 ├── CHANGELOG.md                ← 人类可读变更日志
-├── updates.json                ← 机器可读版本增量索引
 ├── manifest.json               ← 所有文件的 sha256 与版本归属
 ├── README.md                   ← 仓库概览（用户阅读）
 ├── slide-registry.json         ← 640+ 张幻灯片的统一索引（按标签/版式/风格家族检索）
@@ -271,8 +234,6 @@ GordenPPTSkill/
 │   ├── build_registry.py       ← 扫描 templates/*/detail.json 生成 slide-registry.json
 │   ├── render_slides.py        ← pptx → PDF → 每页 PNG（预览/自检）
 │   ├── compute_capacity.py     ← 由 template.pptx 计算每个 slot 的容量字段（数据准备）
-│   ├── check_update.py         ← 检查远端是否有更新
-│   ├── apply_update.py         ← 增量更新本地文件
 │   └── build_manifest.py       ← 重建 manifest.json
 ├── references/
 │   ├── workflow.md
@@ -297,8 +258,6 @@ GordenPPTSkill/
 | `build_registry.py` | 扫描所有 `templates/*/detail.json` 生成 `slide-registry.json`；新增或修改模板后运行 |
 | `render_slides.py` | 把任意 pptx 渲染成每页一张 PNG（用 LibreOffice + pdftoppm），用于预览 / 自检 |
 | `compute_capacity.py` | 由 template.pptx 算出每个 slot 的 `chars_per_line/max_lines/max_chars` 等容量字段（自带模板已算好，仅在加新模板时需要） |
-| `check_update.py` | 对比本地 VERSION 和远端 updates.json，告诉你要不要更新 |
-| `apply_update.py` | 按 updates.json 的 delta 列表只下载变动文件 |
 | `build_manifest.py` | 重新计算 manifest.json |
 
 ## 字体说明
